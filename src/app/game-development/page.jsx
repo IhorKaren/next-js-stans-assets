@@ -1,11 +1,5 @@
-import styles from "../page.module.css";
-
 const Gamedevelopment = () => {
-    return (
-      <main className={styles.main}>
-        <h1>Game development</h1>
-      </main>
-    );
-  };
-  
-  export default Gamedevelopment;
+  return <h1>Game development</h1>;
+};
+
+export default Gamedevelopment;

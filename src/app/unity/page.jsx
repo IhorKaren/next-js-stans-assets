@@ -1,11 +1,5 @@
-import styles from "../page.module.css";
-
 const Unity = () => {
-  return (
-    <main className={styles.main}>
-      <h1>Unity</h1>
-    </main>
-  );
+  return <h1>Unity</h1>;
 };
 
 export default Unity;

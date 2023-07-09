@@ -1,11 +1,11 @@
 import styles from "../page.module.css";
 
-const Services = () => {
+const Contacts = () => {
     return (
       <main className={styles.main}>
-        <h1>Services</h1>
+        <h1>Contacts</h1>
       </main>
     );
   };
   
-  export default Services;
+  export default Contacts;

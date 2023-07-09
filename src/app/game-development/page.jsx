@@ -1,11 +1,11 @@
 import styles from "../page.module.css";
 
-const Technologies = () => {
+const Gamedevelopment = () => {
     return (
       <main className={styles.main}>
-        <h1>Technologies</h1>
+        <h1>Game development</h1>
       </main>
     );
   };
   
-  export default Technologies;
+  export default Gamedevelopment;

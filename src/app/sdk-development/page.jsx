@@ -1,11 +1,11 @@
 import styles from "../page.module.css";
 
-const About = () => {
+const Sdk = () => {
   return (
     <main className={styles.main}>
-      <h1>About</h1>
+      <h1>SDK development</h1>
     </main>
   );
 };
 
-export default About;
+export default Sdk;

@@ -1,10 +1,17 @@
 @import "../utils/variables.module.scss";
 @import "../utils/placeholders.module.scss";
 
-:root {
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+html {
+  font-family: var(--font-montserrat);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-raleway);
 }
 
 * {

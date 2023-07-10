@@ -46,9 +46,9 @@ const Navbar = () => {
   return (
     <div className={styles.site_nav_wrapper}>
       <div>
-        <a href="/" className={styles.site_logo}>
-          <Image src={logo} alt="logo" priority={false} />
-        </a>
+        <Link href="/" className={styles.site_logo}>
+          <Image src={logo} alt="logo" priority={true} />
+        </Link>
       </div>
 
       <nav>

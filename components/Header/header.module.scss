@@ -1,0 +1,14 @@
+@import "../../src/utils/variables.module.scss";
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 120px;
+  padding-right: 120px; 
+
+  background-color: rgba(33, 33, 33, 0.3);
+}

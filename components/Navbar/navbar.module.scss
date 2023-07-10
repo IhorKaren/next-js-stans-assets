@@ -1,0 +1,86 @@
+@import "../../src/utils/placeholders.module.scss";
+@import "../../src/utils/variables.module.scss";
+
+.site_logo {
+  position: relative;
+  display: block;
+  top: -7px;
+}
+
+.site_nav_wrapper {
+  display: flex;
+  width: 1600px;
+
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site_nav_list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @extend %list;
+}
+
+.site_nav_item {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.hover_menu {
+  position: absolute;
+  top: 55px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+
+  color: $secondary-text-color;
+  background-color: rgba(33, 33, 33, 0.8);
+  border-top: 3px solid #00a4e8;
+
+  @extend %list;
+}
+
+.site_nav_link_button {
+  position: relative;
+  display: inline-block;
+
+  color: $secondary-text-color;
+  background-color: transparent;
+  border: none;
+
+  font-size: 16px;
+  line-height: 2.25;
+
+  cursor: pointer;
+
+  &:hover {
+    color: #44c9ff;
+  }
+}
+
+.site_nav_link {
+  display: flex;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 2.25;
+  color: $secondary-text-color;
+
+  &:hover {
+    color: #44c9ff;
+  }
+}
+
+.site_nav_button {
+  color: $secondary-text-color;
+  @extend %main-button;
+
+  &:hover {
+    background-color: #06b25f;
+    border-color: #06b25f;
+  }
+}

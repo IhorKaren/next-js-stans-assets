@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Hero from "../../components/Hero/hero";
 
 const Home = () => {
   return (
@@ -6,7 +7,7 @@ const Home = () => {
       <Head>
         <title>Home</title>
       </Head>
-      <h1>Hello world!</h1>
+      <Hero />
     </>
   );
 };

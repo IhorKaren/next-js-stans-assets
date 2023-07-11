@@ -37,7 +37,7 @@
   padding: 12px;
 
   color: $secondary-text-color;
-  background-color: rgba(33, 33, 33, 0.8);
+  background-color: rgba(33, 33, 33, 0.9);
   border-top: 3px solid #00a4e8;
 
   @extend %list;
@@ -51,13 +51,16 @@
   background-color: transparent;
   border: none;
 
+  font-weight: 600;
   font-size: 16px;
   line-height: 2.25;
+
+  transition: color 250ms ease-in-out;
 
   cursor: pointer;
 
   &:hover {
-    color: #44c9ff;
+    color: $hover-text-color;
   }
 }
 
@@ -65,13 +68,16 @@
   display: flex;
   align-items: center;
 
+  font-weight: 600;
   font-size: 16px;
   line-height: 2.25;
 
   color: $secondary-text-color;
 
+  transition: color 250ms ease-in-out;
+
   &:hover {
-    color: #44c9ff;
+    color: $hover-text-color;
   }
 }
 

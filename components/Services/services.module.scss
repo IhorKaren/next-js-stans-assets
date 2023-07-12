@@ -1,0 +1,77 @@
+@import "../../src/utils/placeholders.module.scss";
+@import "../../src/utils/variables.module.scss";
+
+.services_section {
+  width: 100%;
+  @extend %no-padding;
+}
+
+.title {
+  margin-bottom: 60px;
+
+  color: $primary-title-color;
+
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-align: center;
+}
+
+.content_list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  color: $primary-text-color;
+  font-size: 16px;
+  line-height: 1.62;
+
+  @extend %list;
+}
+
+.content_list_title {
+  margin-bottom: 20px;
+
+  color: $secondary-title-color;
+
+  font-size: 24px;
+  line-height: 1.58;
+  letter-spacing: 1.2px;
+}
+
+.content_list_text {
+  max-width: 555px;
+}
+
+.content_list_item {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-image: url("../../public/services-decorations/decor-bg1.png");
+}
+
+.content_list_item:nth-child(2n) {
+  flex-direction: row-reverse;
+  background-position: left;
+}
+
+.content_list_item:nth-child(2) {
+  background-image: url("../../public/services-decorations/decor-bg2.png");
+}
+
+.content_list_item:nth-child(3) {
+  background-image: url("../../public/services-decorations/decor-bg3.png");
+}
+.content_list_item:nth-child(4) {
+  background-image: url("../../public/services-decorations/decor-bg4.png");
+}
+
+.decoration {
+  display: flex;
+  width: 550px;
+  height: 395px;
+}

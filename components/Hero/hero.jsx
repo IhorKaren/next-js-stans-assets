@@ -25,16 +25,16 @@ const Hero = () => {
   };
 
   return (
-    <div className={styles.hero}>
+    <section className={styles.hero}>
       <div className={styles.slider_container}>
         <Swiper
           allowTouchMove={false}
-          speed={1000}
+          speed={1200}
           slidesPerView={1}
           loop={true}
           navigation={true}
           autoplay={{
-            delay: 7000,
+            delay: 10000,
             disableOnInteraction: true,
           }}
           modules={[Autoplay, Navigation, A11y]}
@@ -49,13 +49,12 @@ const Hero = () => {
                   FOCUS ON THE PRODUCT AND LET US DO THE REST!
                 </span>
                 <p className={styles.text}>
-                  We’re a software development company focused on just
-                  one thing - offshore software development services. We have
-                  16+ years of experience and a team of 450+ developers working
-                  efficiently to deliver unique solutions to start-ups, software
-                  development companies, enterprises, and digital agencies to
-                  simplify their IT outsourcing experience & reduce time/cost to
-                  market.
+                  We’re a software development company focused on just one thing
+                  - offshore software development services. We have 16+ years of
+                  experience and a team of 450+ developers working efficiently
+                  to deliver unique solutions to start-ups, software development
+                  companies, enterprises, and digital agencies to simplify their
+                  IT outsourcing experience & reduce time/cost to market.
                 </p>
                 {buttons()}
               </div>
@@ -109,7 +108,7 @@ const Hero = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 };
 

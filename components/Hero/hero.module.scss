@@ -1,6 +1,11 @@
 @import "../../src/utils/variables.module.scss";
 @import "../../src/utils/placeholders.module.scss";
 
+.hero {
+  height: 940px;
+  @extend %no-padding;
+}
+
 .slider_container {
   position: absolute;
   left: 0;

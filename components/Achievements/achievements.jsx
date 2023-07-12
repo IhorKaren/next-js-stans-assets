@@ -35,8 +35,8 @@ const Achievements = () => {
               className={styles.image_centered}
             />
             <p className={styles.text}>
-              Asset store publisher since{" "}
-              <span className={styles.accent}>2013</span>
+              Asset store publisher since
+              <span className={styles.accent}> 2013</span>
             </p>
           </li>
           <li className={styles.item}>
@@ -47,9 +47,9 @@ const Achievements = () => {
               className={styles.image_centered}
             />
             <p className={styles.text}>
-              Our products (packages) used by{" "}
-              <span className={styles.accent}>100k+</span> devs in
-              <span className={styles.accent}>5k+</span> commercial projects
+              Our products (packages) used by
+              <span className={styles.accent}> 100k+</span> devs in
+              <span className={styles.accent}> 5k+</span> commercial projects
               worldwide
             </p>
           </li>

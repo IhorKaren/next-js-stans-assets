@@ -22,8 +22,9 @@ const Achievements = () => {
           </li>
           <li className={styles.item}>
             <Image src={achievements2} alt="rocket" className={styles.image} />
-            <p>
-              <span>50+</span> successfully launched projects on the market
+            <p className={styles.text}>
+              <span className={styles.accent}>50+</span> successfully launched
+              projects on the market
             </p>
           </li>
           <li className={styles.item}>
@@ -33,8 +34,9 @@ const Achievements = () => {
               width="204"
               className={styles.image_centered}
             />
-            <p>
-              Asset store publisher since <span>2013</span>
+            <p className={styles.text}>
+              Asset store publisher since{" "}
+              <span className={styles.accent}>2013</span>
             </p>
           </li>
           <li className={styles.item}>
@@ -44,9 +46,11 @@ const Achievements = () => {
               width="210"
               className={styles.image_centered}
             />
-            <p>
-              Our products (packages) used by <span>100k+</span> devs in{" "}
-              <span>5k+</span> commercial projects worldwide
+            <p className={styles.text}>
+              Our products (packages) used by{" "}
+              <span className={styles.accent}>100k+</span> devs in
+              <span className={styles.accent}>5k+</span> commercial projects
+              worldwide
             </p>
           </li>
         </ul>

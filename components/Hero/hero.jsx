@@ -1,14 +1,16 @@
 "use client";
-// Import Swiper React components
-import { useState } from "react";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, A11y } from "swiper/modules";
 import styles from "./hero.module.scss";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
+import image1 from "../../public/image-bg1.png";
+import image2 from "../../public/image-bg2.png";
+import image3 from "../../public/image-bg3.png";
 
 const Hero = () => {
   const buttons = () => {
@@ -41,6 +43,12 @@ const Hero = () => {
         >
           <SwiperSlide>
             <div className={`${styles.slide} ${styles.slide_first}`}>
+              <Image
+                src={image1}
+                alt="Ori"
+                placeholder="blur"
+                className={`${styles.image} `}
+              />
               <div className={styles.thumb}>
                 <h1 className={styles.title}>
                   STAN’S ASSETS - IT OUTSOURCING DEVELOPMENT COMPANY
@@ -62,6 +70,12 @@ const Hero = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className={`${styles.slide} ${styles.slide_second}`}>
+              <Image
+                src={image2}
+                alt="Tin Hearts"
+                className={styles.image}
+                placeholder="blur"
+              />
               <div className={styles.thumb}>
                 <h2 className={styles.title}>
                   FOCUS ON THE PRODUCT AND LET US DO THE REST!
@@ -85,6 +99,12 @@ const Hero = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className={`${styles.slide} ${styles.slide_third}`}>
+              <Image
+                src={image3}
+                alt="Stickman"
+                className={styles.image}
+                placeholder="blur"
+              />
               <div className={styles.thumb}>
                 <h2 className={styles.title}>
                   PRODUCT PERFECTION MADE EASY - STAN’S ASSETS, YOUR OUTSOURCING

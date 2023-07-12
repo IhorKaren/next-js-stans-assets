@@ -3,6 +3,7 @@
 
 .hero {
   height: 940px;
+
   @extend %no-padding;
 }
 
@@ -24,16 +25,16 @@
   background-size: cover;
 }
 
-.slide_first {
-  background-image: url("../../public/image-bg1.png");
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
 }
 
-.slide_second {
-  background-image: url("../../public/image-bg2.png");
-}
-
-.slide_third {
-  background-image: url("../../public/image-bg3.png");
+.big_image {
+  top: -60px;
 }
 
 .thumb {

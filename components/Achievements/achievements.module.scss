@@ -1,2 +1,54 @@
 @import "../../src/utils/placeholders.module.scss";
 @import "../../src/utils/variables.module.scss";
+
+.container {
+  @extend %container;
+}
+
+.title {
+  margin-bottom: 100px;
+
+  color: $primary-title-color;
+
+  text-align: center;
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: 3.6px;
+}
+
+.list {
+  display: flex;
+  gap: 25px;
+
+  @extend %list;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  padding: 290px 20px 10px 20px;
+
+  flex-basis: calc((100% - 75px) / 4);
+  height: 400px;
+  z-index: -1;
+
+  background-color: #f4f8fd;
+  border-radius: 25px;
+  box-shadow: 0px 3px 16px 4px rgba(29, 51, 107, 0.1);
+
+  text-align: center;
+}
+
+.image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.image_centered {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+}

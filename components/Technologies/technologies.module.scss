@@ -1,6 +1,10 @@
 @import "../../src/utils/placeholders.module.scss";
 @import "../../src/utils/variables.module.scss";
 
+.container {
+  @extend %container;
+}
+
 .thumb {
   text-align: center;
 

@@ -1,9 +1,8 @@
+@import "../../src/utils/placeholders.module.scss";
+@import "../../src/utils/variables.module.scss";
+
 .container {
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 120px;
-  padding-right: 120px;
+  @extend %container;
 }
 
 .main {

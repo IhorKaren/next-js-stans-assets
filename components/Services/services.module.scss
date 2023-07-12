@@ -6,6 +6,10 @@
   @extend %no-padding;
 }
 
+.container {
+  @extend %container;
+}
+
 .title {
   margin-bottom: 60px;
 
@@ -23,6 +27,7 @@
   gap: 30px;
 
   color: $primary-text-color;
+
   font-size: 16px;
   line-height: 1.62;
 

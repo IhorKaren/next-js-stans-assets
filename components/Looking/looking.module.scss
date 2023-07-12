@@ -1,0 +1,52 @@
+@import "../../src/utils/placeholders.module.scss";
+@import "../../src/utils/variables.module.scss";
+
+.thumb {
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 190px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../public/looking-bg.png");
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 16px;
+
+  color: $secondary-text-color;
+
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 2.64px;
+}
+
+.text {
+  margin-bottom: 36px;
+
+  color: $secondary-text-color;
+
+  font-size: 24px;
+  line-height: normal;
+}
+
+.button {
+  margin-left: auto;
+  margin-right: auto;
+
+  color: #06b25f;
+  border-color: #06b25f;
+  background-color: #ffffff;
+
+  @extend %main-button;
+
+  &:hover,
+  :focus {
+    color: #ffffff;
+    background-color: #06b25f;
+  }
+}

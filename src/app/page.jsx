@@ -2,6 +2,7 @@ import Head from "next/head";
 import Hero from "../../components/Hero/hero";
 import Technologies from "../../components/Technologies/technologies";
 import Services from "../../components/Services/services";
+import Looking from "../../components/Looking/looking";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <Technologies />
       <Services />
+      <Looking />
     </>
   );
 };

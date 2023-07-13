@@ -110,13 +110,13 @@ const Footer = () => {
               <h4 className={styles.title}>ABOUT US</h4>
               <ul className={styles.pages_list}>
                 <li>
-                  <Link href="">Contacts</Link>
+                  <Link href="/contacts">Contacts</Link>
                 </li>
                 <li>
-                  <Link href="">Team</Link>
+                  <Link href="/team">Team</Link>
                 </li>
                 <li>
-                  <Link href="">Join the Team</Link>
+                  <Link href="/join">Join the Team</Link>
                 </li>
               </ul>
             </li>

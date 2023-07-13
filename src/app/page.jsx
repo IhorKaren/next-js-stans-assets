@@ -5,6 +5,7 @@ import Services from "../../components/Services/services";
 import Looking from "../../components/Looking/looking";
 import Achievements from "../../components/Achievements/achievements";
 import Partners from "../../components/Partners/partners";
+import Contacts from "../../components/Contacts/contacts";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Looking />
       <Achievements />
       <Partners />
+      <Contacts />
     </>
   );
 };

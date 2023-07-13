@@ -1,0 +1,151 @@
+@import "../../src/utils/placeholders.module.scss";
+@import "../../src/utils/variables.module.scss";
+
+.container {
+  text-align: center;
+  color: $primary-text-color;
+  @extend %container;
+}
+
+.title {
+  margin-bottom: 60px;
+
+  color: $primary-title-color;
+
+  text-align: center;
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: 3.6px;
+}
+
+.text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: normal;
+}
+
+.text_wrap {
+  display: block;
+  margin-bottom: 100px;
+}
+
+.thumb {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  text-align: start;
+
+  @extend %list;
+}
+
+.link {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  fill: $secondary-title-color;
+
+  font-size: 20px;
+  line-height: normal;
+  font-style: normal;
+}
+
+.icon {
+  fill: inherit;
+  width: 24px;
+}
+
+.form_thumb {
+  position: relative;
+}
+
+.decoration {
+  width: 155px;
+  position: absolute;
+  z-index: -1;
+
+  background-repeat: no-repeat;
+}
+
+.decoration:nth-child(1) {
+  top: -15%;
+  left: -25%;
+  height: 152px;
+  background-image: url("../../public/contacts/form-bg1.png");
+}
+
+.decoration:nth-child(2) {
+  bottom: 5%;
+  left: -30%;
+  height: 108px;
+  background-image: url("../../public/contacts/form-bg2.png");
+}
+
+.decoration:nth-child(3) {
+  top: -15%;
+  right: -20%;
+  height: 230px;
+  background-image: url("../../public/contacts/form-bg3.png");
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 420px;
+  height: 400px;
+  padding: 50px 40px;
+
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
+}
+
+.form_item {
+  width: 100%;
+  padding: 11px 16px;
+
+  font-size: 14px;
+  line-height: normal;
+
+  outline: none;
+  resize: none;
+
+  border-radius: 4px;
+  border: 2px solid #d7d7d7;
+
+  transition: border-color 250ms ease-in-out;
+
+  &:placeholder-shown {
+    font-family: var(--font-montserrat);
+    color: #a9a9a9;
+  }
+
+  &:focus {
+    border-color: $primary-button-color;
+  }
+}
+
+.button {
+  width: 100%;
+
+  color: $secondary-text-color;
+  background-color: $primary-button-color;
+  border-color: $primary-button-color;
+
+  @extend %main-button;
+
+  &:hover,
+  :focus {
+    background-color: $secondary-button-color;
+    border-color: $secondary-button-color;
+  }
+}

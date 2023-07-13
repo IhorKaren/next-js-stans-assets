@@ -62,11 +62,12 @@
   font-size: 20px;
   line-height: normal;
 
-  transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out, fill 250ms ease-in-out;
 
   &:hover,
   :focus {
     color: $hover-text-color;
+    fill: $hover-text-color;
   }
 }
 

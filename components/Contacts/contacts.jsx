@@ -10,7 +10,7 @@ import {
 
 const Contacts = () => {
   return (
-    <section>
+    <section className={styles.section}>
       <div className={styles.container}>
         <h3 className={styles.title}>CONTACTS</h3>
         <p className={styles.text}>

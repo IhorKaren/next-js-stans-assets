@@ -1,6 +1,11 @@
 @import "../../src/utils/placeholders.module.scss";
 @import "../../src/utils/variables.module.scss";
 
+
+.section {
+  @extend %no-padding
+}
+
 .container {
   text-align: center;
 

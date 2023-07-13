@@ -4,6 +4,7 @@ import Technologies from "../../components/Technologies/technologies";
 import Services from "../../components/Services/services";
 import Looking from "../../components/Looking/looking";
 import Achievements from "../../components/Achievements/achievements";
+import Partners from "../../components/Partners/partners";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Services />
       <Looking />
       <Achievements />
+      <Partners />
     </>
   );
 };

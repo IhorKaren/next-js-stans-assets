@@ -24,12 +24,12 @@ const Contacts = () => {
         <div className={styles.thumb}>
           <ul className={styles.list}>
             <li>
-              <address>
-                <a href="" className={styles.link}>
-                  <BiMap size="cssSize" className={styles.icon} />
+              <a href="" className={styles.link}>
+                <BiMap size="cssSize" className={styles.icon} />
+                <address className={styles.address}>
                   Ukraine, Kyiv, Rodyny Kristeriv 20B, office 188
-                </a>
-              </address>
+                </address>
+              </a>
             </li>
             <li>
               <a href="" className={styles.link}>

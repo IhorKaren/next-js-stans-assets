@@ -6,7 +6,7 @@ import stickman from "../public/ProjectsSlider/slide5.png";
 
 import image1 from "../public/image-bg1.png";
 import image2 from "../public/image-bg2.png";
-import image3 from "../public/image-bg3.png";
+import image3 from "../public/image-bg4.png";
 
 const projectsData = [
   {

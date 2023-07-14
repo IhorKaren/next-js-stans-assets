@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay, A11y } from "swiper/modules";
+import { Navigation, Autoplay, A11y } from "swiper/modules";
 import styles from "./hero.module.scss";
 
 import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 import data from "../../resources/sliderData";
 
@@ -30,15 +30,13 @@ const Hero = () => {
           allowTouchMove={false}
           speed={1200}
           slidesPerView={1}
-          pagination={{
-            clickable: true,
-            el: ".swiper-custom-pagination",
-          }}
+          navigation
+          loop={true}
           autoplay={{
             delay: 10000,
             disableOnInteraction: true,
           }}
-          modules={[Autoplay, Pagination, A11y]}
+          modules={[Autoplay, Navigation, A11y]}
         >
           {data.heroData.map(
             ({ id, img, Tag, title, subtitle, text, paragraph }) => {
@@ -68,13 +66,13 @@ const Hero = () => {
                       </p>
                     </div>
                     {buttons()}
+                    <div className={styles.cadsada}></div>
                   </div>
                 </SwiperSlide>
               );
             }
           )}
         </Swiper>
-        <div className="swiper-custom-pagination"></div>
       </div>
     </section>
   );

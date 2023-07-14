@@ -1,5 +1,20 @@
+import HeroBlock from "../../../components/HeroBlock/heroBlock";
+import ContentTextBlock from "../../../components/ContentTextBlock/contentTextBlock";
+import Looking from "../../../components/Looking/looking";
+import Contacts from "../../../components/Contacts/contacts";
+
+import image from "../../../public/Technologies/unity.png";
+
 const Unity = () => {
-  return <h1>Unity</h1>;
+  return (
+    <>
+      <HeroBlock title="unity technologies" img={image} alt="Unity" />
+      <ContentTextBlock />
+      <Looking />
+      <ContentTextBlock />
+      <Contacts />
+    </>
+  );
 };
 
 export default Unity;

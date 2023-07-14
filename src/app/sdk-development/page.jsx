@@ -9,7 +9,7 @@ const Sdk = () => {
   return (
     <>
       <HeroBlock
-        title="sdk development"
+        title="SDK development"
         img={image}
         alt="Robot"
       />

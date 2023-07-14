@@ -8,7 +8,7 @@ import image from "../../../public/Technologies/ios.png";
 const Ios = () => {
   return (
     <>
-      <HeroBlock title="ios technologies" img={image} alt="Apple" />
+      <HeroBlock title="IOS technologies" img={image} alt="Apple" />
       <ContentTextBlock />
       <Looking />
       <ContentTextBlock />

@@ -8,7 +8,7 @@ import image from "../../../public/Services/services-3d.png";
 const Modeling = () => {
   return (
     <>
-      <HeroBlock title="sdk 3d modeling" img={image} alt="Man with tablet" />
+      <HeroBlock title="SDK 3D modeling" img={image} alt="Man with tablet" />
       <ContentTextBlock />
       <Looking />
       <ContentTextBlock />

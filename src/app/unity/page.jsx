@@ -8,7 +8,7 @@ import image from "../../../public/Technologies/unity.png";
 const Unity = () => {
   return (
     <>
-      <HeroBlock title="unity technologies" img={image} alt="Unity" />
+      <HeroBlock title="Unity technologies" img={image} alt="Unity" />
       <ContentTextBlock />
       <Looking />
       <ContentTextBlock />

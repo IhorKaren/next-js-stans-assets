@@ -13,7 +13,7 @@ export const metadata = {
 const Android = () => {
   return (
     <>
-      <HeroBlock title="android technologies" img={image} alt="Apple" />
+      <HeroBlock title="Android technologies" img={image} alt="Apple" />
       <ContentTextBlock />
       <Looking />
       <ContentTextBlock />

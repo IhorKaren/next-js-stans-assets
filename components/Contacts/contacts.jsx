@@ -69,10 +69,10 @@ const Contacts = () => {
             <div className={styles.decoration}></div>
             <form
               name="contactUs_form"
-              autocomplete="off"
+              autoComplete="off"
               className={styles.form}
             >
-              <label for="name">
+              <label htmlFor="name">
                 <input
                   type="text"
                   id="name"
@@ -81,7 +81,7 @@ const Contacts = () => {
                 />
               </label>
 
-              <label for="email">
+              <label htmlFor="email">
                 <input
                   type="text"
                   id="email"
@@ -90,7 +90,7 @@ const Contacts = () => {
                 />
               </label>
 
-              <label for="message">
+              <label htmlFor="message">
                 <textarea
                   rows="5"
                   id="message"

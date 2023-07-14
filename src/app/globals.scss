@@ -31,6 +31,20 @@ body {
   --swiper-navigation-sides-offset: 0px;
 }
 
+.swiper-custom-pagination {
+  position: absolute;
+  z-index: 2;
+  padding-bottom: 260px;
+  padding-left: 150px;
+
+  --swiper-pagination-color: #ffffff;
+  --swiper-pagination-bullet-size: 20px;
+  --swiper-pagination-bullet-width: 20px;
+  --swiper-pagination-bullet-height: 20px;
+  --swiper-pagination-bullet-inactive-color: rgb(255, 255, 255);
+  --swiper-pagination-bullet-inactive-opacity: 0.4;
+}
+
 section {
   padding-top: 120px;
   padding-bottom: 120px;

@@ -24,12 +24,17 @@ const ProjectsSlider = () => {
           modules={[Navigation, A11y]}
           className={styles.slider}
         >
-          {data.map(({ id, img, title, text, path }) => {
+          {data.projectsData.map(({ id, img, title, text, path }) => {
             return (
               <SwiperSlide key={id} className={styles.slide}>
                 <div className={styles.slide_card}>
                   <Link href={path}>
-                    <Image src={img} alt={title} className={styles.image} />
+                    <Image
+                      src={img}
+                      alt={title}
+                      className={styles.image}
+                      placeholder="blur"
+                    />
                   </Link>
                   <div className={styles.wrap}>
                     <Link href={path}>

@@ -4,7 +4,11 @@ import signal from "../public/ProjectsSlider/slide3.png";
 import art from "../public/ProjectsSlider/slide4.jpg";
 import stickman from "../public/ProjectsSlider/slide5.png";
 
-const data = [
+import image1 from "../public/image-bg1.png";
+import image2 from "../public/image-bg2.png";
+import image3 from "../public/image-bg3.png";
+
+const projectsData = [
   {
     id: 1,
     img: ori,
@@ -41,5 +45,37 @@ const data = [
     text: "It is an incredible bike simulator with realistic physics that offers racing mountain bikes, BMX, motorcycles, pit bikes, mopeds, and...",
   },
 ];
+
+const heroData = [
+  {
+    id: 1,
+    img: image1,
+    Tag: "h1",
+    title: "STAN’S ASSETS - IT OUTSOURCING DEVELOPMENT COMPANY",
+    subtitle: "FOCUS ON THE PRODUCT AND LET US DO THE REST!",
+    text: "We’re a software development company focused on just one thing- offshore software development services. We have 16+ years ofexperience and a team of 450+ developers working efficientlyto deliver unique solutions to start-ups, software developmentcompanies, enterprises, and digital agencies to simplify theirIT outsourcing experience & reduce time/cost to market.",
+  },
+  {
+    id: 2,
+    img: image2,
+    Tag: "h2",
+    title: "FOCUS ON THE PRODUCT AND LET US DO THE REST!",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totamsoluta sint sed cum tenetur! Totam rem nulla incidunt undesapiente earum. Qui eaque accusantium dolorum veniam ab saepemolestias deserunt.",
+    paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,asperiores. Fugit quasi odit repellendus, officiis aliquideius vel. Illum suscipit eaque amet numquam nulla inciduntmaiores eligendi ipsa laboriosam sunt!",
+  },
+  {
+    id: 3,
+    img: image3,
+    Tag: "h2",
+    title: "PRODUCT PERFECTION MADE EASY - STAN’S ASSETS, YOUR OUTSOURCINGEXPERTS",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totamsoluta sint sed cum tenetur! Totam rem nulla incidunt undesapiente earum. Qui eaque accusantium dolorum veniam ab saepemolestias deserunt.",
+    paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,asperiores. Fugit quasi odit repellendus, officiis aliquideius vel. Illum suscipit eaque amet numquam nulla inciduntmaiores eligendi ipsa laboriosam sunt!",
+  },
+];
+
+const data = {
+  projectsData,
+  heroData,
+};
 
 export default data;

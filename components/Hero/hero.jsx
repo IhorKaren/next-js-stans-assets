@@ -5,7 +5,6 @@ import { Navigation, Autoplay, A11y } from "swiper/modules";
 import styles from "./hero.module.scss";
 
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import image1 from "../../public/image-bg1.png";

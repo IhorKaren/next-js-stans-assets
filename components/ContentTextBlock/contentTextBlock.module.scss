@@ -1,0 +1,30 @@
+@import "../../src/utils/placeholders.module.scss";
+@import "../../src/utils/variables.module.scss";
+
+.container {
+  @extend %container;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+
+  @extend %list;
+}
+
+.item {
+  max-width: 555px;
+
+  color: $primary-text-color;
+  line-height: 1.62;
+}
+
+.title {
+  margin-bottom: 16px;
+
+  color: $secondary-title-color;
+
+  font-size: 24px;
+  line-height: 1.58;
+  letter-spacing: 1.2px;
+}

@@ -1,0 +1,34 @@
+@import "../../src/utils/placeholders.module.scss";
+@import "../../src/utils/variables.module.scss";
+
+.section {
+  padding-bottom: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  @extend %container;
+}
+
+.navigate {
+  display: block;
+  margin-bottom: 90px;
+
+  color: $primary-title-color;
+
+  font-family: var(--font-montserrat);
+  line-height: 1.5;
+}
+
+.title {
+  max-width: 550px;
+
+  color: $primary-title-color;
+
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+}

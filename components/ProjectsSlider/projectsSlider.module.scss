@@ -1,9 +1,40 @@
 @import "../../src/utils/placeholders.module.scss";
 @import "../../src/utils/variables.module.scss";
 
+.section {
+  position: relative;
+  width: 100%;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 105%;
+  z-index: -1;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-image: url("../../public/partners-bg2.png");
+}
+
 .container {
   width: 100%;
   padding: 120px;
+}
+
+.main_title {
+  margin-bottom: 100px;
+
+  color: $primary-title-color;
+
+  text-align: center;
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
 }
 
 .slider {

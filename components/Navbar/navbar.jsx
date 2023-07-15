@@ -61,7 +61,12 @@ const Navbar = () => {
               onMouseLeave={handleMouseLeaveServices}
             >
               SERVICES
-              <BiChevronDown />
+              <BiChevronDown
+                size="cssSize"
+                className={`${styles.icon} ${
+                  servicesMenuOpen ? styles.iconOpen : styles.iconClose
+                }`}
+              />
             </button>
             {servicesMenuOpen && (
               <ul
@@ -91,7 +96,12 @@ const Navbar = () => {
               onMouseLeave={handleMouseLeaveTechnologies}
             >
               TECHNOLOGIES
-              <BiChevronDown />
+              <BiChevronDown
+                size="cssSize"
+                className={`${styles.icon} ${
+                  technologiesMenuOpen ? styles.iconOpen : styles.iconClose
+                }`}
+              />
             </button>
             {technologiesMenuOpen && (
               <ul
@@ -136,7 +146,12 @@ const Navbar = () => {
               onMouseLeave={handleMouseLeaveAbout}
             >
               ABOUT US
-              <BiChevronDown />
+              <BiChevronDown
+                size="cssSize"
+                className={`${styles.icon} ${
+                  aboutMenuOpen ? styles.iconOpen : styles.iconClose
+                }`}
+              />
             </button>
             {aboutMenuOpen && (
               <ul

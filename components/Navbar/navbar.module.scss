@@ -1,6 +1,46 @@
 @import "../../src/utils/placeholders.module.scss";
 @import "../../src/utils/variables.module.scss";
 
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotateAnimationClose {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .site_logo {
   position: relative;
   display: block;
@@ -40,12 +80,15 @@
   background-color: rgba(33, 33, 33, 0.9);
   border-top: 3px solid #00a4e8;
 
+  animation: appear 250ms ease-in-out;
+
   @extend %list;
 }
 
 .site_nav_link_button {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
 
   color: $secondary-text-color;
   background-color: transparent;
@@ -62,6 +105,24 @@
   &:hover {
     color: $hover-text-color;
   }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  padding-bottom: 2;
+}
+
+.iconOpen {
+  transform: rotate(180deg);
+
+  animation: rotateAnimation 250ms ease-in-out;
+}
+
+.iconClose {
+  transform: rotate(0deg);
+
+  animation: rotateAnimationClose 250ms ease-in-out;
 }
 
 .site_nav_link {

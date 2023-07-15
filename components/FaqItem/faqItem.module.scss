@@ -1,0 +1,78 @@
+@import "../../src/utils/placeholders.module.scss";
+@import "../../src/utils/variables.module.scss";
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotateAnimationClose {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.item {
+  width: 780px;
+  padding: 16px;
+
+  border-bottom: 1px solid rgba(13, 110, 183, 0.5);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.text {
+  line-height: 1.62;
+
+  animation: appear 250ms ease-in-out;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.iconOpen {
+  transform: rotate(180deg);
+
+  animation: rotateAnimation 250ms ease-in-out;
+}
+
+.iconClose {
+  transform: rotate(0deg);
+
+  animation: rotateAnimationClose 250ms ease-in-out;
+}

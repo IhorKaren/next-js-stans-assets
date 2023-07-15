@@ -3,6 +3,8 @@ import ContentTextBlock from "../../../components/ContentTextBlock/contentTextBl
 import Looking from "../../../components/Looking/looking";
 import Contacts from "../../../components/Contacts/contacts";
 import ServicesLinks from "../../../components/ServicesLinks/servicesLinks";
+import ProjectsSlider from "../../../components/ProjectsSlider/projectsSlider";
+import Faq from "../../../components/FAQ/faq";
 
 import image from "../../../public/Technologies/android.png";
 
@@ -20,6 +22,8 @@ const Android = () => {
       <Looking />
       <ContentTextBlock />
       <Contacts />
+      <ProjectsSlider />
+      <Faq />
     </>
   );
 };

@@ -3,6 +3,8 @@ import ContentTextBlock from "../../../components/ContentTextBlock/contentTextBl
 import Looking from "../../../components/Looking/looking";
 import Contacts from "../../../components/Contacts/contacts";
 import ServicesLinks from "../../../components/ServicesLinks/servicesLinks";
+import ProjectsSlider from "../../../components/ProjectsSlider/projectsSlider";
+import Faq from "../../../components/FAQ/faq";
 
 import image from "../../../public/Services/services-game.png";
 
@@ -19,6 +21,8 @@ const Gamedevelopment = () => {
       <Looking />
       <ContentTextBlock />
       <Contacts />
+      <ProjectsSlider />
+      <Faq />
     </>
   );
 };

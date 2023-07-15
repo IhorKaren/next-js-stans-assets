@@ -15,6 +15,7 @@ const projectsData = [
     path: "/",
     title: "Ori and the will of the wisps",
     text: "Ori and the Will of the Wisps is a platform-adventure Metroidvania video game developed by Moon Studios and published…",
+    mainText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel cursus. Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus rutrum, libero augue venenatis leo, in maximus ipsum dui et est. In in aliquet libero. In ac enim non lectus convallis feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel cursus. Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus rutrum.',
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const projectsData = [
     path: "/",
     title: "Tin Hearts",
     text: "Behind every brilliant invention, hides an incredible story. Guide a troop of tin soldiers through a magical toy-filled world, in this...",
+    mainText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel cursus. Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus rutrum, libero augue venenatis leo, in maximus ipsum dui et est. In in aliquet libero. In ac enim non lectus convallis feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel cursus. Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus rutrum.',
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ const projectsData = [
     path: "/",
     title: "One signal",
     text: "OneSignal is the easiest and most popular way to send push notifications, in-app messages/pop-ups, emails, and SMS...",
+    mainText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel cursus. Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus rutrum, libero augue venenatis leo, in maximus ipsum dui et est. In in aliquet libero. In ac enim non lectus convallis feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel cursus. Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus rutrum.',
   },
   {
     id: 4,
@@ -36,6 +39,7 @@ const projectsData = [
     path: "/",
     title: "Realistic art",
     text: "Stan’s Assets offers a range of 3D assets and tools that enable users to create realistic and high-quality 3D art for their projects. Their...",
+    mainText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel cursus. Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus rutrum, libero augue venenatis leo, in maximus ipsum dui et est. In in aliquet libero. In ac enim non lectus convallis feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel cursus. Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus rutrum.',
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ const projectsData = [
     path: "/",
     title: "Stickman trials",
     text: "It is an incredible bike simulator with realistic physics that offers racing mountain bikes, BMX, motorcycles, pit bikes, mopeds, and...",
+    mainText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel cursus. Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus rutrum, libero augue venenatis leo, in maximus ipsum dui et est. In in aliquet libero. In ac enim non lectus convallis feugiat. .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel cursus. Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus rutrum.',
   },
 ];
 

@@ -11,7 +11,7 @@ const Products = () => {
       <HeroBlock
         title="Stan assets products"
         img={image}
-        alt="Woman with phone"
+        alt="VR helmet and smartphone"
       />
       <PluginsList />
       <Looking />

@@ -1,0 +1,92 @@
+@import "../../src/utils/placeholders.module.scss";
+@import "../../src/utils/variables.module.scss";
+
+.section {
+    width: 100%;
+    position: relative;
+  }
+  
+  .background {
+    position: absolute;
+    bottom: -150px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../public/plugins-bg.png");
+  }
+
+.container {
+  @extend %container;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 80px;
+
+  @extend %list;
+}
+
+.item {
+  width: 100%;
+  height: 340px;
+  display: flex;
+
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
+  overflow: hidden;
+}
+
+.item:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.image_thumb {
+  min-width: 550px;
+}
+
+.text_thumb {
+  padding: 24px;
+}
+
+.title {
+  margin-bottom: 8px;
+
+  color: $secondary-title-color;
+
+  font-size: 24px;
+  line-height: 1.58;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.text {
+  margin-bottom: 16px;
+
+  color: $primary-text-color;
+
+  line-height: 1.62;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: $primary-button-color;
+  border-color: $primary-button-color;
+
+  @extend %main-button;
+
+  &:hover,
+  :focus {
+    color: $secondary-text-color;
+    background-color: $primary-button-color;
+  }
+}

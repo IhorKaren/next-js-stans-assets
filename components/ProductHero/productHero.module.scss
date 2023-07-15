@@ -1,0 +1,83 @@
+@import "../../src/utils/placeholders.module.scss";
+@import "../../src/utils/variables.module.scss";
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  padding-top: 100px;
+
+  color: $secondary-text-color;
+
+  line-height: 1.62;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  height: 100%;
+  @extend %container;
+}
+
+.route {
+  margin-bottom: 120px;
+
+  font-family: var(--font-montserrat);
+}
+
+.thumb {
+  max-width: 850px;
+}
+
+.title {
+  margin-bottom: 20px;
+
+  color: $secondary-text-color;
+
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+}
+
+.text {
+  margin-bottom: 60px;
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+
+  @extend %list;
+}
+
+.item {
+  width: 44px;
+  height: 44px;
+}
+
+.link {
+  width: 100%;
+  height: 100%;
+
+  fill: #fff;
+
+  transition: fill 250ms ease-in-out;
+
+  &:hover,
+  :focus {
+    fill: $hover-text-color;
+  }
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+
+  fill: inherit;
+}

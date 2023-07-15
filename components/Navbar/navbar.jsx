@@ -134,11 +134,6 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={styles.site_nav_item}>
-            <Link className={styles.site_nav_link} href="/blog">
-              BLOG
-            </Link>
-          </li>
-          <li className={styles.site_nav_item}>
             <button
               type="button"
               className={styles.site_nav_link_button}

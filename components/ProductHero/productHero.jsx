@@ -49,49 +49,49 @@ const ProductHero = ({
           <ul className={styles.list}>
             {nintendo && (
               <li className={styles.item}>
-                <a href="/" className={styles.link}>
+                <a href="#" className={styles.link}>
                   <BsNintendoSwitch className={styles.icon} />
                 </a>
               </li>
             )}
             {playstation && (
               <li className={styles.item}>
-                <a href="/" className={styles.link}>
+                <a href="#" className={styles.link}>
                   <BsPlaystation className={styles.icon} />
                 </a>
               </li>
             )}
             {steam && (
               <li className={styles.item}>
-                <a href="/" className={styles.link}>
+                <a href="#" className={styles.link}>
                   <BsSteam className={styles.icon} />
                 </a>
               </li>
             )}
             {android && (
               <li className={styles.item}>
-                <a href="/" className={styles.link}>
+                <a href="#" className={styles.link}>
                   <BsAndroid2 fill="transparent" className={styles.icon} />
                 </a>
               </li>
             )}
             {ios && (
               <li className={styles.item}>
-                <a href="/" className={styles.link}>
+                <a href="#" className={styles.link}>
                   <BsApple className={styles.icon} />
                 </a>
               </li>
             )}
             {unity && (
               <li className={styles.item}>
-                <a href="/" className={styles.link}>
+                <a href="#" className={styles.link}>
                   <BsUnity className={styles.icon} />
                 </a>
               </li>
             )}
             {xbox && (
               <li className={styles.item}>
-                <a href="/" className={styles.link}>
+                <a href="#" className={styles.link}>
                   <BsXbox className={styles.icon} />
                 </a>
               </li>

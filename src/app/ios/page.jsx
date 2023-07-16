@@ -12,10 +12,10 @@ const Ios = () => {
   return (
     <>
       <HeroBlock title="IOS technologies" route="IOS" img={image} alt="Apple" />
-      <ContentTextBlock />
+      <ContentTextBlock firstTitle="Header1" secondTitle="Header2" />
       <ServicesLinks />
       <Looking />
-      <ContentTextBlock />
+      <ContentTextBlock firstTitle="Header1" secondTitle="Header2" />
       <Contacts />
       <ProjectsSlider />
       <Faq />

@@ -16,10 +16,10 @@ const VRdevelopment = () => {
         img={image}
         alt="Woman in VR helmet"
       />
-      <ContentTextBlock />
+      <ContentTextBlock firstTitle="Header1" secondTitle="Header2" />
       <ServicesLinks />
       <Looking />
-      <ContentTextBlock />
+      <ContentTextBlock firstTitle="Header1" secondTitle="Header2" />
       <Contacts />
       <ProjectsSlider />
       <Faq />

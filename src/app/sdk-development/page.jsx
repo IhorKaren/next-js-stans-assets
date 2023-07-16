@@ -12,10 +12,10 @@ const Sdk = () => {
   return (
     <>
       <HeroBlock title="SDK development" img={image} alt="Robot" />
-      <ContentTextBlock />
+      <ContentTextBlock firstTitle="Header1" secondTitle="Header2" />
       <ServicesLinks />
       <Looking />
-      <ContentTextBlock />
+      <ContentTextBlock firstTitle="Header1" secondTitle="Header2" />
       <Contacts />
       <ProjectsSlider />
       <Faq />

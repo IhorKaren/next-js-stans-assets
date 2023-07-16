@@ -12,7 +12,7 @@ const Modeling = () => {
   return (
     <>
       <HeroBlock title="SDK 3D modeling" img={image} alt="Man with tablet" />
-      <ContentTextBlock />
+      <ContentTextBlock firstTitle="Header1" secondTitle="Header2" />
       <ServicesLinks />
       <Looking />
       <ContentTextBlock />

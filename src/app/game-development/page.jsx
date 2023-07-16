@@ -16,10 +16,10 @@ const Gamedevelopment = () => {
         img={image}
         alt="Woman with desctop"
       />
-      <ContentTextBlock />
+      <ContentTextBlock firstTitle="Header1" secondTitle="Header2" />
       <ServicesLinks />
       <Looking />
-      <ContentTextBlock />
+      <ContentTextBlock firstTitle="Header1" secondTitle="Header2" />
       <Contacts />
       <ProjectsSlider />
       <Faq />

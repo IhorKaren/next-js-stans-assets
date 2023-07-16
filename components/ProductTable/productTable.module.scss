@@ -1,0 +1,65 @@
+@import "../../src/utils/placeholders.module.scss";
+@import "../../src/utils/variables.module.scss";
+
+.container {
+  padding-top: 0;
+  @extend %container;
+}
+
+.table {
+  width: 100%;
+
+  border-radius: 8px;
+  overflow: hidden;
+
+  box-shadow: 0px 3px 16px 4px rgba(29, 51, 107, 0.1);
+}
+
+.table_head {
+  width: 100%;
+  padding: 0;
+}
+
+.table_header {
+  width: 50%;
+  padding: 12px 12px 12px 24px;
+
+  background-color: #84b5ff;
+  color: $secondary-text-color;
+
+  font-family: var(--font-raleway);
+
+  text-align: start;
+  font-size: 24px;
+  line-height: 1.58;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  &:nth-child(2) {
+    background-color: #06b25f;
+  }
+}
+
+.table_row {
+  &:nth-child(2n) {
+    .tableCell:nth-child(1) {
+      background-color: rgba(132, 181, 255, 0.2);
+    }
+
+    .tableCell:nth-child(2) {
+      background-color: rgba(58, 205, 134, 0.2);
+    }
+  }
+}
+
+.tableCell {
+  padding: 15px 25px;
+
+  color: $primary-text-color;
+  font-weight: 600;
+  line-height: 1.62;
+
+  &:nth-child(2) {
+    border-left: 2px solid #84b5ff;
+  }
+}

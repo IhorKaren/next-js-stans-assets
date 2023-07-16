@@ -7,7 +7,7 @@ import styles from "./hero.module.scss";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import data from "../../resources/sliderData";
+import data from "../../resources/productsData";
 
 const Hero = () => {
   const buttons = () => {

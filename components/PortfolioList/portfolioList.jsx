@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./portfolioList.module.scss";
 
-import data from "../../resources/sliderData";
+import data from "../../resources/productsData";
 
 const PortfolioList = () => {
   return (

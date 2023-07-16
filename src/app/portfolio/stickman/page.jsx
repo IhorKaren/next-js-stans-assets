@@ -1,6 +1,9 @@
 import ProductHero from "../../../../components/ProductHero/productHero";
 import Looking from "../../../../components/Looking/looking";
 import ProjectsSlider from "../../../../components/ProjectsSlider/projectsSlider";
+import ProductTable from "../../../../components/ProductTable/productTable";
+
+import tableData from "../../../../resources/tableData";
 
 import image from "../../../../public/Products/stickman.png";
 
@@ -19,7 +22,7 @@ const Stickman = () => {
         ios
         unity
       />
-      <section></section>
+      <ProductTable data={tableData.stickman}/>
       <Looking />
       <ProjectsSlider />
     </>

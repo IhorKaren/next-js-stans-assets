@@ -143,6 +143,10 @@
 }
 
 .site_nav_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: $secondary-text-color;
 
   @extend %main-button;

@@ -170,9 +170,9 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <button type="button" className={styles.site_nav_button}>
+      <Link href="contacts" className={styles.site_nav_button}>
         CONTACT US
-      </button>
+      </Link>
     </div>
   );
 };

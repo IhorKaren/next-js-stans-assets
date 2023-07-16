@@ -53,6 +53,9 @@ const VacanciesItem = ({
           />
           <h3 className={styles.main_title}>{title}</h3>
         </button>
+        <button type="button" className={styles.modal_btn}>
+          APPLY
+        </button>
       </div>
 
       <motion.div

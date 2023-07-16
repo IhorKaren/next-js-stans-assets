@@ -18,7 +18,7 @@ const PluginsList = () => {
                   <div className={styles.overlay}>
                     <ul className={styles.links_thumb}>
                       <li className={styles.links_thumb_item}>
-                        <a href="/" className={styles.link}>
+                        <a href="#" className={styles.link}>
                           <BiLogoGithub
                             size="cssSize"
                             className={styles.icon}
@@ -26,7 +26,7 @@ const PluginsList = () => {
                         </a>
                       </li>
                       <li className={styles.links_thumb_item}>
-                        <a href="/" className={styles.link}>
+                        <a href="#" className={styles.link}>
                           <BiLogoUnity size="cssSize" className={styles.icon} />
                         </a>
                       </li>

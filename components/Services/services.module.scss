@@ -52,31 +52,9 @@
   padding-top: 40px;
   padding-bottom: 40px;
   display: flex;
-
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-  background-image: url("../../public/services-decorations/decor-bg1.png");
+  justify-content: space-between;
 }
 
 .content_list_item:nth-child(2n) {
   flex-direction: row-reverse;
-  background-position: left;
-}
-
-.content_list_item:nth-child(2) {
-  background-image: url("../../public/services-decorations/decor-bg2.png");
-}
-
-.content_list_item:nth-child(3) {
-  background-image: url("../../public/services-decorations/decor-bg3.png");
-}
-.content_list_item:nth-child(4) {
-  background-image: url("../../public/services-decorations/decor-bg4.png");
-}
-
-.decoration {
-  display: flex;
-  width: 550px;
-  height: 395px;
 }

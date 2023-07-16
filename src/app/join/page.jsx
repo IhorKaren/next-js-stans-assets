@@ -1,6 +1,6 @@
 import HeroBlock from "../../../components/HeroBlock/heroBlock";
 import ContentTextBlock from "../../../components/ContentTextBlock/contentTextBlock";
-import VacanciesList from "../../../components/VacanciesList/vacanciesList";
+import VacancyList from "../../../components/VacancyList/vacancyList";
 
 import vacations from "../../../resources/vacations";
 
@@ -16,7 +16,7 @@ const Join = () => {
         firstTextBlock={text.first}
         secondTextBlock={text.second}
       />
-      <VacanciesList data={vacations} />
+      <VacancyList data={vacations} />
     </>
   );
 };

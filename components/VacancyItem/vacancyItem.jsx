@@ -3,9 +3,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { BiChevronDown } from "react-icons/bi";
 
-import styles from "./vacanciesItem.module.scss";
+import styles from "./vacancyItem.module.scss";
 
-const VacanciesItem = ({
+const VacancyItem = ({
   title,
   requirements,
   preferences,
@@ -100,4 +100,4 @@ const VacanciesItem = ({
   );
 };
 
-export default VacanciesItem;
+export default VacancyItem;

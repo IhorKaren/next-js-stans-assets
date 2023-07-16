@@ -1,8 +1,8 @@
-import VacanciesItem from "../VacanciesItem/vacanciesItem";
+import VacancyItem from "../VacancyItem/vacancyItem";
 
-import styles from "./vacanciesList.module.scss";
+import styles from "./vacancyList.module.scss";
 
-const VacanciesList = ({ data }) => {
+const VacancyList = ({ data }) => {
   return (
     <section>
       <div className={styles.container}>
@@ -11,7 +11,7 @@ const VacanciesList = ({ data }) => {
           {data.map(
             ({ id, title, requirements, preferences, responsibilities }) => {
               return (
-                <VacanciesItem
+                <VacancyItem
                   key={id}
                   title={title}
                   requirements={requirements}
@@ -27,4 +27,4 @@ const VacanciesList = ({ data }) => {
   );
 };
 
-export default VacanciesList;
+export default VacancyList;

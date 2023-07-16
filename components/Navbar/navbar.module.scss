@@ -1,28 +1,6 @@
 @import "../../src/utils/placeholders.module.scss";
 @import "../../src/utils/variables.module.scss";
 
-@keyframes appear {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes disappear {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-25px);
-  }
-}
-
 @keyframes rotateAnimation {
   0% {
     transform: rotate(0deg);
@@ -80,7 +58,7 @@
   background-color: rgba(33, 33, 33, 0.9);
   border-top: 3px solid #00a4e8;
 
-  animation: appear 250ms ease-in-out;
+  // animation: appear 250ms ease-in-out;
 
   @extend %list;
 }

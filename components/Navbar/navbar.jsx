@@ -1,12 +1,44 @@
 "use client";
-
 import styles from "./navbar.module.scss";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../public/logo.png";
+import { motion } from "framer-motion";
 import { BiChevronDown } from "react-icons/bi";
 import { services, technologies, about } from "../../resources/pages";
+
+// Animations
+const listVariants = {
+  open: {
+    clipPath: "inset(0% 0% 0% 0% round 0px)",
+    transition: {
+      type: "spring",
+      bounce: 0,
+      duration: 0.5,
+      delayChildren: 0.2,
+      staggerChildren: 0.05,
+    },
+  },
+  closed: {
+    clipPath: "inset(10% 50% 100% 0% round 10px)",
+    transition: {
+      type: "spring",
+      bounce: 0,
+      duration: 0.3,
+    },
+  },
+};
+//
+
+const itemVariants = {
+  open: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 300, damping: 24 },
+  },
+  closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
+};
 
 const Navbar = () => {
   const [servicesMenuOpen, setServicesMenuOpen] = useState(false);
@@ -68,25 +100,27 @@ const Navbar = () => {
                 }`}
               />
             </button>
-            {servicesMenuOpen && (
-              <ul
-                className={styles.hover_menu}
-                onMouseEnter={handleMouseEnterServices}
-                onMouseLeave={handleMouseLeaveServices}
-              >
-                {services.map(({ id, text, path }) => (
-                  <li key={id}>
-                    <Link
-                      href={path}
-                      onClick={handleMouseClick}
-                      className={styles.site_nav_link}
-                    >
-                      {text}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
+
+            <motion.ul
+              initial={false}
+              animate={servicesMenuOpen ? "open" : "closed"}
+              variants={listVariants}
+              className={styles.hover_menu}
+              onMouseEnter={handleMouseEnterServices}
+              onMouseLeave={handleMouseLeaveServices}
+            >
+              {services.map(({ id, text, path }) => (
+                <motion.li key={id} variants={itemVariants}>
+                  <Link
+                    href={path}
+                    onClick={handleMouseClick}
+                    className={styles.site_nav_link}
+                  >
+                    {text}
+                  </Link>
+                </motion.li>
+              ))}
+            </motion.ul>
           </li>
           <li className={styles.site_nav_item}>
             <button
@@ -103,25 +137,27 @@ const Navbar = () => {
                 }`}
               />
             </button>
-            {technologiesMenuOpen && (
-              <ul
-                className={styles.hover_menu}
-                onMouseEnter={handleMouseEnterTechnologies}
-                onMouseLeave={handleMouseLeaveTechnologies}
-              >
-                {technologies.map(({ id, text, path }) => (
-                  <li key={id}>
-                    <Link
-                      href={path}
-                      onClick={handleMouseClick}
-                      className={styles.site_nav_link}
-                    >
-                      {text}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
+
+            <motion.ul
+              initial={false}
+              animate={technologiesMenuOpen ? "open" : "closed"}
+              variants={listVariants}
+              className={styles.hover_menu}
+              onMouseEnter={handleMouseEnterTechnologies}
+              onMouseLeave={handleMouseLeaveTechnologies}
+            >
+              {technologies.map(({ id, text, path }) => (
+                <motion.li key={id} variants={itemVariants}>
+                  <Link
+                    href={path}
+                    onClick={handleMouseClick}
+                    className={styles.site_nav_link}
+                  >
+                    {text}
+                  </Link>
+                </motion.li>
+              ))}
+            </motion.ul>
           </li>
           <li className={styles.site_nav_item}>
             <Link className={styles.site_nav_link} href="/products">
@@ -148,25 +184,27 @@ const Navbar = () => {
                 }`}
               />
             </Link>
-            {aboutMenuOpen && (
-              <ul
-                className={styles.hover_menu}
-                onMouseEnter={handleMouseEnterAbout}
-                onMouseLeave={handleMouseLeaveAbout}
-              >
-                {about.map(({ id, text, path }) => (
-                  <li key={id}>
-                    <Link
-                      href={path}
-                      onClick={handleMouseClick}
-                      className={styles.site_nav_link}
-                    >
-                      {text}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
+
+            <motion.ul
+              initial={false}
+              animate={aboutMenuOpen ? "open" : "closed"}
+              variants={listVariants}
+              className={styles.hover_menu}
+              onMouseEnter={handleMouseEnterAbout}
+              onMouseLeave={handleMouseLeaveAbout}
+            >
+              {about.map(({ id, text, path }) => (
+                <motion.li key={id} variants={itemVariants}>
+                  <Link
+                    href={path}
+                    onClick={handleMouseClick}
+                    className={styles.site_nav_link}
+                  >
+                    {text}
+                  </Link>
+                </motion.li>
+              ))}
+            </motion.ul>
           </li>
         </ul>
       </nav>

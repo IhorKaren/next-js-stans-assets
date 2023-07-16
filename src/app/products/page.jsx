@@ -10,6 +10,7 @@ const Products = () => {
     <>
       <HeroBlock
         title="Stan assets products"
+        route="Products"
         img={image}
         alt="VR helmet and smartphone"
       />

@@ -81,8 +81,13 @@
 }
 
 .title {
+  display: block;
   margin-bottom: 30px;
 
+  color: $secondary-text-color;
+
+  font-family: var(--font-raleway);
+  font-weight: 700;
   font-size: 20px;
   line-height: normal;
   letter-spacing: 1.4px;

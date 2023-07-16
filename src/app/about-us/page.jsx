@@ -1,24 +1,22 @@
 import HeroBlock from "../../../components/HeroBlock/heroBlock";
 import Looking from "../../../components/Looking/looking";
 import Contacts from "../../../components/Contacts/contacts";
-import PortfolioList from "../../../components/PortfolioList/portfolioList";
 
-import image from "../../../public/portfolio.png";
+import image from "../../../public/Services/services-3d.png";
 
-const Portfolio = () => {
+const About = () => {
   return (
     <>
       <HeroBlock
-        title="Stan assets portfolio"
-        route="Portfolio"
+        title="We are an outsourcing team focused on Games, VR, 3D, SDK, and Unity packages."
+        route="About Us"
         img={image}
         alt="Man with tablet"
       />
-      <PortfolioList />
       <Looking />
       <Contacts />
     </>
   );
 };
 
-export default Portfolio;
+export default About;

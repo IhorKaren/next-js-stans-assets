@@ -104,7 +104,9 @@ const Footer = () => {
               </ul>
             </li>
             <li>
-              <h4 className={styles.title}>ABOUT US</h4>
+              <Link href="/about-us" className={styles.title}>
+                ABOUT US
+              </Link>
               <ul className={styles.pages_list}>
                 <li>
                   <Link href="/contacts">Contacts</Link>
@@ -123,7 +125,7 @@ const Footer = () => {
       <div className={styles.wrap}>
         <div className={styles.container}>
           <div className={styles.wrap_container}>
-            <div>© 2023 - Stan’s Assets. All Right Reserved</div>
+            <div>© 2023 - Stan’s Assets. Version by Ihor Karen</div>
             <div className={styles.policy}>
               <div>
                 <a href="">Privacy policy</a>

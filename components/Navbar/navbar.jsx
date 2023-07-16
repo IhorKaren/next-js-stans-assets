@@ -134,9 +134,9 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={styles.site_nav_item}>
-            <button
-              type="button"
-              className={styles.site_nav_link_button}
+            <Link
+              href="/about-us"
+              className={styles.site_nav_link}
               onMouseEnter={handleMouseEnterAbout}
               onMouseLeave={handleMouseLeaveAbout}
             >
@@ -147,7 +147,7 @@ const Navbar = () => {
                   aboutMenuOpen ? styles.iconOpen : styles.iconClose
                 }`}
               />
-            </button>
+            </Link>
             {aboutMenuOpen && (
               <ul
                 className={styles.hover_menu}

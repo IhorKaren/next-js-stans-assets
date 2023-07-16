@@ -1,0 +1,45 @@
+@import "../../src/utils/placeholders.module.scss";
+@import "../../src/utils/variables.module.scss";
+
+.container {
+  @extend %container;
+  padding-bottom: 80px;
+}
+
+.thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 60px;
+
+  color: $primary-title-color;
+
+  text-align: center;
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.titles_list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+
+  color: $secondary-title-color;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  @extend %list;
+}

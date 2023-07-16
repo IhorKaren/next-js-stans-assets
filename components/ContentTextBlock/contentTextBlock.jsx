@@ -13,7 +13,7 @@ const ContentTextBlock = ({
           <li className={styles.item}>
             {firstTitle && <h2 className={styles.title}>{firstTitle}</h2>}
             {firstTextBlock ? (
-              <p>{firstTextBlock}</p>
+              <p dangerouslySetInnerHTML={{ __html: firstTextBlock }}></p>
             ) : (
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -33,7 +33,7 @@ const ContentTextBlock = ({
           <li className={styles.item}>
             {secondTitle && <h2 className={styles.title}>{secondTitle}</h2>}
             {secondTextBlock ? (
-              <p>{secondTextBlock}</p>
+              <p dangerouslySetInnerHTML={{ __html: secondTextBlock }}></p>
             ) : (
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.

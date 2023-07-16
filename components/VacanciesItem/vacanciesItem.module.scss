@@ -1,0 +1,122 @@
+@import "../../src/utils/placeholders.module.scss";
+@import "../../src/utils/variables.module.scss";
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotateAnimationClose {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.item {
+  width: 100%;
+  padding: 0 30px 0 30px;
+
+  border-radius: 16px;
+  box-shadow: 0px 3px 16px rgba(29, 51, 107, 0.15);
+}
+
+.main_title {
+  color: $primary-title-color;
+
+  font-size: 24px;
+  line-height: 1.66;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.text {
+  line-height: 1.62;
+}
+
+.buttons_thumb {
+  padding: 29px 0 29px 0;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+
+  fill: $primary-title-color;
+}
+
+.iconOpen {
+  transform: rotate(180deg);
+
+  animation: rotateAnimation 250ms ease-in-out;
+}
+
+.iconClose {
+  transform: rotate(0deg);
+
+  animation: rotateAnimationClose 250ms ease-in-out;
+}
+
+.criterion_list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+
+  line-height: 1.62;
+
+  &:nth-child(1) {
+    border-top: 1px solid $primary-title-color;
+  }
+
+  @extend %list;
+}
+
+.requirements_title {
+  margin-bottom: 16px;
+
+  color: $primary-title-color;
+
+  font-size: 20px;
+  line-height: 1.9;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.requirements_list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 24px;
+
+  line-height: 1.62;
+
+  @extend %list;
+
+  li::before {
+    position: absolute;
+    content: "\2022";
+    color: #276ed8;
+    font-weight: 900;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: -15px;
+  }
+}

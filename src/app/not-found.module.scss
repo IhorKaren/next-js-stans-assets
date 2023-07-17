@@ -1,0 +1,73 @@
+@import "../../src/utils/placeholders.module.scss";
+@import "../../src/utils/variables.module.scss";
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 780px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 780px;
+}
+
+.background {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: 780px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("../../public/404.png");
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+
+  @extend %container;
+}
+
+.thumb {
+  position: absolute;
+  bottom: 10%;
+  right: 50%;
+
+  transform: translateX(50%);
+}
+
+.title {
+  margin-bottom: 30px;
+
+  color: $primary-title-color;
+
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+}
+
+.link {
+  width: max-content;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  text-align: center;
+
+  border-color: $primary-button-color;
+  background-color: $primary-button-color;
+  color: $secondary-text-color;
+
+  text-transform: uppercase;
+
+  @extend %main-button;
+
+  &:hover,
+  :focus {
+    background-color: $secondary-button-color;
+    border-color: $secondary-button-color;
+  }
+}

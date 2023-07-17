@@ -1,5 +1,6 @@
 import HeroBlock from "../../../components/HeroBlock/heroBlock";
 import Form from "../../../components/Form/form";
+import ContactsLinks from "../../../components/ContactsLinks/contactsLinks";
 import Looking from "../../../components/Looking/looking";
 import ProjectsSlider from "../../../components/ProjectsSlider/projectsSlider";
 
@@ -16,6 +17,7 @@ const ContactsPage = () => {
           btnText="SEND REQUEST"
           text="Hit us up any time through email with any idea and help us turn your great ideas into brilliant projects"
         />
+        <ContactsLinks columns />
       </HeroBlock>
       <Looking />
       <ProjectsSlider />

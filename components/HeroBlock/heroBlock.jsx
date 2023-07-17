@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./heroBlock.module.scss";
 
-const HeroBlock = ({ title, img, alt, route = null }) => {
+const HeroBlock = ({ title, img, alt, route }) => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -12,9 +12,11 @@ const HeroBlock = ({ title, img, alt, route = null }) => {
           </span>
           <h1 className={styles.title}>{title}</h1>
         </div>
-        <div>
-          <Image src={img} alt={alt} placeholder="blur" />
-        </div>
+        {img && (
+          <div>
+            <Image src={img} alt={alt} placeholder="blur" />
+          </div>
+        )}
       </div>
     </section>
   );

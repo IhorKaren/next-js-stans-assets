@@ -1,4 +1,5 @@
 import styles from "./contacts.module.scss";
+import Form from "../Form/form";
 import {
   BiMap,
   BiPhone,
@@ -8,7 +9,7 @@ import {
   BiLogoFacebookCircle,
 } from "react-icons/bi";
 
-const Contacts = () => {
+const Contacts = ({ children }) => {
   return (
     <section>
       <div className={styles.container}>
@@ -67,42 +68,7 @@ const Contacts = () => {
             <div className={styles.decoration}></div>
             <div className={styles.decoration}></div>
             <div className={styles.decoration}></div>
-            <form
-              name="contactUs_form"
-              autoComplete="off"
-              className={styles.form}
-            >
-              <label htmlFor="name">
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="Name"
-                  className={styles.form_item}
-                />
-              </label>
-
-              <label htmlFor="email">
-                <input
-                  type="text"
-                  id="email"
-                  placeholder="Email"
-                  className={styles.form_item}
-                />
-              </label>
-
-              <label htmlFor="message">
-                <textarea
-                  rows="5"
-                  id="message"
-                  placeholder="Message"
-                  className={styles.form_item}
-                />
-              </label>
-
-              <button type="submit" className={styles.button}>
-                SEND REQUEST
-              </button>
-            </form>
+            <Form btnText="SEND REQUEST">{children}</Form>
           </div>
         </div>
       </div>

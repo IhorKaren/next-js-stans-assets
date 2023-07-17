@@ -25,7 +25,7 @@ const Footer = () => {
             </Link>
             <ul className={styles.links_list}>
               <li>
-                <a href="" className={styles.social_link}>
+                <a href="#" className={styles.social_link}>
                   <BiLogoFacebookCircle
                     size="cssSize"
                     className={styles.icon}
@@ -33,22 +33,32 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="" className={styles.social_link}>
+                <a
+                  href="https://www.linkedin.com/in/ihor-karen/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.social_link}
+                >
                   <BiLogoLinkedin size="cssSize" className={styles.icon} />
                 </a>
               </li>
               <li>
-                <a href="" className={styles.social_link}>
+                <a href="#" className={styles.social_link}>
                   <BiLogoWhatsapp size="cssSize" className={styles.icon} />
                 </a>
               </li>
               <li>
-                <a href="" className={styles.social_link}>
+                <a href="#" className={styles.social_link}>
                   <BiLogoSkype size="cssSize" className={styles.icon} />
                 </a>
               </li>
               <li>
-                <a href="" className={styles.social_link}>
+                <a
+                  href="https://github.com/IhorKaren"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.social_link}
+                >
                   <BiLogoGithub size="cssSize" className={styles.icon} />
                 </a>
               </li>
@@ -128,10 +138,10 @@ const Footer = () => {
             <div>© 2023 - Stan’s Assets. Version by Ihor Karen</div>
             <div className={styles.policy}>
               <div>
-                <a href="">Privacy policy</a>
+                <a href="#">Privacy policy</a>
               </div>
               <div>
-                <a href="">Cookies policy</a>
+                <a href="#">Cookies policy</a>
               </div>
             </div>
           </div>

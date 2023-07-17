@@ -32,7 +32,7 @@
 
   cursor: pointer;
 
-  transition: fill 250ms ease-in-out;
+  transition: fill $timing-function;
 
   &:hover,
   :focus {

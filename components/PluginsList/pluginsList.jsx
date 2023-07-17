@@ -35,7 +35,7 @@ const PluginsList = () => {
                 </div>
                 <div className={styles.text_thumb}>
                   <h2 className={styles.title}>{title}</h2>
-                  <p className={styles.text}>{text}</p>
+                  <p>{text}</p>
                 </div>
               </li>
             );

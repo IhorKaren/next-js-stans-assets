@@ -61,9 +61,9 @@
 .title {
   margin-bottom: 16px;
 
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 2.64px;
+  color: $secondary-text-color;
+
+  @extend %main-title;
 }
 
 .highlight {

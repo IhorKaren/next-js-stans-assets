@@ -8,7 +8,6 @@
 .thumb {
   text-align: center;
 
-  color: $primary-text-color;
   font-size: 24px;
   line-height: 1.58;
 }
@@ -16,11 +15,7 @@
 .title {
   margin-bottom: 60px;
 
-  color: $primary-title-color;
-
-  font-size: 36px;
-  line-height: normal;
-  letter-spacing: 3.6px;
+  @extend %second-title;
 }
 
 .text {
@@ -52,7 +47,7 @@
   width: 64px;
   height: 64px;
 
-  background-color: #06b25f;
+  background-color: $primary-button-color;
   box-shadow: 0px 4px 12px 0px rgba(41, 24, 111, 0.2);
 
   border-radius: 25%;

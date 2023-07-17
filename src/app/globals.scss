@@ -24,6 +24,9 @@ span {
 body {
   overflow-x: hidden;
 
+  color: $primary-text-color;
+  line-height: 1.62;
+
   --swiper-navigation-size: 54px;
   --swiper-navigation-top-offset: 47%;
   --swiper-navigation-sides-offset: 0px;

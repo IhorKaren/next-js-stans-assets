@@ -20,10 +20,8 @@
   color: $primary-title-color;
 
   text-align: center;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 2.64px;
-  text-transform: uppercase;
+
+  @extend %main-title;
 }
 
 .list {
@@ -57,10 +55,5 @@
 .name {
   margin-bottom: 8px;
 
-  color: $secondary-title-color;
-
-  font-size: 24px;
-  line-height: 1.58;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
+  @extend %middle-title;
 }

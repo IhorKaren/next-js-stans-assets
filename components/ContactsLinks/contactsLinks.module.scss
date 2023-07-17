@@ -41,7 +41,7 @@
   font-size: 20px;
   line-height: normal;
 
-  transition: color 250ms ease-in-out, fill 250ms ease-in-out;
+  transition: color $timing-function, fill $timing-function;
 
   &:hover,
   :focus {

@@ -32,10 +32,6 @@
   line-height: 1.5;
 }
 
-.text {
-  line-height: 1.62;
-}
-
 .button {
   display: flex;
   align-items: center;
@@ -55,11 +51,11 @@
 .iconOpen {
   transform: rotate(180deg);
 
-  animation: rotateAnimation 250ms ease-in-out;
+  animation: rotateAnimation $timing-function;
 }
 
 .iconClose {
   transform: rotate(0deg);
 
-  animation: rotateAnimationClose 250ms ease-in-out;
+  animation: rotateAnimationClose $timing-function;
 }

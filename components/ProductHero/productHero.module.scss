@@ -8,8 +8,6 @@
   padding-top: 100px;
 
   color: $secondary-text-color;
-
-  line-height: 1.62;
 }
 
 .image {
@@ -39,10 +37,7 @@
 
   color: $secondary-text-color;
 
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 2.64px;
-  text-transform: uppercase;
+  @extend %main-title;
 }
 
 .text {
@@ -67,7 +62,7 @@
 
   fill: #fff;
 
-  transition: fill 250ms ease-in-out;
+  transition: fill $timing-function;
 
   &:hover,
   :focus {

@@ -12,12 +12,7 @@
 .title {
   margin-bottom: 60px;
 
-  color: $primary-title-color;
-
-  text-align: center;
-  font-size: 36px;
-  line-height: normal;
-  letter-spacing: 3.6px;
+  @extend %second-title;
 }
 
 .text {
@@ -62,7 +57,7 @@
   font-size: 20px;
   line-height: normal;
 
-  transition: color 250ms ease-in-out, fill 250ms ease-in-out;
+  transition: color $timing-function, fill $timing-function;
 
   &:hover,
   :focus {

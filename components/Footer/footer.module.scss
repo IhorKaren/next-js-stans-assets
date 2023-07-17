@@ -36,7 +36,7 @@
 .social_link {
   fill: #ffffff;
 
-  transition: fill 250ms ease-in-out;
+  transition: fill $timing-function;
 
   &:hover,
   :focus {
@@ -72,7 +72,7 @@
   height: 2px;
   background-color: $secondary-text-color;
   transform: scaleX(0);
-  transition: transform 250ms ease-in-out;
+  transition: transform $timing-function;
 }
 
 .navigation a:hover::after,

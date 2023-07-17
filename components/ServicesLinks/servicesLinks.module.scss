@@ -8,12 +8,7 @@
 .title {
   margin-bottom: 70px;
 
-  color: $primary-title-color;
-
-  text-align: center;
-  font-size: 36px;
-  line-height: normal;
-  letter-spacing: 3.6px;
+  @extend %second-title;
 }
 
 .list {
@@ -46,7 +41,7 @@
   line-height: 1.5;
   text-transform: uppercase;
 
-  transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out;
+  transition: background-color $timing-function, box-shadow $timing-function;
 
   &:hover,
   :focus {

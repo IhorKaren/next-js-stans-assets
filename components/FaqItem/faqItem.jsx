@@ -30,7 +30,7 @@ const FaqItem = ({ title, text }) => {
         initial="hidden"
         animate={isFaqOpen ? "visible" : "hidden"}
       >
-        <p className={styles.text}>{text}</p>
+        <p>{text}</p>
       </motion.div>
     </li>
   );

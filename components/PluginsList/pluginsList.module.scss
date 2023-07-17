@@ -40,7 +40,7 @@
 
   overflow: hidden;
 
-  transition: box-shadow 250ms ease-in-out;
+  transition: box-shadow $timing-function;
 
   &:hover,
   :focus {
@@ -70,7 +70,7 @@
   width: 100%;
   height: 100%;
 
-  transition: background-color 250ms ease-in-out;
+  transition: background-color $timing-function;
 
   .item:hover &,
   .item:focus & {
@@ -90,7 +90,7 @@
 
   transform: translateY(100%);
 
-  transition: transform 250ms ease-in-out;
+  transition: transform $timing-function;
 
   @extend %list;
 
@@ -121,7 +121,7 @@
 
   fill: #fff;
 
-  transition: fill 250ms ease-in-out;
+  transition: fill $timing-function;
 
   &:hover,
   :focus {
@@ -138,16 +138,5 @@
 .title {
   margin-bottom: 8px;
 
-  color: $primary-title-color;
-
-  font-size: 24px;
-  line-height: 1.58;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-}
-
-.text {
-  color: $primary-text-color;
-
-  line-height: 1.62;
+  @extend %middle-title;
 }

@@ -1,3 +1,5 @@
+@import "./variables.module.scss";
+
 %container {
   width: 1600px;
   margin-left: auto;
@@ -30,6 +32,47 @@
   padding-bottom: 0;
 }
 
+%main-title {
+  color: $secondary-title-color;
+
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 2.64px;
+
+  text-transform: uppercase;
+}
+
+%second-title {
+  color: $primary-title-color;
+
+  text-align: center;
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: 3.6px;
+
+  text-transform: uppercase;
+}
+
+%middle-title {
+  color: $secondary-title-color;
+
+  font-size: 24px;
+  line-height: 1.58;
+  letter-spacing: 1.2px;
+
+  text-transform: uppercase;
+}
+
+%small-title {
+  color: $primary-title-color;
+
+  font-size: 18px;
+  line-height: 1.58;
+  letter-spacing: 1.2px;
+  
+  text-transform: uppercase;
+}
+
 %main-button {
   display: block;
 
@@ -46,7 +89,7 @@
 
   background-color: transparent;
 
-  transition: background-color 250ms ease-in-out, border-color 250ms ease-in-out;
+  transition: background-color $timing-function, border-color $timing-function;
 
   cursor: pointer;
 }

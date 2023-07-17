@@ -18,7 +18,7 @@ const PortfolioList = () => {
                 </div>
                 <div className={styles.text_thumb}>
                   <h2 className={styles.title}>{title}</h2>
-                  <p className={styles.text}>{mainText}</p>
+                  <p>{mainText}</p>
                   <Link href={path} className={styles.button}>
                     READ MORE
                   </Link>

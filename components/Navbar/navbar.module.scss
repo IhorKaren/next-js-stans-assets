@@ -58,8 +58,6 @@
   background-color: rgba(33, 33, 33, 0.9);
   border-top: 3px solid #00a4e8;
 
-  // animation: appear 250ms ease-in-out;
-
   @extend %list;
 }
 
@@ -76,7 +74,7 @@
   font-size: 16px;
   line-height: 2.25;
 
-  transition: color 250ms ease-in-out;
+  transition: color $timing-function;
 
   cursor: text;
 
@@ -94,13 +92,13 @@
 .iconOpen {
   transform: rotate(180deg);
 
-  animation: rotateAnimation 250ms ease-in-out;
+  animation: rotateAnimation $timing-function;
 }
 
 .iconClose {
   transform: rotate(0deg);
 
-  animation: rotateAnimationClose 250ms ease-in-out;
+  animation: rotateAnimationClose $timing-function;
 }
 
 .site_nav_link {
@@ -113,7 +111,7 @@
 
   color: $secondary-text-color;
 
-  transition: color 250ms ease-in-out;
+  transition: color $timing-function;
 
   &:hover {
     color: $hover-text-color;

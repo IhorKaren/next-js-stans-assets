@@ -20,9 +20,7 @@
 
   color: $secondary-text-color;
 
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 2.64px;
+  @extend %main-title;
 }
 
 .text {
@@ -38,8 +36,8 @@
   margin-left: auto;
   margin-right: auto;
 
-  color: #06b25f;
-  border-color: #06b25f;
+  color: $primary-button-color;
+  border-color: $primary-button-color;
   background-color: #ffffff;
 
   @extend %main-button;
@@ -47,6 +45,6 @@
   &:hover,
   :focus {
     color: #ffffff;
-    background-color: #06b25f;
+    background-color: $primary-button-color;
   }
 }

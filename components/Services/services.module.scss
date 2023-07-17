@@ -13,12 +13,7 @@
 .title {
   margin-bottom: 60px;
 
-  color: $primary-title-color;
-
-  font-size: 36px;
-  line-height: normal;
-  letter-spacing: 3.6px;
-  text-align: center;
+  @extend %second-title;
 }
 
 .content_list {
@@ -26,22 +21,13 @@
   flex-direction: column;
   gap: 30px;
 
-  color: $primary-text-color;
-
-  font-size: 16px;
-  line-height: 1.62;
-
   @extend %list;
 }
 
 .content_list_title {
   margin-bottom: 20px;
 
-  color: $secondary-title-color;
-
-  font-size: 24px;
-  line-height: 1.58;
-  letter-spacing: 1.2px;
+  @extend %middle-title;
 }
 
 .content_list_text {

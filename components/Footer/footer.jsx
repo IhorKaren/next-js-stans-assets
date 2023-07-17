@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./footer.module.scss";
+
 import {
-  BiLogoFacebookCircle,
-  BiLogoLinkedin,
-  BiLogoWhatsapp,
-  BiLogoSkype,
-  BiLogoGithub,
-} from "react-icons/bi";
+  BsWhatsapp,
+  BsSkype,
+  BsFacebook,
+  BsLinkedin,
+  BsGithub,
+} from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -26,10 +27,7 @@ const Footer = () => {
             <ul className={styles.links_list}>
               <li>
                 <a href="#" className={styles.social_link}>
-                  <BiLogoFacebookCircle
-                    size="cssSize"
-                    className={styles.icon}
-                  />
+                  <BsFacebook className={styles.icon} />
                 </a>
               </li>
               <li>
@@ -39,17 +37,17 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className={styles.social_link}
                 >
-                  <BiLogoLinkedin size="cssSize" className={styles.icon} />
+                  <BsLinkedin className={styles.icon} />
                 </a>
               </li>
               <li>
                 <a href="#" className={styles.social_link}>
-                  <BiLogoWhatsapp size="cssSize" className={styles.icon} />
+                  <BsWhatsapp className={styles.icon} />
                 </a>
               </li>
               <li>
                 <a href="#" className={styles.social_link}>
-                  <BiLogoSkype size="cssSize" className={styles.icon} />
+                  <BsSkype className={styles.icon} />
                 </a>
               </li>
               <li>
@@ -59,7 +57,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className={styles.social_link}
                 >
-                  <BiLogoGithub size="cssSize" className={styles.icon} />
+                  <BsGithub className={styles.icon} />
                 </a>
               </li>
             </ul>

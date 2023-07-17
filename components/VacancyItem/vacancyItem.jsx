@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { BiChevronDown } from "react-icons/bi";
+import { BsChevronDown } from "react-icons/bs";
 import Modal from "../Modal/modal";
 import Form from "../Form/form";
 
@@ -54,8 +54,7 @@ const VacancyItem = ({
             onClick={toggleVacancy}
             className={styles.button}
           >
-            <BiChevronDown
-              size="cssSize"
+            <BsChevronDown
               className={`${styles.icon} ${
                 isVacancyOpen ? styles.iconOpen : styles.iconClose
               }`}

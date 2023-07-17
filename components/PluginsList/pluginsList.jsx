@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BiLogoUnity, BiLogoGithub } from "react-icons/bi";
+import { BsUnity, BsGithub } from "react-icons/bs";
 import plugins from "../../resources/pluginsList";
 
 import styles from "./pluginsList.module.scss";
@@ -19,15 +19,12 @@ const PluginsList = () => {
                     <ul className={styles.links_thumb}>
                       <li className={styles.links_thumb_item}>
                         <a href="#" className={styles.link}>
-                          <BiLogoGithub
-                            size="cssSize"
-                            className={styles.icon}
-                          />
+                          <BsGithub className={styles.icon} />
                         </a>
                       </li>
                       <li className={styles.links_thumb_item}>
                         <a href="#" className={styles.link}>
-                          <BiLogoUnity size="cssSize" className={styles.icon} />
+                          <BsUnity className={styles.icon} />
                         </a>
                       </li>
                     </ul>

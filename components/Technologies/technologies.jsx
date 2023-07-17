@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./technologies.module.scss";
-import { BiLogoAndroid, BiLogoApple, BiLogoUnity } from "react-icons/bi";
+import { BsAndroid2, BsApple, BsUnity } from "react-icons/bs";
 
 const Technologies = () => {
   return (
@@ -17,17 +17,17 @@ const Technologies = () => {
           <ul className={styles.link_list}>
             <li className={styles.link_item}>
               <Link href="/android" className={styles.link}>
-                <BiLogoAndroid size="cssSize" className={styles.icon} />
+                <BsAndroid2 className={styles.icon} />
               </Link>
             </li>
             <li className={styles.link_item}>
               <Link href="/ios" className={styles.link}>
-                <BiLogoApple size="cssSize" className={styles.icon} />
+                <BsApple className={styles.icon} />
               </Link>
             </li>
             <li className={styles.link_item}>
               <Link href="/unity" className={styles.link}>
-                <BiLogoUnity size="cssSize" className={styles.icon} />
+                <BsUnity className={styles.icon} />
               </Link>
             </li>
           </ul>

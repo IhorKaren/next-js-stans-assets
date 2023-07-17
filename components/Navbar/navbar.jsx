@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "../../public/logo.png";
 import { motion } from "framer-motion";
-import { BiChevronDown } from "react-icons/bi";
+import { BsChevronDown } from "react-icons/bs";
 import { services, technologies, about } from "../../resources/pages";
 
 import animations from "../../resources/animations";
@@ -63,8 +63,7 @@ const Navbar = () => {
               onMouseLeave={handleMouseLeaveServices}
             >
               SERVICES
-              <BiChevronDown
-                size="cssSize"
+              <BsChevronDown
                 className={`${styles.icon} ${
                   servicesMenuOpen ? styles.iconOpen : styles.iconClose
                 }`}
@@ -100,8 +99,7 @@ const Navbar = () => {
               onMouseLeave={handleMouseLeaveTechnologies}
             >
               TECHNOLOGIES
-              <BiChevronDown
-                size="cssSize"
+              <BsChevronDown
                 className={`${styles.icon} ${
                   technologiesMenuOpen ? styles.iconOpen : styles.iconClose
                 }`}
@@ -147,8 +145,7 @@ const Navbar = () => {
               onMouseLeave={handleMouseLeaveAbout}
             >
               ABOUT US
-              <BiChevronDown
-                size="cssSize"
+              <BsChevronDown
                 className={`${styles.icon} ${
                   aboutMenuOpen ? styles.iconOpen : styles.iconClose
                 }`}

@@ -28,6 +28,8 @@
 }
 
 .main_title {
+  margin-left: 5px;
+
   color: $primary-title-color;
 
   @extend %middle-title;
@@ -50,8 +52,8 @@
 }
 
 .icon {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 
   fill: $primary-title-color;
 }

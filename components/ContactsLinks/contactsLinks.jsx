@@ -1,11 +1,11 @@
 import {
-  BiMap,
-  BiPhone,
-  BiLogoWhatsapp,
-  BiLogoSkype,
-  BiEnvelope,
-  BiLogoFacebookCircle,
-} from "react-icons/bi";
+  BsGeoAltFill,
+  BsTelephone,
+  BsWhatsapp,
+  BsSkype,
+  BsEnvelope,
+  BsFacebook,
+} from "react-icons/bs";
 
 import styles from "./contactsLinks.module.scss";
 
@@ -14,7 +14,7 @@ const ContactsLinks = ({ columns }) => {
     <ul className={columns ? styles.list_columns : styles.list_default}>
       <li>
         <a href="#" className={styles.link}>
-          <BiMap size="cssSize" className={styles.icon} />
+          <BsGeoAltFill className={styles.icon} />
           <address className={styles.address}>
             Ukraine, Kyiv, Rodyny Kristeriv 20B, office 188
           </address>
@@ -22,31 +22,31 @@ const ContactsLinks = ({ columns }) => {
       </li>
       <li>
         <a href="#" className={styles.link}>
-          <BiPhone size="cssSize" className={styles.icon} />
+          <BsTelephone className={styles.icon} />
           +38 (093) 345 56 76
         </a>
       </li>
       <li>
         <a href="#" className={styles.link}>
-          <BiLogoWhatsapp size="cssSize" className={styles.icon} />
+          <BsWhatsapp className={styles.icon} />
           +38 (093) 345 56 77
         </a>
       </li>
       <li>
         <a href="#" className={styles.link}>
-          <BiLogoSkype size="cssSize" className={styles.icon} />
+          <BsSkype className={styles.icon} />
           Stanassets
         </a>
       </li>
       <li>
         <a href="#" className={styles.link}>
-          <BiEnvelope size="cssSize" className={styles.icon} />
+          <BsEnvelope className={styles.icon} />
           stanAssets@gmail.com
         </a>
       </li>
       <li>
         <a href="#" className={styles.link}>
-          <BiLogoFacebookCircle size="cssSize" className={styles.icon} />
+          <BsFacebook className={styles.icon} />
           facebook.com/Stanassets
         </a>
       </li>

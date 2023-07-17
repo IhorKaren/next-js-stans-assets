@@ -24,6 +24,7 @@
 
 .title {
   max-width: 640px;
+  margin-bottom: 20px;
 
   color: $primary-title-color;
 
@@ -31,4 +32,12 @@
   line-height: 1.36;
   letter-spacing: 2.64px;
   text-transform: uppercase;
+}
+
+.text {
+  max-width: 580px;
+
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.41;
 }

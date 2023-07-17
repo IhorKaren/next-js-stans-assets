@@ -11,7 +11,7 @@ const Partners = () => {
         <ul className={styles.list}>
           {partnersList.map(({ id, img, width, height, alt }) => (
             <li key={id} className={styles.item}>
-              <Image src={img} width={width} height={height} alt={alt} />
+              <Image src={img} alt={alt} />
             </li>
           ))}
         </ul>

@@ -2,6 +2,7 @@
 @import "../../src/utils/variables.module.scss";
 
 .form {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 20px;

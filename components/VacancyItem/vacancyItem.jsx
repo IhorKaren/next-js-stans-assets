@@ -7,31 +7,7 @@ import Form from "../Form/form";
 
 import styles from "./vacancyItem.module.scss";
 
-//Animation
-const containerVariants = {
-  hidden: {
-    opacity: 0,
-    maxHeight: 0,
-    overflow: "hidden",
-  },
-  visible: {
-    opacity: 1,
-    maxHeight: "100vh",
-    overflow: "visible",
-    transition: {
-      duration: 0.5,
-    },
-  },
-  closed: {
-    opacity: 0,
-    maxHeight: 0,
-    overflow: "hidden",
-    transition: {
-      duration: 1,
-    },
-  },
-};
-//
+import animations from "../../resources/animations";
 
 const VacancyItem = ({
   title,
@@ -44,13 +20,16 @@ const VacancyItem = ({
 
   useEffect(() => {
     if (isModalOpen) {
-      document.body.style.overflowY = "hidden";
+      document.body.style.overflow = "hidden";
+      document.body.style.paddingRight = `8px`;
     } else {
-      document.body.style.overflowY = "auto";
+      document.body.style.overflow = "auto";
+      document.body.style.paddingRight = "0";
     }
 
     return () => {
-      document.body.style.overflowY = "auto";
+      document.body.style.overflow = "auto";
+      document.body.style.paddingRight = "0";
     };
   }, [isModalOpen]);
 
@@ -93,7 +72,7 @@ const VacancyItem = ({
         </div>
 
         <motion.div
-          variants={containerVariants}
+          variants={animations.vacancyVariants}
           initial="hidden"
           animate={isVacancyOpen ? "visible" : "hidden"}
         >
@@ -132,7 +111,7 @@ const VacancyItem = ({
         </motion.div>
       </li>
       {isModalOpen && (
-        <Modal closeModal={closeModal}>
+        <Modal closeModal={closeModal} isModalOpen={isModalOpen}>
           <Form
             btnText="SUBMIT"
             title="join the team"

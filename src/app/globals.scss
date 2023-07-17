@@ -21,9 +21,8 @@ span {
   margin: 0;
 }
 
-html,
 body {
-  max-width: 100vw;
+  overflow-x: hidden;
 
   --swiper-navigation-size: 54px;
   --swiper-navigation-top-offset: 47%;
@@ -44,12 +43,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
 
 ::-webkit-scrollbar {

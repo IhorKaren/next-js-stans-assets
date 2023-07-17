@@ -15,6 +15,34 @@
 }
 
 .modal {
+  position: relative;
   max-width: calc(100vw - 48px);
   max-height: calc(100vh - 24px);
+}
+
+.close_btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  background-color: transparent;
+  border: none;
+
+  fill: $primary-title-color;
+
+  cursor: pointer;
+
+  transition: fill 250ms ease-in-out;
+
+  &:hover,
+  :focus {
+    fill: $primary-button-color;
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+
+  fill: inherit;
 }

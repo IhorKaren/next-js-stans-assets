@@ -1,9 +1,11 @@
 "use client";
 import { useState } from "react";
-
+import { motion } from "framer-motion";
 import { BiChevronDown } from "react-icons/bi";
 
 import styles from "./faqItem.module.scss";
+
+import animations from "../../resources/animations";
 
 const FaqItem = ({ title, text }) => {
   const [isFaqOpen, setFaqOpen] = useState(false);
@@ -23,7 +25,13 @@ const FaqItem = ({ title, text }) => {
         />
         <h5 className={styles.title}>{title}</h5>
       </button>
-      {isFaqOpen && <p className={styles.text}>{text}</p>}
+      <motion.div
+        variants={animations.faqVariants}
+        initial="hidden"
+        animate={isFaqOpen ? "visible" : "hidden"}
+      >
+        <p className={styles.text}>{text}</p>
+      </motion.div>
     </li>
   );
 };

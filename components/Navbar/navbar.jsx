@@ -8,37 +8,7 @@ import { motion } from "framer-motion";
 import { BiChevronDown } from "react-icons/bi";
 import { services, technologies, about } from "../../resources/pages";
 
-// Animations
-const listVariants = {
-  open: {
-    clipPath: "inset(0% 0% 0% 0% round 0px)",
-    transition: {
-      type: "spring",
-      bounce: 0,
-      duration: 0.5,
-      delayChildren: 0.2,
-      staggerChildren: 0.05,
-    },
-  },
-  closed: {
-    clipPath: "inset(10% 50% 100% 0% round 10px)",
-    transition: {
-      type: "spring",
-      bounce: 0,
-      duration: 0.3,
-    },
-  },
-};
-//
-
-const itemVariants = {
-  open: {
-    opacity: 1,
-    y: 0,
-    transition: { type: "spring", stiffness: 300, damping: 24 },
-  },
-  closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
-};
+import animations from "../../resources/animations";
 
 const Navbar = () => {
   const [servicesMenuOpen, setServicesMenuOpen] = useState(false);
@@ -104,13 +74,13 @@ const Navbar = () => {
             <motion.ul
               initial={false}
               animate={servicesMenuOpen ? "open" : "closed"}
-              variants={listVariants}
+              variants={animations.hoverMenuVariants}
               className={styles.hover_menu}
               onMouseEnter={handleMouseEnterServices}
               onMouseLeave={handleMouseLeaveServices}
             >
               {services.map(({ id, text, path }) => (
-                <motion.li key={id} variants={itemVariants}>
+                <motion.li key={id} variants={animations.hoverMenuItemVariants}>
                   <Link
                     href={path}
                     onClick={handleMouseClick}
@@ -141,13 +111,13 @@ const Navbar = () => {
             <motion.ul
               initial={false}
               animate={technologiesMenuOpen ? "open" : "closed"}
-              variants={listVariants}
+              variants={animations.hoverMenuVariants}
               className={styles.hover_menu}
               onMouseEnter={handleMouseEnterTechnologies}
               onMouseLeave={handleMouseLeaveTechnologies}
             >
               {technologies.map(({ id, text, path }) => (
-                <motion.li key={id} variants={itemVariants}>
+                <motion.li key={id} variants={animations.hoverMenuItemVariants}>
                   <Link
                     href={path}
                     onClick={handleMouseClick}
@@ -188,13 +158,13 @@ const Navbar = () => {
             <motion.ul
               initial={false}
               animate={aboutMenuOpen ? "open" : "closed"}
-              variants={listVariants}
+              variants={animations.hoverMenuVariants}
               className={styles.hover_menu}
               onMouseEnter={handleMouseEnterAbout}
               onMouseLeave={handleMouseLeaveAbout}
             >
               {about.map(({ id, text, path }) => (
-                <motion.li key={id} variants={itemVariants}>
+                <motion.li key={id} variants={animations.hoverMenuItemVariants}>
                   <Link
                     href={path}
                     onClick={handleMouseClick}

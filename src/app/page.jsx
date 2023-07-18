@@ -17,7 +17,7 @@ const Home = () => {
       <Technologies />
       <Services />
       <Looking />
-      {/* <Achievements /> */}
+      <Achievements />
       {/* <Partners /> */}
       {/* <Contacts /> */}
     </>

@@ -5,17 +5,36 @@
   @extend %container;
 }
 
+.section {
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
+}
+
 .thumb {
   text-align: center;
-
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.58;
+
+  @media screen and (min-width: 767px) {
+    font-size: 24px;
+  }
 }
 
 .title {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 
-  @extend %second-title;
+  @extend %mobile_second_title;
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 60px;
+
+    font-size: 36px;
+    line-height: normal;
+    letter-spacing: 3.6px;
+
+    text-transform: uppercase;
+  }
 }
 
 .text {
@@ -36,10 +55,14 @@
 .link_list {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 60px;
   margin-bottom: 30px;
 
   @extend %list;
+
+  @media screen and (min-width: 500px) {
+    gap: 80px;
+  }
 }
 
 .link_item {

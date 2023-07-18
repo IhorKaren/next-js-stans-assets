@@ -3,8 +3,8 @@
 %container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media screen and (min-width: 1600px) {
     width: 1600px;
@@ -77,6 +77,24 @@
   line-height: 1.58;
   letter-spacing: 1.2px;
 
+  text-transform: uppercase;
+}
+
+%mobile_second_title {
+  color: $primary-title-color;
+
+  font-size: 22px;
+  line-height: 1.72;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+%mobile_midle_title {
+  color: $secondary-title-color;
+
+  font-size: 18px;
+  line-height: 2.11;
+  letter-spacing: 0.9px;
   text-transform: uppercase;
 }
 

@@ -1,11 +1,4 @@
-import Image from "next/image";
-
 import styles from "./services.module.scss";
-
-import image1 from "../../public/services-decorations/decor-bg1.png";
-import image2 from "../../public/services-decorations/decor-bg2.png";
-import image3 from "../../public/services-decorations/decor-bg3.png";
-import image4 from "../../public/services-decorations/decor-bg4.png";
 
 const Services = () => {
   return (
@@ -14,9 +7,6 @@ const Services = () => {
         <h3 className={styles.title}>SERVICES</h3>
         <ul className={styles.content_list}>
           <li className={styles.content_list_item}>
-            <div>
-              <Image src={image1} alt={""} />
-            </div>
             <div>
               <h4 className={styles.content_list_title}>GAME DEVELOPMENT</h4>
               <p className={styles.content_list_text}>
@@ -36,9 +26,6 @@ const Services = () => {
           </li>
           <li className={styles.content_list_item}>
             <div>
-              <Image src={image2} alt={""} />
-            </div>
-            <div>
               <h4 className={styles.content_list_title}>SDK DEVELOPMENT</h4>
               <p className={styles.content_list_text}>
                 SDK solves a big task: it ensures the data exchange between an
@@ -57,9 +44,6 @@ const Services = () => {
             </div>
           </li>
           <li className={styles.content_list_item}>
-            <div>
-              <Image src={image3} alt={""} />
-            </div>
             <div>
               <h4 className={styles.content_list_title}>
                 3D MODELING SERVICES
@@ -81,9 +65,6 @@ const Services = () => {
             </div>
           </li>
           <li className={styles.content_list_item}>
-            <div>
-              <Image src={image4} alt={""} />
-            </div>
             <div>
               <h4 className={styles.content_list_title}>VR APP DEVELOPMENT</h4>
               <p className={styles.content_list_text}>

@@ -5,7 +5,7 @@ import { BsAndroid2, BsApple, BsUnity } from "react-icons/bs";
 const Technologies = () => {
   return (
     <div className={styles.container}>
-      <section>
+      <section className={styles.section}>
         <div className={styles.thumb}>
           <h3 className={styles.title}>TECHNOLOGIES</h3>
           <p className={styles.text}>

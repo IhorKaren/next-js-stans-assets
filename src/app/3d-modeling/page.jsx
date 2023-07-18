@@ -15,9 +15,9 @@ const Modeling = () => {
       <ContentTextBlock firstTitle="Header1" secondTitle="Header2" />
       <ServicesLinks />
       <Looking />
-      {/* <ContentTextBlock /> */}
+      <ContentTextBlock firstTitle="Header1" secondTitle="Header2" />
       <Contacts />
-      {/* <ProjectsSlider /> */}
+      <ProjectsSlider />
       {/* <Faq /> */}
     </>
   );

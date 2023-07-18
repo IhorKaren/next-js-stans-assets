@@ -74,6 +74,10 @@
   @extend %list;
 }
 
+.form_thumb {
+  position: relative;
+}
+
 .decoration {
   width: 155px;
   position: absolute;

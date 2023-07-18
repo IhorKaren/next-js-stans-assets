@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import styles from "./achievements.module.scss";
 
 const Achievements = () => {

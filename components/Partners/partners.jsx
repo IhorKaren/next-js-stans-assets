@@ -9,9 +9,9 @@ const Partners = () => {
       <div className={styles.container}>
         <h3 className={styles.title}>PARTNERS</h3>
         <ul className={styles.list}>
-          {partnersList.map(({ id, img, width, height, alt }) => (
+          {partnersList.map(({ id, img, imgMobile, alt }) => (
             <li key={id} className={styles.item}>
-              <Image src={img} alt={alt} />
+              <Image src={img} alt={alt} className={styles.image} />
             </li>
           ))}
         </ul>

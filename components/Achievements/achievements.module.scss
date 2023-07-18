@@ -2,7 +2,14 @@
 @import "../../src/utils/variables.module.scss";
 
 .container {
+  padding: 0;
+
   @extend %container;
+
+  @media screen and (min-width: 767px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .title {
@@ -58,6 +65,8 @@
 
   @media screen and (min-width: 767px) {
     flex-basis: calc((100% - 75px) / 4);
+
+    height: 460px;
   }
 }
 
@@ -77,6 +86,10 @@
 
 .decoration {
   height: 290px;
+
+  @media screen and (min-width: 767px) {
+    height: 350px;
+  }
 }
 
 .text {

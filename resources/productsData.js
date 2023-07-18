@@ -58,7 +58,7 @@ const heroData = [
     Tag: "h1",
     title: "STAN’S ASSETS - IT OUTSOURCING DEVELOPMENT COMPANY",
     subtitle: "FOCUS ON THE PRODUCT AND LET US DO THE REST!",
-    text: "We’re a software development company focused on just one thing- offshore software development services. We have 16+ years ofexperience and a team of 450+ developers working efficientlyto deliver unique solutions to start-ups, software developmentcompanies, enterprises, and digital agencies to simplify theirIT outsourcing experience & reduce time/cost to market.",
+    text: "We’re an Indian software development company focused on just one thing- offshore software development services. We have 16+ years ofexperience and a team of 450+ developers working efficientlyto deliver unique solutions to start-ups, software developmentcompanies, enterprises, and digital agencies to simplify theirIT outsourcing experience & reduce time/cost to market.",
   },
   {
     id: 2,

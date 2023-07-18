@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, A11y } from "swiper/modules";
 import Link from "next/link";
-
+import ProjectsSliderMobile from "./projectsSliderMobile";
 import styles from "./projectsSlider.module.scss";
 
 import "swiper/css";
@@ -29,7 +29,7 @@ const ProjectsSlider = () => {
           >
             {data.projectsData.map(({ id, img, title, text, path }) => {
               return (
-                <SwiperSlide key={id} className={styles.slide}>
+                <SwiperSlide key={id}>
                   <div className={styles.slide_card}>
                     <Link href={path}>
                       <Image
@@ -50,6 +50,7 @@ const ProjectsSlider = () => {
               );
             })}
           </Swiper>
+          <ProjectsSliderMobile />
         </div>
       </div>
     </section>

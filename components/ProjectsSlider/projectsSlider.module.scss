@@ -4,6 +4,11 @@
 .section {
   position: relative;
   width: 100%;
+  padding-top: 0;
+
+  @media screen and (min-width: 767px) {
+    padding-top: 120px;
+  }
 }
 
 .background {
@@ -26,23 +31,38 @@
 }
 
 .main_title {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 
-  @extend %second-title;
+  text-align: center;
+
+  @extend %mobile_second_title;
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 100px;
+
+    color: $primary-title-color;
+
+    text-align: center;
+    font-size: 36px;
+    line-height: normal;
+    letter-spacing: 3.6px;
+
+    text-transform: uppercase;
+  }
 }
 
 .slider {
-  display: flex;
-  width: 1400px;
-  height: 480px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
-  padding-left: 40px;
-  justify-content: space-evenly;
-}
+  @media screen and (min-width: 767px) {
+    width: 1400px;
+    height: 480px;
 
-.slide {
-  width: 400px;
-  height: 440px;
+    padding-left: 40px;
+    justify-content: space-evenly;
+  }
 }
 
 .slide_card {
@@ -65,6 +85,42 @@
 
 .title {
   margin-bottom: 8px;
+
+  @extend %small-title;
+}
+
+// Mobile Slider Styles
+
+.slider_mobile {
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+.slide_card_mobile {
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  height: 390px;
+
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
+  overflow: hidden;
+}
+
+.image_mobile {
+  height: 224px;
+}
+
+.wrap_mobile {
+  padding: 12px;
+}
+
+.title_mobile {
+  margin-bottom: 4px;
+
+  font-size: 16px;
 
   @extend %small-title;
 }

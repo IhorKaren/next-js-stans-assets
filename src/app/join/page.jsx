@@ -11,7 +11,12 @@ import text from "../../../resources/joinToUs";
 const Join = () => {
   return (
     <>
-      <HeroBlock title="Join the team" img={image} alt="Woman and man" />
+      <HeroBlock
+        title="Join the team"
+        lastRoute="About Us"
+        img={image}
+        alt="Woman and man"
+      />
       <ContentTextBlock
         firstTextBlock={text.first}
         secondTextBlock={text.second}

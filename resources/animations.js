@@ -6,7 +6,7 @@ const faqVariants = {
   },
   visible: {
     opacity: 1,
-    maxHeight: "20vh",
+    maxHeight: "30vh",
     overflow: "visible",
     transition: {
       duration: 0.5,
@@ -64,7 +64,7 @@ const animations = {
   faqVariants,
   vacancyVariants,
   hoverMenuVariants,
-  hoverMenuItemVariants
+  hoverMenuItemVariants,
 };
 
 export default animations;

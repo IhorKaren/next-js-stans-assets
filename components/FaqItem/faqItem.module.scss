@@ -20,27 +20,52 @@
 }
 
 .item {
-  width: 780px;
   padding: 16px;
 
   border-bottom: 1px solid rgba(13, 110, 183, 0.5);
+
+  @media screen and (min-width: 767px) {
+    width: 780px;
+  }
 }
 
 .title {
-  font-size: 20px;
+  flex: 2;
+
+  text-align: start;
+
+  font-size: 18px;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1.55;
+
+  @media screen and (min-width: 767px) {
+    flex: 1;
+
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 .button {
+  width: 100%;
   display: flex;
-  align-items: center;
+  padding-top: 4px;
+  padding-left: 4px;
+
+  justify-content: center;
   margin-bottom: 14px;
 
   background-color: transparent;
   border: none;
 
   cursor: pointer;
+
+  @media screen and (min-width: 767px) {
+    padding-top: 0;
+    padding-left: 0;
+
+    align-items: center;
+  }
 }
 
 .icon {

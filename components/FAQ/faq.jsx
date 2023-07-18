@@ -24,7 +24,7 @@ const Faq = () => {
           <ul className={styles.faq_list}>
             {faqData.map(({ id, title, text }) => {
               return <FaqItem key={id} title={title} text={text} />;
-            })}
+            })} 
           </ul>
         </div>
       </div>

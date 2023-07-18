@@ -19,27 +19,56 @@
 
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top left 18%, top right 18%;
-  background-image: url("../../public/faq-left.png"),
-    url("../../public/faq-right.png.png");
+  background-position: top left, top right;
+  background-image: url("../../public/faq-left-mobile.png"),
+    url("../../public/faq-right-mobile.png");
+
+  @media screen and (min-width: 767px) {
+    background-position: top left 18%, top right 18%;
+    background-image: url("../../public/faq-left.png"),
+      url("../../public/faq-right.png");
+  }
 }
 
 .title {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 
-  @extend %second-title;
+  text-align: center;
+
+  @extend %mobile_second_title;
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 60px;
+
+    color: $primary-title-color;
+
+    text-align: center;
+    font-size: 36px;
+    line-height: normal;
+    letter-spacing: 3.6px;
+
+    text-transform: uppercase;
+  }
 }
 
 .titles_list {
   display: flex;
   flex-direction: column;
   gap: 26px;
+  padding-left: 50px;
 
   color: $secondary-title-color;
 
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.55;
+
+  @media screen and (min-width: 767px) {
+    padding-left: 0;
+
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 .faq_list {

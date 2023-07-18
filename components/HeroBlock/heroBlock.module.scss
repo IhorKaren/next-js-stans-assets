@@ -13,21 +13,44 @@
   @extend %container;
 }
 
+.thumb {
+  width: 100%;
+}
+
 .navigate {
   display: block;
-  margin-bottom: 90px;
+  margin-bottom: 36px;
 
   color: $primary-title-color;
 
   font-family: var(--font-montserrat);
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 2.16;
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 90px;
+
+    line-height: 1.5;
+  }
 }
 
 .title {
-  max-width: 640px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
-  @extend %main-title;
+  text-align: center;
+
+  @extend %middle-title;
+
+  @media screen and (min-width: 767px) {
+    max-width: 640px;
+    margin-bottom: 20px;
+
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+
+    text-transform: uppercase;
+  }
 }
 
 .text {

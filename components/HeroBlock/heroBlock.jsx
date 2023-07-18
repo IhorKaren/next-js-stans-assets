@@ -16,7 +16,7 @@ const HeroBlock = ({
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <div>
+        <div className={styles.thumb}>
           <span className={styles.navigate}>
             <Link href={lastRoute ? `/${toLowerCaseRoute}` : "/"}>
               {lastRoute}

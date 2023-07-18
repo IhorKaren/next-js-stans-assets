@@ -38,7 +38,7 @@
 
   fill: $secondary-title-color;
 
-  font-size: 20px;
+  font-size: 16px;
   line-height: normal;
 
   transition: color $timing-function, fill $timing-function;
@@ -47,6 +47,10 @@
   :focus {
     color: $hover-text-color;
     fill: $hover-text-color;
+  }
+
+  @media screen and (min-width: 767px) {
+    font-size: 20px;
   }
 }
 

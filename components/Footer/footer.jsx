@@ -67,23 +67,41 @@ const Footer = () => {
               <h4 className={styles.title}>SERVICES</h4>
               <ul className={styles.pages_list}>
                 <li>
-                  <Link href="/mobile-development">
+                  <Link
+                    href="/mobile-development"
+                    className={styles.navigation_link}
+                  >
                     Mobile Application Development
                   </Link>
                 </li>
                 <li>
-                  <Link href="/game-development">
+                  <Link
+                    href="/game-development"
+                    className={styles.navigation_link}
+                  >
                     Game Development Outsourcing
                   </Link>
                 </li>
                 <li>
-                  <Link href="/vr-development">VR App Development</Link>
+                  <Link
+                    href="/vr-development"
+                    className={styles.navigation_link}
+                  >
+                    VR App Development
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/sdk-development">SDK Development</Link>
+                  <Link
+                    href="/sdk-development"
+                    className={styles.navigation_link}
+                  >
+                    SDK Development
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/3d-modeling">3D Modeling services</Link>
+                  <Link href="/3d-modeling" className={styles.navigation_link}>
+                    3D Modeling services
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -91,13 +109,19 @@ const Footer = () => {
               <h4 className={styles.title}>TECHNOLOGIES</h4>
               <ul className={styles.pages_list}>
                 <li>
-                  <Link href="/android">Android</Link>
+                  <Link href="/android" className={styles.navigation_link}>
+                    Android
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/ios">IOS</Link>
+                  <Link href="/ios" className={styles.navigation_link}>
+                    IOS
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/unity">Unity</Link>
+                  <Link href="/unity" className={styles.navigation_link}>
+                    Unity
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -117,13 +141,19 @@ const Footer = () => {
               </Link>
               <ul className={styles.pages_list}>
                 <li>
-                  <Link href="/contacts">Contacts</Link>
+                  <Link href="/contacts" className={styles.navigation_link}>
+                    Contacts
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/team">Team</Link>
+                  <Link href="/team" className={styles.navigation_link}>
+                    Team
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/join">Join the Team</Link>
+                  <Link href="/join" className={styles.navigation_link}>
+                    Join the Team
+                  </Link>
                 </li>
               </ul>
             </li>

@@ -4,33 +4,64 @@
 .container {
   text-align: center;
 
-  color: $primary-text-color;
-
   @extend %container;
 }
 
 .title {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 
-  @extend %second-title;
+  text-align: center;
+
+  @extend %mobile_second_title;
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 60px;
+
+    font-size: 36px;
+    line-height: normal;
+    letter-spacing: 3.6px;
+
+    text-transform: uppercase;
+  }
 }
 
 .text {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
-  font-weight: 700;
-  font-size: 24px;
-  line-height: normal;
+  text-align: center;
+
+  font-weight: 600;
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: normal;
+  }
 }
 
 .text_wrap {
   display: block;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 100px;
+  }
 }
 
 .thumb {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 0px;
+  }
 }
 
 .list {
@@ -43,44 +74,16 @@
   @extend %list;
 }
 
-.address {
-  font-style: normal;
-}
-
-.link {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-
-  fill: $secondary-title-color;
-
-  font-size: 20px;
-  line-height: normal;
-
-  transition: color $timing-function, fill $timing-function;
-
-  &:hover,
-  :focus {
-    color: $hover-text-color;
-    fill: $hover-text-color;
-  }
-}
-
-.icon {
-  fill: inherit;
-  width: 24px;
-}
-
-.form_thumb {
-  position: relative;
-}
-
 .decoration {
   width: 155px;
   position: absolute;
   z-index: -1;
 
   background-repeat: no-repeat;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .decoration:nth-child(1) {

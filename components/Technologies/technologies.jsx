@@ -16,17 +16,29 @@ const Technologies = () => {
           </p>
           <ul className={styles.link_list}>
             <li className={styles.link_item}>
-              <Link href="/android" className={styles.link}>
+              <Link
+                href="/android"
+                aria-label="Navigate to android page"
+                className={styles.link}
+              >
                 <BsAndroid2 className={styles.icon} />
               </Link>
             </li>
             <li className={styles.link_item}>
-              <Link href="/ios" className={styles.link}>
+              <Link
+                href="/ios"
+                aria-label="Navigate to ios page"
+                className={styles.link}
+              >
                 <BsApple className={styles.icon} />
               </Link>
             </li>
             <li className={styles.link_item}>
-              <Link href="/unity" className={styles.link}>
+              <Link
+                href="/unity"
+                aria-label="Navigate to unity page"
+                className={styles.link}
+              >
                 <BsUnity className={styles.icon} />
               </Link>
             </li>

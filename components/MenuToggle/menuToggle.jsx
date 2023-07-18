@@ -31,7 +31,11 @@ const MenuToggle = ({ isOpen, toggle }) => {
   };
 
   return (
-    <button onClick={toggle} className={styles.button}>
+    <button
+      onClick={toggle}
+      className={styles.button}
+      aria-label="Navigation menu"
+    >
       <svg width="23" height="18" viewBox="0 0 23 18">
         <Path
           d={isOpen ? "M 3 16.5 L 17 2.5" : "M 2 2.5 L 20 2.5"}

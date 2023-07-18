@@ -59,12 +59,13 @@
   display: flex;
   align-items: center;
   flex-direction: column-reverse;
+  padding-bottom: 260px;
 
   gap: 30px;
 
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right;
+  background-position: bottom;
   background-image: url("../../public/services-decorations/decor-bg1.png");
 
   @media screen and (min-width: 767px) {
@@ -75,6 +76,8 @@
     gap: 0;
     padding-top: 40px;
     padding-bottom: 40px;
+
+    background-position: right;
   }
 }
 
@@ -85,7 +88,9 @@
 }
 
 .content_list_item:nth-child(2n) {
-  background-position: left;
+  @media screen and (min-width: 767px) {
+    background-position: left;
+  }
 }
 
 .content_list_item:nth-child(2) {

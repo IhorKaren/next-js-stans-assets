@@ -1,15 +1,15 @@
 const faqVariants = {
   hidden: {
     opacity: 0,
-    maxHeight: 0,
+    maxHeight: "0vh",
     overflow: "hidden",
   },
   visible: {
     opacity: 1,
-    maxHeight: "25vh",
+    maxHeight: "27vh",
     overflow: "visible",
     transition: {
-      duration: 0.7,
+      duration: 0.5,
     },
   },
   closed: {
@@ -17,7 +17,7 @@ const faqVariants = {
     maxHeight: 0,
     overflow: "hidden",
     transition: {
-      duration: 0.7,
+      duration: 0.5,
     },
   },
 };
@@ -26,7 +26,7 @@ const vacancyVariants = {
   ...faqVariants,
   visible: {
     ...faqVariants.visible,
-    maxHeight: "100vh",
+    maxHeight: "100%",
   },
 };
 

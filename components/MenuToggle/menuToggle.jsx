@@ -4,7 +4,7 @@ import styles from "./menuToggle.module.scss";
 const Path = ({ d, variants, className }) => (
   <motion.path
     strokeWidth="3"
-    stroke="#194484"
+    stroke="#ffffff"
     strokeLinecap="round"
     d={d}
     variants={variants}

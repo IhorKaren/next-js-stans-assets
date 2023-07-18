@@ -9,6 +9,8 @@ import "swiper/css/navigation";
 
 import data from "../../resources/productsData";
 
+import mobileImage from "../../public/mobile-hero.png";
+
 const Hero = () => {
   const buttons = () => {
     return (
@@ -73,6 +75,23 @@ const Hero = () => {
             }
           )}
         </Swiper>
+      </div>
+      <div className={styles.mobile_hero}>
+        <Image src={mobileImage} alt="Ori" />
+      </div>
+      <div className={styles.text_wrap}>
+        <h1 className={styles.mobile_title}>
+          FOCUS ON THE PRODUCT AND LET US DO THE REST!
+        </h1>
+        <div className={styles.btns_wrap}>{buttons()}</div>
+        <p>
+          We’re an Indian software development company focused on just one thing
+          - offshore software development services. We have 16+ years of
+          experience and a team of 450+ developers working efficiently to
+          deliver unique solutions to start-ups, software development companies,
+          enterprises, and digital agencies to simplify their IT outsourcing
+          experience & reduce time/cost to market.
+        </p>
       </div>
     </section>
   );

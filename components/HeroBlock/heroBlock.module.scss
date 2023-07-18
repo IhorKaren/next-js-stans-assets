@@ -14,7 +14,9 @@
 }
 
 .thumb {
-  width: 100%;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .navigate {
@@ -29,7 +31,7 @@
 
   @media screen and (min-width: 767px) {
     margin-bottom: 90px;
-
+    font-size: 16px;
     line-height: 1.5;
   }
 }

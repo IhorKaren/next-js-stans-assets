@@ -10,6 +10,8 @@ import {
   BsGithub,
 } from "react-icons/bs";
 
+import logo from "../../public/logo-white.png";
+
 const Footer = () => {
   return (
     <div>
@@ -17,12 +19,7 @@ const Footer = () => {
         <div className={styles.container}>
           <div>
             <Link href="/" className={styles.logo}>
-              <Image
-                src="/../public/logo-white.png"
-                width="202"
-                height="52"
-                alt="Stan`s assets"
-              />
+              <Image src={logo} alt="Stan`s assets" />
             </Link>
             <ul className={styles.links_list}>
               <li>

@@ -2,11 +2,13 @@ const services = [
   {
     id: 1,
     text: "MOBILE APPLICATION DEVELOPMENT",
+    mobileText: "MOBILE DEVELOPMENT",
     path: "/mobile-development",
   },
   {
     id: 2,
     text: "GAME DEVELOPMENT OUTSOURCING",
+    mobileText: "GAME DEVELOPMENT",
     path: "/game-development",
   },
   {
@@ -45,21 +47,21 @@ const technologies = [
 ];
 
 const about = [
-    {
-      id: 1,
-      text: "CONTACTS",
-      path: "/contacts",
-    },
-    {
-      id: 2,
-      text: "TEAM",
-      path: "/team",
-    },
-    {
-      id: 3,
-      text: "JOIN THE TEAM",
-      path: "/join",
-    },
-  ];
+  {
+    id: 1,
+    text: "CONTACTS",
+    path: "/contacts",
+  },
+  {
+    id: 2,
+    text: "TEAM",
+    path: "/team",
+  },
+  {
+    id: 3,
+    text: "JOIN THE TEAM",
+    path: "/join",
+  },
+];
 
 export { services, technologies, about };

@@ -1,11 +1,18 @@
 @import "./variables.module.scss";
 
 %container {
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 %list {
@@ -69,7 +76,7 @@
   font-size: 18px;
   line-height: 1.58;
   letter-spacing: 1.2px;
-  
+
   text-transform: uppercase;
 }
 

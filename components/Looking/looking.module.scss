@@ -3,12 +3,20 @@
 
 .thumb {
   width: 100%;
-  padding-top: 140px;
-  padding-bottom: 170px;
+  padding-top: 40px;
+  padding-bottom: 100px;
 
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
   background-image: url("../../public/looking-bg.png");
+
+  @media screen and (min-width: 767px) {
+    padding-top: 140px;
+    padding-bottom: 170px;
+
+    background-position: left;
+  }
 }
 
 .container {
@@ -20,16 +28,31 @@
 
   color: $secondary-text-color;
 
-  @extend %main-title;
+  @extend %middle-title;
+
+  @media screen and (min-width: 767px) {
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+
+    text-transform: uppercase;
+  }
 }
 
 .text {
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 
   color: $secondary-text-color;
 
-  font-size: 24px;
-  line-height: normal;
+  font-size: 16px;
+  line-height: 1.62;
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 36px;
+
+    font-size: 24px;
+    line-height: normal;
+  }
 }
 
 .button {

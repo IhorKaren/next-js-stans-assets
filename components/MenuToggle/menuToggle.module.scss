@@ -2,6 +2,8 @@
 @import "../../src/utils/variables.module.scss";
 
 .button {
+  position: relative;
+  z-index: 2;
   outline: none;
   border: none;
   cursor: pointer;

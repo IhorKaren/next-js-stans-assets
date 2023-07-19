@@ -3,31 +3,17 @@ const faqVariants = {
     opacity: 0,
     maxHeight: "0vh",
     overflow: "hidden",
+    transition: {
+      opacity: { duration: 1 },
+      duration: 1,
+    },
   },
   visible: {
     opacity: 1,
-    maxHeight: "27vh",
-    overflow: "visible",
-    transition: {
-      duration: 0.5,
-    },
-  },
-  closed: {
-    opacity: 0,
-    maxHeight: 0,
+    maxHeight: "30vh",
     overflow: "hidden",
     transition: {
-      duration: 0.5,
-    },
-  },
-};
-
-const vacancyVariants = {
-  ...faqVariants,
-  visible: {
-    ...faqVariants.visible,
-    maxHeight: "200vh",
-    transition: {
+      opacity: { duration: 0.5 },
       duration: 1,
     },
   },
@@ -63,11 +49,43 @@ const hoverMenuItemVariants = {
   closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
 };
 
+const vacancyMenuVariants = {
+  open: {
+    maxHeight: "200vh",
+    transition: {
+      type: "spring",
+      bounce: 0,
+      duration: 1,
+      delayChildren: 0.3,
+      staggerChildren: 0.1,
+    },
+  },
+  closed: {
+    maxHeight: "0vh",
+    overflow: "hidden",
+    transition: {
+      type: "spring",
+      bounce: 0,
+      duration: 1,
+    },
+  },
+};
+
+const vacrncyMenuItemVariants = {
+  open: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 300, damping: 24 },
+  },
+  closed: { opacity: 0, y: 20, transition: { duration: 0.4 } },
+};
+
 const animations = {
   faqVariants,
-  vacancyVariants,
   hoverMenuVariants,
   hoverMenuItemVariants,
+  vacancyMenuVariants,
+  vacrncyMenuItemVariants,
 };
 
 export default animations;

@@ -4,7 +4,7 @@ import styles from "./vacancyList.module.scss";
 
 const VacancyList = ({ data }) => {
   return (
-    <section>
+    <section className={styles.section}>
       <div className={styles.container}>
         <h2 className={styles.title}>Current openings</h2>
         <ul className={styles.list}>

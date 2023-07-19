@@ -67,14 +67,15 @@ const VacancyItem = ({
           </button>
         </div>
 
-        <motion.div
-          variants={animations.vacancyVariants}
-          initial="hidden"
-          animate={isVacancyOpen ? "visible" : "hidden"}
+        <motion.ul
+          initial={false}
+          animate={isVacancyOpen ? "open" : "closed"}
+          variants={animations.vacancyMenuVariants}
+          className={styles.criterion_list}
         >
-          <ul className={styles.criterion_list}>
-            <li>
-              <h4 className={styles.requirements_title}>Requirements</h4>
+          <motion.li variants={animations.vacrncyMenuItemVariants}>
+            <h4 className={styles.requirements_title}>Requirements</h4>
+            {isVacancyOpen && (
               <ul className={styles.requirements_list}>
                 {requirements.map((text, index) => (
                   <li key={index}>
@@ -82,9 +83,11 @@ const VacancyItem = ({
                   </li>
                 ))}
               </ul>
-            </li>
-            <li>
-              <h4 className={styles.requirements_title}>Preferences</h4>
+            )}
+          </motion.li>
+          <motion.li variants={animations.vacrncyMenuItemVariants}>
+            <h4 className={styles.requirements_title}>Preferences</h4>
+            {isVacancyOpen && (
               <ul className={styles.requirements_list}>
                 {preferences.map((text, index) => (
                   <li key={index}>
@@ -92,19 +95,21 @@ const VacancyItem = ({
                   </li>
                 ))}
               </ul>
-            </li>
-            <li>
-              <h4 className={styles.requirements_title}>Responsibilities</h4>
+            )}
+          </motion.li>
+          <motion.li variants={animations.vacrncyMenuItemVariants}>
+            <h4 className={styles.requirements_title}>Responsibilities</h4>
+            {responsibilities && (
               <ul className={styles.requirements_list}>
-                {responsibilities.map((text, index) => (
+                {preferences.map((text, index) => (
                   <li key={index}>
                     <p>{text}</p>
                   </li>
                 ))}
               </ul>
-            </li>
-          </ul>
-        </motion.div>
+            )}
+          </motion.li>
+        </motion.ul>
       </li>
       {isModalOpen && (
         <Modal closeModal={closeModal} isModalOpen={isModalOpen}>

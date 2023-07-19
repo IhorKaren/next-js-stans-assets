@@ -1,6 +1,12 @@
 @import "../../src/utils/placeholders.module.scss";
 @import "../../src/utils/variables.module.scss";
 
+.section {
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+  }
+}
+
 .container {
   @extend %container;
   padding-bottom: 80px;
@@ -33,6 +39,7 @@
 }
 
 .titles_list {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -45,6 +52,7 @@
 }
 
 .list {
+  min-width: 340px;
   display: flex;
   flex-direction: column;
   gap: 50px;

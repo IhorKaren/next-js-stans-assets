@@ -30,10 +30,15 @@
   color: $primary-title-color;
 
   font-family: var(--font-raleway);
-  font-size: 24px;
-  line-height: 38px;
-  letter-spacing: 1.2px;
+
+  @extend %mobile_midle_title;
   text-transform: uppercase;
+
+  @media screen and (min-width: 767px) {
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 1.2px;
+  }
 }
 
 .form_text {
@@ -91,7 +96,7 @@
 
 .input_file_btn {
   position: relative;
-  width: 140px;
+  width: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,6 +112,10 @@
   :focus {
     color: $secondary-text-color;
     background-color: $primary-button-color;
+  }
+
+  @media screen and (min-width: 767px) {
+    width: 140px;
   }
 }
 

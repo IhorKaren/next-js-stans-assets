@@ -21,10 +21,14 @@
 
 .item {
   width: 100%;
-  padding: 0 30px 0 30px;
+  padding: 0 10px 0 10px;
 
   border-radius: 16px;
   box-shadow: 0px 3px 16px rgba(29, 51, 107, 0.15);
+
+  @media screen and (min-width: 768px) {
+    padding: 0 30px 0 30px;
+  }
 }
 
 .main_title {
@@ -32,13 +36,22 @@
 
   color: $primary-title-color;
 
-  @extend %middle-title;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.58;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
 }
 
 .buttons_thumb {
   display: flex;
   justify-content: space-between;
-  padding: 29px 0 29px 0;
+  padding: 10px 0 10px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 29px 0 29px 0;
+  }
 }
 
 .button {
@@ -71,6 +84,8 @@
 }
 
 .modal_btn {
+  width: 120px;
+
   color: $secondary-text-color;
   background-color: $primary-button-color;
   background-color: $primary-button-color;
@@ -82,19 +97,28 @@
     background-color: $secondary-button-color;
     background-color: $secondary-button-color;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 160px;
+  }
 }
 
 .criterion_list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  padding: 40px;
+  gap: 15px;
+  padding: 20px;
 
   &:nth-child(1) {
     border-top: 1px solid $primary-title-color;
   }
 
   @extend %list;
+
+  @media screen and (min-width: 768px) {
+    gap: 30px;
+    padding: 40px;
+  }
 }
 
 .requirements_title {
@@ -102,10 +126,15 @@
 
   color: $primary-title-color;
 
-  font-size: 20px;
-  line-height: 1.9;
-  letter-spacing: 1.4px;
+  font-size: 18px;
+  line-height: 1.55;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.9;
+    letter-spacing: 1.4px;
+  }
 }
 
 .requirements_list {

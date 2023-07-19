@@ -4,6 +4,8 @@ import ContactsLinks from "../../../components/ContactsLinks/contactsLinks";
 import Looking from "../../../components/Looking/looking";
 import ProjectsSlider from "../../../components/ProjectsSlider/projectsSlider";
 
+import styles from "./contactsMobile.module.scss";
+
 const ContactsPage = () => {
   return (
     <>
@@ -17,7 +19,10 @@ const ContactsPage = () => {
           btnText="SEND REQUEST"
           text="Hit us up any time through email with any idea and help us turn your great ideas into brilliant projects"
         />
-        <ContactsLinks columns />
+
+        <div className={styles.mobile_thumb}>
+          <ContactsLinks columns />
+        </div>
       </HeroBlock>
       <Looking />
       <ProjectsSlider />

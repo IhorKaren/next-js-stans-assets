@@ -1,0 +1,12 @@
+.mobile_thumb {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 10px;
+
+  @media screen and (min-width: 767px) {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+}

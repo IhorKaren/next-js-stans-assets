@@ -34,21 +34,31 @@
 
 .item {
   width: 100%;
-  height: 340px;
+
   display: flex;
+  flex-direction: column;
 
   border-radius: 16px;
   background-color: #ffffff;
   box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
   overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    height: 340px;
+    flex-direction: row;
+  }
 }
 
 .item:nth-child(2n) {
-  flex-direction: row-reverse;
+  @media screen and (min-width: 768px) {
+    flex-direction: row-reverse;
+  }
 }
 
 .image_thumb {
-  min-width: 550px;
+  @media screen and (min-width: 768px) {
+    min-width: 550px;
+  }
 }
 
 .text_thumb {
@@ -56,18 +66,41 @@
   flex-direction: column;
   justify-content: space-around;
   padding: 24px;
+  gap: 10px;
+
+  @media screen and (min-width: 768px) {
+    gap: 0;
+  }
 }
 
 .title {
-  margin-bottom: 8px;
+  color: $primary-title-color;
 
-  @extend %middle-title;
+  text-align: center;
+
+  font-size: 18px;
+  line-height: 1.58;
+  letter-spacing: 1.2px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 8px;
+
+    text-align: start;
+
+    font-size: 24px;
+    line-height: 1.58;
+    letter-spacing: 1.2px;
+
+    text-transform: uppercase;
+  }
 }
 
 .button {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 
   color: $primary-button-color;
   border-color: $primary-button-color;
@@ -78,5 +111,10 @@
   :focus {
     color: $secondary-text-color;
     background-color: $primary-button-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
   }
 }

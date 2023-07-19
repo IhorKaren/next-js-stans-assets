@@ -44,12 +44,13 @@
 }
 
 .item {
+  position: relative;
   width: 320px;
   height: 400px;
   display: flex;
   flex-direction: column;
 
-  padding: 20px;
+  padding: 290px 20px 10px 20px;
 
   z-index: -1;
 
@@ -59,41 +60,25 @@
 
   text-align: center;
 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../../public/achievements/achievements1.png");
-
   @media screen and (min-width: 767px) {
     flex-basis: calc((100% - 75px) / 4);
-
+    padding: 320px 20px 10px 20px;
     height: 460px;
   }
 }
 
-.item:nth-child(2) {
-  background-image: url("../../public/achievements/achievements2.png");
+.image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
-.item:nth-child(3) {
-  background-size: contain;
-  background-size: 240px;
-  background-position: center top 40%;
-  background-image: url("../../public/achievements/achievements3.png");
-}
-
-.item:nth-child(4) {
-  background-size: contain;
-  background-size: 240px;
-  background-position: center top 40%;
-  background-image: url("../../public/achievements/achievements4.png");
-}
-
-.decoration {
-  height: 290px;
-
-  @media screen and (min-width: 767px) {
-    height: 350px;
-  }
+.image_centered {
+  position: absolute;
+  top: 85px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .text {

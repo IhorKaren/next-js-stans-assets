@@ -92,6 +92,8 @@
 // Mobile Slider Styles
 
 .slider_mobile {
+padding-bottom: 20px;
+
   @media screen and (min-width: 767px) {
     display: none;
   }

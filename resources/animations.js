@@ -26,7 +26,10 @@ const vacancyVariants = {
   ...faqVariants,
   visible: {
     ...faqVariants.visible,
-    maxHeight: "100%",
+    maxHeight: "200vh",
+    transition: {
+      duration: 1,
+    },
   },
 };
 

@@ -24,15 +24,20 @@
 
 .list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 80px;
+  flex-direction: column;
+  gap: 40px;
 
   @extend %list;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
 }
 
 .item {
-  flex-basis: calc((100% - 160px) / 3);
-  height: 440px;
+  height: 400px;
 
   border-radius: 16px;
   background: var(--white, #fff);
@@ -46,6 +51,11 @@
   :focus {
     box-shadow: 0px 4px 20px 4px rgba(29, 51, 107, 0.2);
   }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 160px) / 3);
+    height: 440px;
+  }
 }
 
 .icon {
@@ -58,9 +68,13 @@
 .image_thumb {
   position: relative;
 
-  height: 280px;
+  height: 230px;
 
   overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    height: 280px;
+  }
 }
 
 .overlay {
@@ -138,5 +152,15 @@
 .title {
   margin-bottom: 8px;
 
-  @extend %middle-title;
+  color: $secondary-title-color;
+
+  @extend %small-title;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.58;
+    letter-spacing: 1.2px;
+
+    text-transform: uppercase;
+  }
 }

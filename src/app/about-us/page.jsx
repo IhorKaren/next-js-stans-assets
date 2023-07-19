@@ -11,6 +11,7 @@ const About = () => {
       <HeroBlock
         title="We are an outsourcing team focused on Games, VR, 3D, SDK, and Unity packages."
         route="About Us"
+        routeName='About Us'
         img={image}
         alt="Man with tablet"
       />

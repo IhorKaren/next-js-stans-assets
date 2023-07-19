@@ -4,15 +4,24 @@
 .container {
   padding-top: 0;
   @extend %container;
+
+  @media screen and (max-width: 650px) {
+    max-width: 100%;
+    overflow-x: scroll;
+  }
 }
 
 .table {
-  width: 100%;
+  min-width: 600px;
 
   border-radius: 8px;
   overflow: hidden;
 
   box-shadow: 0px 3px 16px 4px rgba(29, 51, 107, 0.1);
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
 }
 
 .table_head {
@@ -60,5 +69,8 @@
 
   &:nth-child(2) {
     border-left: 2px solid #84b5ff;
+  }
+
+  @media screen and (min-width: 768px) {
   }
 }

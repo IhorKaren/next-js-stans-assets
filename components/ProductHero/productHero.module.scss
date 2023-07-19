@@ -4,10 +4,16 @@
 .section {
   position: relative;
   width: 100%;
-  height: 1000px;
-  padding-top: 100px;
+
+  padding-top: 60px;
 
   color: $secondary-text-color;
+
+  @media screen and (min-width: 768px) {
+    height: 1000px;
+    height: 1000px;
+    padding-top: 100px;
+  }
 }
 
 .image {
@@ -23,9 +29,13 @@
 }
 
 .route {
-  margin-bottom: 120px;
+  margin-bottom: 10px;
 
   font-family: var(--font-montserrat);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 120px;
+  }
 }
 
 .thumb {
@@ -33,15 +43,33 @@
 }
 
 .title {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   color: $secondary-text-color;
 
-  @extend %main-title;
+  @extend %middle-title;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+
+    text-transform: uppercase;
+  }
 }
 
 .text {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+
+  color: $primary-text-color;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+
+    color: $secondary-text-color;
+  }
 }
 
 .list {
@@ -60,13 +88,17 @@
   width: 100%;
   height: 100%;
 
-  fill: #fff;
+  fill: $primary-text-color;
 
   transition: fill $timing-function;
 
   &:hover,
   :focus {
     fill: $hover-text-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    fill: $secondary-text-color;
   }
 }
 

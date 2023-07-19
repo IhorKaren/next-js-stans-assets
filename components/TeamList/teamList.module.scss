@@ -15,22 +15,36 @@
 }
 
 .title {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 
   color: $primary-title-color;
 
   text-align: center;
 
-  @extend %main-title;
+  @extend %mobile_second_title;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 70px;
+
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+
+    text-transform: uppercase;
+  }
 }
 
 .list {
   display: flex;
   flex-wrap: wrap;
-  gap: 80px;
+  gap: 40px;
   justify-content: center;
 
   @extend %list;
+
+  @media screen and (min-width: 768px) {
+    gap: 80px;
+  }
 }
 
 .item {
@@ -38,10 +52,14 @@
   height: 520px;
 
   border-radius: 16px;
-  background: var(--white, #fff);
+  background: #fff;
   box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
 
   overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    height: 520px;
+  }
 }
 
 .text_thumb {
@@ -55,5 +73,15 @@
 .name {
   margin-bottom: 8px;
 
-  @extend %middle-title;
+  color: $secondary-title-color;
+
+  @extend %small-title;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.58;
+    letter-spacing: 1.2px;
+
+    text-transform: uppercase;
+  }
 }

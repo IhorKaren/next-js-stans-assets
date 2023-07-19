@@ -4,22 +4,35 @@
 .section {
   position: relative;
   width: 100%;
-  height: 780px;
+  height: 320px;
   display: flex;
   justify-content: center;
-  padding-bottom: 780px;
+  padding-bottom: 420px;
+
+  @media screen and (min-width: 768px) {
+    height: 780px;
+    padding-bottom: 780px;
+  }
 }
 
 .background {
   position: absolute;
-  top: 80px;
+  top: 60px;
+  right: 20px;
   width: 100%;
-  height: 780px;
+  height: 320px;
 
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   background-image: url("../../public/404.png");
+
+  @media screen and (min-width: 768px) {
+    top: 80px;
+    right: 0;
+    width: 100%;
+    height: 780px;
+  }
 }
 
 .container {
@@ -42,10 +55,20 @@
 
   color: $primary-title-color;
 
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 2.64px;
+  text-align: center;
+
+  font-size: 22px;
+  line-height: 1.72;
+  letter-spacing: 1.1px;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+  }
 }
 
 .link {

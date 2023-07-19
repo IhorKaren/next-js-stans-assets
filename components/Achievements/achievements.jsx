@@ -1,3 +1,5 @@
+"use client";
+import LazyLoad from "react-lazyload";
 import styles from "./achievements.module.scss";
 
 const Achievements = () => {
@@ -7,28 +9,36 @@ const Achievements = () => {
         <h3 className={styles.title}>ACHIEVEMENTS</h3>
         <ul className={styles.list}>
           <li className={styles.item}>
-            <div className={styles.decoration}></div>
+            <LazyLoad height={290} offset={100}>
+              <div className={styles.decoration}></div>
+            </LazyLoad>
             <p>
               Collaboration with <strong>Moon Studios</strong> on WotW AAA Unity
               game
             </p>
           </li>
           <li className={styles.item}>
-            <div className={styles.decoration}></div>
+            <LazyLoad height={290} offset={100}>
+              <div className={styles.decoration}></div>
+            </LazyLoad>
             <p className={styles.text}>
               <span className={styles.accent}>50+</span> successfully launched
               projects on the market
             </p>
           </li>
           <li className={styles.item}>
-            <div className={styles.decoration}></div>
+            <LazyLoad height={290} offset={100}>
+              <div className={styles.decoration}></div>
+            </LazyLoad>
             <p className={styles.text}>
               Asset store publisher since
               <span className={styles.accent}> 2013</span>
             </p>
           </li>
           <li className={styles.item}>
-            <div className={styles.decoration}></div>
+            <LazyLoad height={290} offset={100}>
+              <div className={styles.decoration}></div>
+            </LazyLoad>
             <p className={styles.text}>
               Our products (packages) used by
               <span className={styles.accent}> 100k+</span> devs in

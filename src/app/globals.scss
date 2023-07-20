@@ -27,16 +27,22 @@ body {
   color: $primary-text-color;
   line-height: 1.62;
 
-  --swiper-navigation-size: 54px;
-  --swiper-navigation-top-offset: 47%;
+  --swiper-navigation-size: 42px;
+  --swiper-navigation-top-offset: 40%;
   --swiper-navigation-sides-offset: 0px;
+
+  @media screen and (min-width: 1024px) {
+    --swiper-navigation-size: 54px;
+    --swiper-navigation-top-offset: 47%;
+    --swiper-navigation-sides-offset: 0px;
+  }
 }
 
 section {
   padding-top: 80px;
   padding-bottom: 80px;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     padding-top: 120px;
     padding-bottom: 120px;
   }

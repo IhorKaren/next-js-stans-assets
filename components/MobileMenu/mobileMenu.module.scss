@@ -9,12 +9,16 @@
   padding: 0px 15px;
 
   @media screen and (min-width: 768px) {
+    padding: 0px 30px;
+  }
+
+  @media screen and (min-width: 1024px) {
     display: none;
   }
 }
 
 .mobile_menu {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     display: none;
   }
 }
@@ -41,6 +45,10 @@
   padding: 0 15px 15px 40px;
 
   @extend %list;
+
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+  }
 }
 
 .nav_list_item {
@@ -53,6 +61,11 @@
   font-weight: 600;
 
   will-change: transform, opacity, filter;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.55;
+  }
 }
 
 .nav_list_item_list {

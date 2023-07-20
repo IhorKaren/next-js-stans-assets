@@ -66,9 +66,8 @@ const Hero = () => {
                           </>
                         )}
                       </p>
+                      {buttons()}
                     </div>
-                    {buttons()}
-                    <div className={styles.cadsada}></div>
                   </div>
                 </SwiperSlide>
               );

@@ -18,7 +18,7 @@ const ProjectsSliderMobile = () => {
       speed={1200}
       slidesPerView={1}
       spaceBetween={10}
-      navigation={false}
+      navigation={true}
       modules={[Navigation, A11y]}
       className={styles.slider_mobile}
     >

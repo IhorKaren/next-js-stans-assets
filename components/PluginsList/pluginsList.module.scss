@@ -25,6 +25,7 @@
 .list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 40px;
 
   @extend %list;
@@ -32,11 +33,19 @@
   @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 80px;
   }
 }
 
 .item {
+  width: 320px;
   height: 400px;
 
   border-radius: 16px;
@@ -53,6 +62,10 @@
   }
 
   @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 40px) / 2);
+  }
+
+  @media screen and (min-width: 1024px) {
     flex-basis: calc((100% - 160px) / 3);
     height: 440px;
   }
@@ -73,6 +86,10 @@
   overflow: hidden;
 
   @media screen and (min-width: 768px) {
+    height: 210px;
+  }
+
+  @media screen and (min-width: 1024px) {
     height: 280px;
   }
 }
@@ -156,7 +173,7 @@
 
   @extend %small-title;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     font-size: 24px;
     line-height: 1.58;
     letter-spacing: 1.2px;

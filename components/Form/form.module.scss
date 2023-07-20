@@ -1,6 +1,14 @@
 @import "../../src/utils/placeholders.module.scss";
 @import "../../src/utils/variables.module.scss";
 
+.form_thumb {
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .form {
   position: relative;
   display: flex;

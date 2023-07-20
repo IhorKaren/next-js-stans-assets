@@ -1,10 +1,12 @@
 .mobile_thumb {
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
   padding-top: 30px;
   padding-left: 10px;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1024px) {
     display: block;
     width: 100%;
     padding: 0;

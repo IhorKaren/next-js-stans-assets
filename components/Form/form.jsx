@@ -2,7 +2,7 @@ import styles from "./form.module.scss";
 
 const Form = ({ title, text, btnText, optionalPortfolio, optionalFile }) => {
   return (
-    <div>
+    <div className={styles.form_thumb}>
       <form name="contactUs_form" autoComplete="off" className={styles.form}>
         <div>
           {title && <strong className={styles.form_title}>{title}</strong>}

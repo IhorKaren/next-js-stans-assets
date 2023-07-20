@@ -74,3 +74,11 @@
     line-height: 1.41;
   }
 }
+
+.image {
+  @media screen and (max-width: 1023px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

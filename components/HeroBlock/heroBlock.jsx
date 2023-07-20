@@ -28,7 +28,7 @@ const HeroBlock = ({
           {text && <p className={styles.text}>{text}</p>}
         </div>
         {img && (
-          <div>
+          <div className={styles.image}>
             <Image src={img} alt={alt} placeholder="blur" />
           </div>
         )}

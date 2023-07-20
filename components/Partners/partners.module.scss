@@ -7,7 +7,7 @@
 
   padding: 0;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1024px) {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -40,7 +40,7 @@
 
   @extend %mobile_second_title;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1024px) {
     margin-bottom: 80px;
 
     font-size: 36px;
@@ -59,7 +59,7 @@
 
   @extend %list;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1024px) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -83,15 +83,26 @@
   &:hover {
     opacity: 0.6;
   }
+  @media screen and (min-width: 500px) {
+    flex-wrap: wrap;
+    width: 232px;
+    height: 130px;
+  }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    width: 282px;
+    height: 160px;
+  }
+
+  @media screen and (min-width: 1024px) {
     width: 322px;
     height: 160px;
   }
 }
 
 .image {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1024px) {
     width: 40%;
   }
 }

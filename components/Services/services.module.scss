@@ -10,9 +10,6 @@
   @extend %container;
 }
 
-// .image {
-// }
-
 .title {
   margin-bottom: 20px;
 
@@ -20,7 +17,7 @@
 
   @extend %mobile_second_title;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1024px) {
     margin-bottom: 60px;
 
     font-size: 36px;
@@ -46,7 +43,7 @@
 
   @extend %mobile_midle_title;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1024px) {
     text-align: start;
   }
 }
@@ -68,7 +65,15 @@
   background-position: bottom;
   background-image: url("../../public/services-decorations/decor-bg1.png");
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 500px) {
+    padding-bottom: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 440px;
+  }
+
+  @media screen and (min-width: 1024px) {
     width: 100%;
     justify-content: space-between;
     flex-direction: row;
@@ -82,13 +87,13 @@
 }
 
 .content_list_item:nth-child(2n) {
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1024px) {
     flex-direction: row-reverse;
   }
 }
 
 .content_list_item:nth-child(2n) {
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1024px) {
     background-position: left;
   }
 }

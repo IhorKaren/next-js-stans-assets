@@ -6,7 +6,7 @@
 
   @extend %container;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1024px) {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -19,7 +19,7 @@
 
   @extend %mobile_second_title;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1024px) {
     margin-bottom: 100px;
 
     font-size: 36px;
@@ -37,8 +37,17 @@
 
   @extend %list;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     gap: 25px;
   }
 }
@@ -60,7 +69,11 @@
 
   text-align: center;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
+    padding: 300px 20px 10px 20px;
+  }
+
+  @media screen and (min-width: 1024px) {
     flex-basis: calc((100% - 75px) / 4);
     padding: 320px 20px 10px 20px;
     height: 460px;

@@ -11,7 +11,7 @@
   background-position: top;
   background-image: url("../../public/looking-bg.png");
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1024px) {
     padding-top: 140px;
     padding-bottom: 170px;
 
@@ -30,7 +30,7 @@
 
   @extend %middle-title;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1024px) {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 2.64px;
@@ -47,7 +47,7 @@
   font-size: 16px;
   line-height: 1.62;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1024px) {
     margin-bottom: 36px;
 
     font-size: 24px;

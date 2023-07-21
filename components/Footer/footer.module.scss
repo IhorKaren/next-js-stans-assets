@@ -10,7 +10,7 @@
 
   background-color: $primary-title-color;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     height: 700px;
     padding-top: 360px;
 
@@ -29,7 +29,7 @@
 
   @extend %container;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
   }
 }
@@ -48,7 +48,7 @@
 
   @extend %list;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 0;
     max-width: 220px;
   }
@@ -79,7 +79,7 @@
 
   @extend %list;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
     margin-left: auto;
     gap: 120px;
@@ -89,7 +89,7 @@
 .navigation_link {
   padding-left: 20px;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     padding-left: 0;
   }
 }
@@ -150,7 +150,7 @@
 
   @extend %list;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     gap: 18px;
   }
 }
@@ -173,7 +173,7 @@
   justify-content: space-between;
   text-align: center;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     text-align: start;
   }
 }
@@ -182,7 +182,7 @@
   display: flex;
   gap: 20px;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     gap: 40px;
   }
 }

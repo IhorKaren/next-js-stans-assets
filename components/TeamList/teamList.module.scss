@@ -23,7 +23,7 @@
 
   @extend %mobile_second_title;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 70px;
 
     font-size: 44px;
@@ -43,7 +43,7 @@
 
   @extend %list;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     gap: 80px;
   }
 }
@@ -62,7 +62,7 @@
     flex-basis: calc((100% - 40px) / 2);
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     flex-basis: auto;
     width: 322px;
     height: 520px;
@@ -84,7 +84,7 @@
 
   @extend %small-title;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     font-size: 24px;
     line-height: 1.58;
     letter-spacing: 1.2px;

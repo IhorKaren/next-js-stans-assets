@@ -14,7 +14,7 @@
 }
 
 .thumb {
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1200px) {
     width: 100%;
   }
 }
@@ -29,7 +29,7 @@
   font-size: 12px;
   line-height: 2.16;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 90px;
     font-size: 16px;
     line-height: 1.5;
@@ -43,7 +43,7 @@
 
   @extend %middle-title;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     max-width: 640px;
     margin-bottom: 20px;
 
@@ -65,7 +65,7 @@
   font-weight: 600;
   line-height: 1.55;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 0;
 
     text-align: start;
@@ -76,7 +76,7 @@
 }
 
 .image {
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1199px) {
     width: 100%;
     display: flex;
     justify-content: center;

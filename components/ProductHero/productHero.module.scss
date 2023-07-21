@@ -4,14 +4,26 @@
 .section {
   position: relative;
   width: 100%;
-
+  height: 600px;
   padding-top: 60px;
 
   color: $secondary-text-color;
 
+  @media screen and (min-width: 600px) {
+    height: 700px;
+  }
+
   @media screen and (min-width: 768px) {
+    height: 600px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
     height: 1000px;
-    height: 1000px;
+
     padding-top: 100px;
   }
 }
@@ -33,13 +45,32 @@
 
   font-family: var(--font-montserrat);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 120px;
   }
 }
 
 .thumb {
   max-width: 650px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 500px) {
+    height: 65%;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: auto;
+  }
+
+  @media screen and (min-width: 860px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: auto;
+  }
 }
 
 .title {
@@ -49,7 +80,11 @@
 
   @extend %middle-title;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 500px) {
+    margin-bottom: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-bottom: 20px;
 
     font-size: 44px;
@@ -61,14 +96,20 @@
 }
 
 .text {
-  margin-bottom: 30px;
-
   color: $primary-text-color;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 60px;
-
+    max-width: 380px;
     color: $secondary-text-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 480px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    max-width: 100%;
   }
 }
 
@@ -97,7 +138,7 @@
     fill: $hover-text-color;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 860px) {
     fill: $secondary-text-color;
   }
 }

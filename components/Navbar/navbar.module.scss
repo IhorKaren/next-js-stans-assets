@@ -26,11 +26,11 @@
 }
 
 .site_nav_wrapper {
-  width: 1600px;
+  width: 100%;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   @media screen and (max-width: 1023px) {

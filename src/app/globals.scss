@@ -29,9 +29,9 @@ body {
 
   --swiper-navigation-size: 42px;
   --swiper-navigation-top-offset: 40%;
-  --swiper-navigation-sides-offset: 0px;
+  --swiper-navigation-sides-offset: 5%;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     --swiper-navigation-size: 54px;
     --swiper-navigation-top-offset: 47%;
     --swiper-navigation-sides-offset: 0px;

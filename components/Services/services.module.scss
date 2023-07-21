@@ -17,7 +17,7 @@
 
   @extend %mobile_second_title;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 60px;
 
     font-size: 36px;
@@ -43,7 +43,7 @@
 
   @extend %mobile_midle_title;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     text-align: start;
   }
 }
@@ -73,7 +73,7 @@
     padding-bottom: 440px;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     width: 100%;
     justify-content: space-between;
     flex-direction: row;
@@ -87,13 +87,13 @@
 }
 
 .content_list_item:nth-child(2n) {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row-reverse;
   }
 }
 
 .content_list_item:nth-child(2n) {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     background-position: left;
   }
 }

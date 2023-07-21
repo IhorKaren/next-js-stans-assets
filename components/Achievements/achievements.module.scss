@@ -6,7 +6,7 @@
 
   @extend %container;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -19,7 +19,7 @@
 
   @extend %mobile_second_title;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 100px;
 
     font-size: 36px;
@@ -44,7 +44,7 @@
     gap: 25px;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -73,7 +73,7 @@
     padding: 300px 20px 10px 20px;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 75px) / 4);
     padding: 320px 20px 10px 20px;
     height: 460px;

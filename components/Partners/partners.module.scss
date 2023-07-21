@@ -7,7 +7,7 @@
 
   padding: 0;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -40,7 +40,7 @@
 
   @extend %mobile_second_title;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 80px;
 
     font-size: 36px;
@@ -59,7 +59,7 @@
 
   @extend %list;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -95,14 +95,14 @@
     height: 160px;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     width: 322px;
     height: 160px;
   }
 }
 
 .image {
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1200px) {
     width: 40%;
   }
 }

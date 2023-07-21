@@ -12,7 +12,7 @@
 
   @extend %mobile_second_title;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 70px;
 
     color: $primary-title-color;
@@ -34,7 +34,7 @@
 
   @extend %list;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     flex-wrap: wrap;
     gap: 40px;
   }
@@ -62,7 +62,7 @@
     height: 240px;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     width: 320px;
     height: 320px;
   }
@@ -107,7 +107,7 @@
     line-height: 1.62;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     font-size: 20px;
     line-height: 1.5;
   }

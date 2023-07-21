@@ -6,7 +6,7 @@
   width: 100%;
   padding-top: 0;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 120px;
   }
 }
@@ -37,7 +37,7 @@
 
   @extend %mobile_second_title;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 100px;
 
     color: $primary-title-color;
@@ -52,11 +52,11 @@
 }
 
 .slider {
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     width: 1400px;
     height: 480px;
 
@@ -94,7 +94,7 @@
 .slider_mobile {
   padding-bottom: 20px;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }

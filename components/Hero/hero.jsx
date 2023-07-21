@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 
 import data from "../../resources/productsData";
 
-import mobileImage from "../../public/mobile-hero.png";
+import mobileImage from "../../public/mobile-hero.webp";
 
 const Hero = () => {
   const buttons = () => {

@@ -3,7 +3,7 @@ import styles from "./productTable.module.scss";
 const ProductTable = ({ data }) => {
   return (
     <section className={styles.container}>
-      <table className={styles.table} cellpadding="0" cellspacing="0">
+      <table className={styles.table}>
         <thead className={styles.table_head}>
           <tr>
             <th className={styles.table_header}>CHALLENGE</th>

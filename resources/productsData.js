@@ -1,8 +1,8 @@
-import ori from "../public/ProjectsSlider/slide1.png";
-import tin from "../public/ProjectsSlider/slide2.png";
-import signal from "../public/ProjectsSlider/slide3.png";
-import art from "../public/ProjectsSlider/slide4.jpg";
-import stickman from "../public/ProjectsSlider/slide5.png";
+import ori from "../public/ProjectsSlider/slide1.webp";
+import tin from "../public/ProjectsSlider/slide2.webp";
+import signal from "../public/ProjectsSlider/slide3.webp";
+import art from "../public/ProjectsSlider/slide4.webp";
+import stickman from "../public/ProjectsSlider/slide5.webp";
 
 import image1 from "../public/image-bg1.webp";
 import image2 from "../public/image-bg2.webp";

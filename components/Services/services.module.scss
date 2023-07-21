@@ -71,7 +71,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom left 20px;
-  background-image: url("../../public/services-decorations/decor-bg1.png");
+  background-image: url("../../public/services-decorations/decor-bg1.webp");
 
   @media screen and (min-width: 500px) {
     padding-bottom: 400px;
@@ -105,14 +105,14 @@
 }
 
 .content_list_item:nth-child(2) {
-  background-image: url("../../public/services-decorations/decor-bg2.png");
+  background-image: url("../../public/services-decorations/decor-bg2.webp");
 }
 
 .content_list_item:nth-child(3) {
   background-position: bottom right -80px;
-  background-image: url("../../public/services-decorations/decor-bg3.png");
+  background-image: url("../../public/services-decorations/decor-bg3.webp");
 }
 
 .content_list_item:nth-child(4) {
-  background-image: url("../../public/services-decorations/decor-bg4.png");
+  background-image: url("../../public/services-decorations/decor-bg4.webp");
 }

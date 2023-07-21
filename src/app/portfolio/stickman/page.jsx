@@ -5,7 +5,7 @@ import ProductTable from "../../../../components/ProductTable/productTable";
 
 import tableData from "../../../../resources/tableData";
 
-import image from "../../../../public/Products/stickman.png";
+import image from "../../../../public/Products/stickman.webp";
 
 const Stickman = () => {
   return (

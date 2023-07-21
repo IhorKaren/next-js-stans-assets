@@ -1,14 +1,14 @@
-import image1 from "../public/partners/p1.png";
-import image2 from "../public/partners/p2.png";
-import image3 from "../public/partners/p3.png";
-import image4 from "../public/partners/p4.png";
-import image5 from "../public/partners/p5.png";
-import image6 from "../public/partners/p6.png";
-import image7 from "../public/partners/p7.png";
-import image8 from "../public/partners/p8.png";
-import image9 from "../public/partners/p9.png";
-import image10 from "../public/partners/p10.png";
-import image11 from "../public/partners/p11.png";
+import image1 from "../public/partners/p1.webp";
+import image2 from "../public/partners/p2.webp";
+import image3 from "../public/partners/p3.webp";
+import image4 from "../public/partners/p4.webp";
+import image5 from "../public/partners/p5.webp";
+import image6 from "../public/partners/p6.webp";
+import image7 from "../public/partners/p7.webp";
+import image8 from "../public/partners/p8.webp";
+import image9 from "../public/partners/p9.webp";
+import image10 from "../public/partners/p10.webp";
+import image11 from "../public/partners/p11.webp";
 
 const partnersList = [
   {

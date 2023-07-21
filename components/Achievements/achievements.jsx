@@ -2,10 +2,10 @@ import Image from "next/image";
 
 import styles from "./achievements.module.scss";
 
-import achievements1 from "../../public/achievements/achievements1.png";
-import achievements2 from "../../public/achievements/achievements2.png";
-import achievements3 from "../../public/achievements/achievements3.png";
-import achievements4 from "../../public/achievements/achievements4.png";
+import achievements1 from "../../public/achievements/achievements1.webp";
+import achievements2 from "../../public/achievements/achievements2.webp";
+import achievements3 from "../../public/achievements/achievements3.webp";
+import achievements4 from "../../public/achievements/achievements4.webp";
 
 const Achievements = () => {
   return (

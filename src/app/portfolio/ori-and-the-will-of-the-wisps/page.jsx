@@ -5,7 +5,7 @@ import ProductTable from "../../../../components/ProductTable/productTable";
 
 import tableData from "../../../../resources/tableData";
 
-import image from "../../../../public/Products/ori.png";
+import image from "../../../../public/Products/ori.webp";
 
 const Ori = () => {
   return (

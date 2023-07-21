@@ -5,7 +5,7 @@ import ProductTable from "../../../../components/ProductTable/productTable";
 
 import tableData from "../../../../resources/tableData";
 
-import image from "../../../../public/Products/signal.png";
+import image from "../../../../public/Products/signal.webp";
 
 const Signal = () => {
   return (

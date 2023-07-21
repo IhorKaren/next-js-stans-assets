@@ -33,9 +33,15 @@
   justify-content: space-around;
   align-items: center;
 
+  color: $secondary-text-color;
+
   @media screen and (max-width: 1023px) {
     display: none;
   }
+}
+
+.site_nav_wrapper_white {
+  color: $primary-title-color;
 }
 
 .site_nav_list {
@@ -70,7 +76,7 @@
   display: flex;
   align-items: center;
 
-  color: $secondary-text-color;
+  color: inherit;
   background-color: transparent;
   border: none;
 
@@ -114,8 +120,6 @@
   font-size: 16px;
   line-height: 2.25;
 
-  color: $secondary-text-color;
-
   transition: color $timing-function;
 
   &:hover {
@@ -136,4 +140,9 @@
     background-color: #06b25f;
     border-color: #06b25f;
   }
+}
+
+.site_nav_button_white_header {
+  color: $primary-button-color;
+  border-color: $primary-button-color;
 }

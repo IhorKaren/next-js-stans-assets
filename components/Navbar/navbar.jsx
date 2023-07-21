@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../public/logo.png";
+import logoBlue from "../../public/logo-blue.png";
 import { motion } from "framer-motion";
 import { BsChevronDown } from "react-icons/bs";
 import { services, technologies, about } from "../../resources/pages";
@@ -12,7 +13,7 @@ import animations from "../../resources/animations";
 
 import MobileMenu from "../MobileMenu/mobileMenu";
 
-const Navbar = () => {
+const Navbar = ({ isScrolled, isHeaderWhite }) => {
   const [servicesMenuOpen, setServicesMenuOpen] = useState(false);
   const [technologiesMenuOpen, setTechnologiesMenuOpen] = useState(false);
   const [aboutMenuOpen, setAboutMenuOpen] = useState(false);
@@ -47,12 +48,22 @@ const Navbar = () => {
     setAboutMenuOpen(false);
   };
 
+  const checkHeaderColor = isScrolled || isHeaderWhite;
+
   return (
     <>
-      <div className={styles.site_nav_wrapper}>
+      <div
+        className={`${styles.site_nav_wrapper} ${
+          checkHeaderColor && styles.site_nav_wrapper_white
+        }`}
+      >
         <div>
           <Link href="/" className={styles.site_logo}>
-            <Image src={logo} alt="logo" priority={true} />
+            <Image
+              src={isScrolled || isHeaderWhite ? logoBlue : logo}
+              alt="logo"
+              priority={true}
+            />
           </Link>
         </div>
 
@@ -187,7 +198,12 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-        <Link href="contacts" className={styles.site_nav_button}>
+        <Link
+          href="contacts"
+          className={`${styles.site_nav_button} ${
+            checkHeaderColor && styles.site_nav_button_white_header
+          }`}
+        >
           CONTACT US
         </Link>
       </div>

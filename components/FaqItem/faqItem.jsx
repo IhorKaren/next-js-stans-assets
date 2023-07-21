@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { BiChevronDown } from "react-icons/bi";
+import { BsChevronDown } from "react-icons/bs";
 
 import styles from "./faqItem.module.scss";
 
@@ -17,8 +17,7 @@ const FaqItem = ({ title, text }) => {
   return (
     <li className={styles.item}>
       <button type="button" onClick={toggleFaq} className={styles.button}>
-        <BiChevronDown
-          size="cssSize"
+        <BsChevronDown
           className={`${styles.icon} ${
             isFaqOpen ? styles.iconOpen : styles.iconClose
           }`}

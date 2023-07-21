@@ -21,12 +21,15 @@ const VacancyItem = ({
   useEffect(() => {
     if (isModalOpen) {
       document.body.style.overflow = "hidden";
+      document.body.classList.add("no-scroll");
     } else {
       document.body.style.overflow = "auto";
+      document.body.classList.remove("no-scroll");
     }
 
     return () => {
       document.body.style.overflow = "auto";
+      document.body.classList.remove("no-scroll");
     };
   }, [isModalOpen]);
 
@@ -58,13 +61,13 @@ const VacancyItem = ({
             />
             <h3 className={styles.main_title}>{title}</h3>
           </button>
-          <button
+          <motion.button
             type="button"
             onClick={openModal}
             className={styles.modal_btn}
           >
             APPLY
-          </button>
+          </motion.button>
         </div>
 
         <motion.ul
@@ -111,6 +114,7 @@ const VacancyItem = ({
           </motion.li>
         </motion.ul>
       </li>
+
       {isModalOpen && (
         <Modal closeModal={closeModal} isModalOpen={isModalOpen}>
           <Form

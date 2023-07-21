@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { BsXCircle } from "react-icons/bs";
 import styles from "./modal.module.scss";
 
-const Modal = ({ closeModal, isModalOpen, children }) => {
+const Modal = ({ closeModal, children }) => {
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.code === "Escape") {
@@ -25,14 +25,24 @@ const Modal = ({ closeModal, isModalOpen, children }) => {
   };
 
   return (
-    <div onClick={handleBackdropClick} className={styles.overlay}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        duration: 1,
+        delay: 0.2,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
+      onClick={handleBackdropClick}
+      className={styles.overlay}
+    >
       <div className={styles.modal}>
         {children}
         <button type="button" onClick={closeModal} className={styles.close_btn}>
           <BsXCircle className={styles.icon} />
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

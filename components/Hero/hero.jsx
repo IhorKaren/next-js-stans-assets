@@ -77,7 +77,7 @@ const Hero = () => {
       </div>
       <div className={styles.mobile_hero}>
         <div className={styles.mobile_hero_image}>
-          <Image src={mobileImage} alt="Ori" />
+          <Image src={mobileImage} alt="Ori" placeholder="blur" />
         </div>
         <div className={styles.text_wrap}>
           <h1 className={styles.mobile_title}>

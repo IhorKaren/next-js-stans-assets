@@ -32,6 +32,11 @@ const Header = () => {
 
   useEffect(() => {
     const handleThrottledScroll = throttle(300, handleScroll);
+    const position = window.scrollY || window.pageYOffset;
+
+    if (position > 200) {
+      setIsScrolled(true);
+    }
 
     window.addEventListener("scroll", handleThrottledScroll);
 

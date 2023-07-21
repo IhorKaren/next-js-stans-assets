@@ -60,7 +60,7 @@ const Navbar = ({ isScrolled, isHeaderWhite }) => {
         <div>
           <Link href="/" className={styles.site_logo}>
             <Image
-              src={isScrolled || isHeaderWhite ? logoBlue : logo}
+              src={checkHeaderColor ? logoBlue : logo}
               alt="logo"
               priority={true}
             />
@@ -207,7 +207,7 @@ const Navbar = ({ isScrolled, isHeaderWhite }) => {
           CONTACT US
         </Link>
       </div>
-      <MobileMenu />
+      <MobileMenu checkHeaderColor={checkHeaderColor} isScrolled={isScrolled} />
     </>
   );
 };

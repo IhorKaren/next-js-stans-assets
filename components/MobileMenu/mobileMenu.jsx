@@ -2,12 +2,14 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import mobile_logo from "../../public/mobile-logo.png";
 import { useAnimate, stagger } from "framer-motion";
 import { services, technologies, about } from "../../resources/pages";
 import MenuToggle from "../MenuToggle/menuToggle";
 
 import styles from "./mobileMenu.module.scss";
+
+import mobile_logo from "../../public/mobile-logo.png";
+import mobile_logo_blue from "../../public/mobile-logo-blue.png";
 
 function useMenuAnimation(isOpen) {
   const [scope, animate] = useAnimate();
@@ -41,7 +43,7 @@ function useMenuAnimation(isOpen) {
   return scope;
 }
 
-const MobileMenu = () => {
+const MobileMenu = ({ checkHeaderColor }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const scope = useMenuAnimation(isOpen);
@@ -67,11 +69,19 @@ const MobileMenu = () => {
       <div className={styles.mobile_navigation_wrap}>
         <div>
           <Link href="/" className={styles.site_logo_mobile}>
-            <Image src={mobile_logo} alt="logo" priority={true} />
+            <Image
+              src={checkHeaderColor ? mobile_logo_blue : mobile_logo}
+              alt="logo"
+              priority={true}
+            />
           </Link>
         </div>
         <div>
-          <MenuToggle isOpen={isOpen} toggle={handleMenuToggle} />
+          <MenuToggle
+            isOpen={isOpen}
+            toggle={handleMenuToggle}
+            checkHeaderColor={checkHeaderColor}
+          />
         </div>
       </div>
       <div ref={scope} className={styles.mobile_menu}>

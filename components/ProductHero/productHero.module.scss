@@ -22,9 +22,11 @@
   }
 
   @media screen and (min-width: 1200px) {
-    height: 1000px;
+    height: 800px;
+  }
 
-    padding-top: 100px;
+  @media screen and (min-width: 1600px) {
+    height: 1000px;
   }
 }
 
@@ -45,7 +47,7 @@
 
   font-family: var(--font-montserrat);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1600px) {
     margin-bottom: 120px;
   }
 }
@@ -61,10 +63,11 @@
   }
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 0;
     height: auto;
   }
 
-  @media screen and (min-width: 860px) {
+  @media screen and (min-width: 830px) {
     margin-bottom: 20px;
   }
 
@@ -138,7 +141,7 @@
     fill: $hover-text-color;
   }
 
-  @media screen and (min-width: 860px) {
+  @media screen and (min-width: 768px) {
     fill: $secondary-text-color;
   }
 }

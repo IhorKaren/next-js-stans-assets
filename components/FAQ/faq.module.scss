@@ -24,9 +24,13 @@
     url("../../public/faq-right-mobile.png");
 
   @media screen and (min-width: 1200px) {
-    background-position: top left 18%, top right 18%;
+    background-position: top left 10%, top right 10%;
     background-image: url("../../public/faq-left.png"),
       url("../../public/faq-right.png");
+  }
+
+  @media screen and (min-width: 1600px) {
+    background-position: top left 18%, top right 18%;
   }
 }
 

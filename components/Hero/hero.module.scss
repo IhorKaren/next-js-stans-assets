@@ -17,7 +17,15 @@
   }
 
   @media screen and (min-width: 1200px) {
-    height: 940px;
+    height: 640px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    height: 740px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    height: 920px;
   }
 }
 
@@ -54,7 +62,15 @@
   }
 
   @media screen and (min-width: 1200px) {
-    height: 940px;
+    height: 640px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    height: 740px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    height: 920px;
     padding-top: 180px;
     padding-left: 150px;
   }
@@ -101,7 +117,7 @@
     text-transform: uppercase;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1600px) {
     margin-bottom: 16px;
 
     font-size: 44px;

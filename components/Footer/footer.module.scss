@@ -12,13 +12,18 @@
 
   @media screen and (min-width: 1200px) {
     height: 700px;
-    padding-top: 360px;
+    padding-top: 300px;
 
     background-color: transparent;
 
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../../public/footer.png");
+  }
+
+  @media screen and (min-width: 1600px) {
+    height: 700px;
+    padding-top: 360px;
   }
 }
 
@@ -80,6 +85,11 @@
   @extend %list;
 
   @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1600px) {
     flex-direction: row;
     margin-left: auto;
     gap: 120px;

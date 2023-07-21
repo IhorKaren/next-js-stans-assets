@@ -79,7 +79,13 @@
   gap: 10px;
 
   @media screen and (min-width: 1200px) {
+    gap: 4px;
+    line-height: 1.42;
+  }
+
+  @media screen and (min-width: 1600px) {
     gap: 0;
+    line-height: 1.62;
   }
 }
 
@@ -93,15 +99,21 @@
   letter-spacing: 1.2px;
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: 8px;
-
     text-align: start;
+
+    font-size: 18px;
+    line-height: 2.11;
+    letter-spacing: 0.9px;
+
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 1600px) {
+    margin-bottom: 8px;
 
     font-size: 24px;
     line-height: 1.58;
     letter-spacing: 1.2px;
-
-    text-transform: uppercase;
   }
 }
 

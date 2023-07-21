@@ -22,6 +22,9 @@
 
 .item {
   @media screen and (min-width: 1200px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 1600px) {
     max-width: 555px;
   }
 }

@@ -40,6 +40,10 @@
   @media screen and (min-width: 1200px) {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  @media screen and (min-width: 1600px) {
     gap: 80px;
   }
 }
@@ -66,6 +70,11 @@
   }
 
   @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 3);
+    height: 380px;
+  }
+
+  @media screen and (min-width: 1600px) {
     flex-basis: calc((100% - 160px) / 3);
     height: 440px;
   }
@@ -90,6 +99,10 @@
   }
 
   @media screen and (min-width: 1200px) {
+    height: 200px;
+  }
+
+  @media screen and (min-width: 1600px) {
     height: 280px;
   }
 }
@@ -174,10 +187,17 @@
   @extend %small-title;
 
   @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 2.11;
+    letter-spacing: 0.9px;
+
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 1600px) {
     font-size: 24px;
     line-height: 1.58;
     letter-spacing: 1.2px;
 
-    text-transform: uppercase;
   }
 }

@@ -7,8 +7,7 @@
   @extend %container;
 
   @media screen and (min-width: 1200px) {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 80px;
   }
 }
 
@@ -45,10 +44,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    gap: 25px;
   }
 }
 
@@ -58,7 +54,6 @@
   height: 400px;
   display: flex;
   flex-direction: column;
-
   padding: 290px 20px 10px 20px;
 
   z-index: -1;
@@ -74,9 +69,12 @@
   }
 
   @media screen and (min-width: 1200px) {
+    padding: 290px 20px 10px 20px;
+  }
+
+  @media screen and (min-width: 1600px) {
     flex-basis: calc((100% - 75px) / 4);
-    padding: 320px 20px 10px 20px;
-    height: 460px;
+    padding: 300px 20px 10px 20px;
   }
 }
 

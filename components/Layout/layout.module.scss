@@ -1,10 +1,6 @@
 @import "../../src/utils/placeholders.module.scss";
 @import "../../src/utils/variables.module.scss";
 
-.container {
-  @extend %container;
-}
-
 .main {
   display: flex;
   flex-direction: column;

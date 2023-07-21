@@ -33,6 +33,12 @@ body {
 
   @media screen and (min-width: 1200px) {
     --swiper-navigation-size: 54px;
+    --swiper-navigation-top-offset: 40%;
+    --swiper-navigation-sides-offset: 0px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    --swiper-navigation-size: 54px;
     --swiper-navigation-top-offset: 47%;
     --swiper-navigation-sides-offset: 0px;
   }
@@ -66,4 +72,12 @@ img {
 
 ::-webkit-scrollbar-thumb {
   background-color: #0f70b9;
+}
+
+.container_global {
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
 }

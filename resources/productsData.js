@@ -4,9 +4,9 @@ import signal from "../public/ProjectsSlider/slide3.png";
 import art from "../public/ProjectsSlider/slide4.jpg";
 import stickman from "../public/ProjectsSlider/slide5.png";
 
-import image1 from "../public/image-bg1.png";
-import image2 from "../public/image-bg2.png";
-import image3 from "../public/image-bg4.png";
+import image1 from "../public/image-bg1.webp";
+import image2 from "../public/image-bg2.webp";
+import image3 from "../public/image-bg3.webp";
 
 const projectsData = [
   {

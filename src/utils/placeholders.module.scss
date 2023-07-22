@@ -129,7 +129,8 @@
 
   background-color: transparent;
 
-  transition: background-color $timing-function, border-color $timing-function;
+  transition: background-color $timing-function, border-color $timing-function,
+    fill $timing-function, color $timing-function;
 
   cursor: pointer;
 }

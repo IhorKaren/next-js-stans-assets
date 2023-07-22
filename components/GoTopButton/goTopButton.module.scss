@@ -13,8 +13,12 @@
   border: 2px solid $primary-button-color;
 
   fill: #ffffff;
+  opacity: 1;
 
-  transition: fill $timing-function, background-color $timing-function;
+  transition: fill $timing-function, background-color $timing-function,
+    opacity $timing-function;
+
+  cursor: pointer;
 
   &:hover,
   :focus {
@@ -33,6 +37,8 @@
 }
 
 .button_hide {
+  opacity: 0;
+
   @extend %visually-hidden;
 }
 

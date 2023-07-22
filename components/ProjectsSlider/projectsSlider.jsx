@@ -3,8 +3,10 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, A11y } from "swiper/modules";
 import Link from "next/link";
-import ProjectsSliderMobile from "./projectsSliderMobile";
+
 import styles from "./projectsSlider.module.scss";
+
+import ProjectsSliderMobile from "./projectsSliderMobile";
 
 import "swiper/css";
 import "swiper/css/navigation";

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./technologies.module.scss";
+
 import { BsAndroid2, BsApple, BsUnity } from "react-icons/bs";
 
 const Technologies = () => {

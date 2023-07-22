@@ -3,15 +3,18 @@ import styles from "./navbar.module.scss";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../public/logo.png";
-import logoBlue from "../../public/logo-blue.png";
+
 import { motion } from "framer-motion";
+
 import { BsChevronDown } from "react-icons/bs";
 import { services, technologies, about } from "../../resources/pages";
 
 import animations from "../../resources/animations";
 
 import MobileMenu from "../MobileMenu/mobileMenu";
+
+import logo from "../../public/logo.png";
+import logoBlue from "../../public/logo-blue.png";
 
 const Navbar = ({ isScrolled, isHeaderWhite }) => {
   const [servicesMenuOpen, setServicesMenuOpen] = useState(false);

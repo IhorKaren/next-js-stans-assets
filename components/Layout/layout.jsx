@@ -2,7 +2,9 @@
 import React, { useEffect, useState } from "react";
 import { throttle } from "throttle-debounce";
 import { usePathname } from "next/navigation";
+
 import styles from "./layout.module.scss";
+
 import Header from "../Header/header";
 import GoTopButton from "../GoTopButton/goTopButton";
 import Footer from "../Footer/footer";

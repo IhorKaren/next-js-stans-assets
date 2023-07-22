@@ -8,6 +8,10 @@ import Faq from "../../../components/FAQ/faq";
 
 import image from "../../../public/Services/services-mobile.png";
 
+export const metadata = {
+  title: "Mobile development",
+};
+
 const Mobile = () => {
   return (
     <>

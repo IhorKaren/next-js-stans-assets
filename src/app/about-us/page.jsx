@@ -5,6 +5,10 @@ import AboutSection from "../../../components/About/about";
 
 import image from "../../../public/Services/services-3d.png";
 
+export const metadata = {
+  title: "About Us",
+};
+
 const About = () => {
   return (
     <>

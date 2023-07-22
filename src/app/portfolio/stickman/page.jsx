@@ -7,6 +7,10 @@ import tableData from "../../../../resources/tableData";
 
 import image from "../../../../public/Products/stickman.webp";
 
+export const metadata = {
+  title: "Stickman",
+};
+
 const Stickman = () => {
   return (
     <>

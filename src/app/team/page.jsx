@@ -5,6 +5,10 @@ import ProjectsSlider from "../../../components/ProjectsSlider/projectsSlider";
 
 import teamData from "../../../resources/team";
 
+export const metadata = {
+  title: "Our team",
+};
+
 const Team = () => {
   return (
     <>

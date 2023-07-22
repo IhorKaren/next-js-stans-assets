@@ -7,6 +7,10 @@ import tableData from "../../../../resources/tableData";
 
 import image from "../../../../public/Products/ori.webp";
 
+export const metadata = {
+  title: "Ori and wotw",
+};
+
 const Ori = () => {
   return (
     <>

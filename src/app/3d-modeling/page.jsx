@@ -8,6 +8,10 @@ import Faq from "../../../components/FAQ/faq";
 
 import image from "../../../public/Services/services-3d.png";
 
+export const metadata = {
+  title: "3D Modeling",
+};
+
 const Modeling = () => {
   return (
     <>

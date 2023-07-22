@@ -8,12 +8,16 @@ import image from "../../../public/join.png";
 
 import text from "../../../resources/joinToUs";
 
+export const metadata = {
+  title: "Join us",
+};
+
 const Join = () => {
   return (
     <>
       <HeroBlock
         title="Join the team"
-        lastRoute="About Us"
+        lastRoute="About us"
         img={image}
         alt="Woman and man"
       />

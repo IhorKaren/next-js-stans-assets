@@ -5,6 +5,10 @@ import PortfolioList from "../../../components/PortfolioList/portfolioList";
 
 import image from "../../../public/portfolio.png";
 
+export const metadata = {
+  title: "Portfolio",
+};
+
 const Portfolio = () => {
   return (
     <>

@@ -7,6 +7,10 @@ import tableData from "../../../../resources/tableData";
 
 import image from "../../../../public/Products/signal.webp";
 
+export const metadata = {
+  title: "One signal",
+};
+
 const Signal = () => {
   return (
     <>

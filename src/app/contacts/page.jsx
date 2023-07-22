@@ -6,12 +6,16 @@ import ProjectsSlider from "../../../components/ProjectsSlider/projectsSlider";
 
 import styles from "./contactsMobile.module.scss";
 
+export const metadata = {
+  title: "Contact us",
+};
+
 const ContactsPage = () => {
   return (
     <>
       <HeroBlock
-        title="Contact Us"
-        lastRoute="About Us"
+        title="Contact us"
+        lastRoute="About us"
         text="We are open for dialog and you are welcome to share your 
       opinions or thoughts with us"
       >

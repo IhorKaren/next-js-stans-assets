@@ -8,6 +8,10 @@ import Faq from "../../../components/FAQ/faq";
 
 import image from "../../../public/Services/services-vr.png";
 
+export const metadata = {
+  title: "VR development",
+};
+
 const VRdevelopment = () => {
   return (
     <>

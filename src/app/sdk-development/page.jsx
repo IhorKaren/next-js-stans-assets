@@ -8,6 +8,10 @@ import Faq from "../../../components/FAQ/faq";
 
 import image from "../../../public/Services/services-sdk.png";
 
+export const metadata = {
+  title: "SDK development",
+};
+
 const Sdk = () => {
   return (
     <>

@@ -7,6 +7,10 @@ import tableData from "../../../../resources/tableData";
 
 import image from "../../../../public/Products/tinhearts.webp";
 
+export const metadata = {
+  title: "Tin hearts",
+};
+
 const TinHearts = () => {
   return (
     <>

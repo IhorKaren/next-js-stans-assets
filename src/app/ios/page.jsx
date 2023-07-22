@@ -8,6 +8,10 @@ import Faq from "../../../components/FAQ/faq";
 
 import image from "../../../public/Technologies/ios.png";
 
+export const metadata = {
+  title: "IOS",
+};
+
 const Ios = () => {
   return (
     <>

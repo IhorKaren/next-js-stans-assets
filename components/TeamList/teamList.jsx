@@ -8,7 +8,7 @@ const TeamList = ({ team }) => {
     <section>
       <div className={styles.container}>
         <span className={styles.route}>
-          <Link href="/about-us">About Us</Link> {">"} Team
+          <Link href="/about-us">About us</Link> {">"} Team
         </span>
         <h1 className={styles.title}>Core team</h1>
         <ul className={styles.list}>

@@ -5,6 +5,10 @@ import PluginsList from "../../../components/PluginsList/pluginsList";
 
 import image from "../../../public/products.png";
 
+export const metadata = {
+  title: "Products",
+};
+
 const Products = () => {
   return (
     <>

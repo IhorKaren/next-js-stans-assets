@@ -8,6 +8,10 @@ import Faq from "../../../components/FAQ/faq";
 
 import image from "../../../public/Technologies/unity.png";
 
+export const metadata = {
+  title: "Unity",
+};
+
 const Unity = () => {
   return (
     <>

@@ -77,6 +77,12 @@
 }
 
 .navigation {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+
+.navigation_list {
   display: flex;
   flex-direction: column;
   padding-top: 16px;

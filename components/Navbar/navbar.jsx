@@ -60,15 +60,13 @@ const Navbar = ({ isScrolled, isHeaderWhite }) => {
           checkHeaderColor && styles.site_nav_wrapper_white
         }`}
       >
-        <div>
-          <Link href="/" className={styles.site_logo}>
-            <Image
-              src={checkHeaderColor ? logoBlue : logo}
-              alt="logo"
-              priority={true}
-            />
-          </Link>
-        </div>
+        <Link href="/" className={styles.site_logo}>
+          <Image
+            src={checkHeaderColor ? logoBlue : logo}
+            alt="logo"
+            priority={true}
+          />
+        </Link>
 
         <nav>
           <ul className={styles.site_nav_list}>

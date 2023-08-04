@@ -5,7 +5,7 @@
   @extend %container;
 }
 
-.list {
+.content_list {
   display: flex;
   flex-direction: column;
 
@@ -20,7 +20,7 @@
   }
 }
 
-.item {
+.content_list_item {
   @media screen and (min-width: 1200px) {
     max-width: 480px;
   }
@@ -29,7 +29,7 @@
   }
 }
 
-.title {
+.content_list_item_title {
   margin-bottom: 16px;
 
   color: $secondary-title-color;

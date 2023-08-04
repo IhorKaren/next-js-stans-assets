@@ -13,7 +13,7 @@
   }
 }
 
-.background {
+.partners_background {
   position: absolute;
   top: 0;
   left: 0;
@@ -27,13 +27,13 @@
   background-image: url("../../public/partners-bg2.png");
 }
 
-.container {
+.partners_container {
   padding-top: 120px;
   padding-bottom: 120px;
   @extend %container;
 }
 
-.title {
+.partners_title {
   margin-bottom: 40px;
 
   text-align: center;
@@ -51,7 +51,7 @@
   }
 }
 
-.list {
+.partners_list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -65,7 +65,7 @@
   }
 }
 
-.item {
+.partners_list_item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,7 +101,7 @@
   }
 }
 
-.image {
+.partners_list_image {
   @media screen and (max-width: 1200px) {
     width: 40%;
   }

@@ -19,7 +19,7 @@
   }
 }
 
-.item {
+.faq_item {
   padding: 16px;
 
   border-bottom: 1px solid rgba(13, 110, 183, 0.5);
@@ -29,7 +29,7 @@
   }
 }
 
-.title {
+.faq_item_title {
   flex: 2;
 
   text-align: start;
@@ -46,7 +46,7 @@
   }
 }
 
-.button {
+.faq_item_button {
   width: 100%;
   display: flex;
   padding-top: 4px;
@@ -68,7 +68,7 @@
   }
 }
 
-.icon {
+.faq_item_icon {
   width: 24px;
   height: 24px;
 }

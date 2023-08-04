@@ -16,15 +16,15 @@ const Footer = () => {
   return (
     <div>
       <footer className={styles.footer}>
-        <div className={styles.container}>
+        <div className={styles.footer_container}>
           <div>
-            <Link href="/" className={styles.logo}>
+            <Link href="/" className={styles.footer_logo}>
               <Image src={logo} alt="Stan`s assets" />
             </Link>
-            <ul className={styles.links_list}>
+            <ul className={styles.footer_links_list}>
               <li>
-                <a href="#" className={styles.social_link}>
-                  <BsFacebook className={styles.icon} />
+                <a href="#" className={styles.footer_social_link}>
+                  <BsFacebook className={styles.footer_social_link_icon} />
                 </a>
               </li>
               <li>
@@ -32,19 +32,19 @@ const Footer = () => {
                   href="https://www.linkedin.com/in/ihor-karen/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.social_link}
+                  className={styles.footer_social_link}
                 >
-                  <BsLinkedin className={styles.icon} />
+                  <BsLinkedin className={styles.footer_social_link_icon} />
                 </a>
               </li>
               <li>
-                <a href="#" className={styles.social_link}>
-                  <BsWhatsapp className={styles.icon} />
+                <a href="#" className={styles.footer_social_link}>
+                  <BsWhatsapp className={styles.footer_social_link_icon} />
                 </a>
               </li>
               <li>
-                <a href="#" className={styles.social_link}>
-                  <BsSkype className={styles.icon} />
+                <a href="#" className={styles.footer_social_link}>
+                  <BsSkype className={styles.footer_social_link_icon} />
                 </a>
               </li>
               <li>
@@ -52,22 +52,22 @@ const Footer = () => {
                   href="https://github.com/IhorKaren"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.social_link}
+                  className={styles.footer_social_link}
                 >
-                  <BsGithub className={styles.icon} />
+                  <BsGithub className={styles.footer_social_link_icon} />
                 </a>
               </li>
             </ul>
           </div>
-          <nav className={styles.navigation}>
-            <ul className={styles.navigation_list}>
+          <nav className={styles.footer_navigation}>
+            <ul className={styles.footer_navigation_list}>
               <li>
-                <h4 className={styles.title}>SERVICES</h4>
-                <ul className={styles.pages_list}>
+                <h4 className={styles.navigation_list_title}>SERVICES</h4>
+                <ul className={styles.navigation_pages_list}>
                   <li>
                     <Link
                       href="/mobile-development"
-                      className={styles.navigation_link}
+                      className={styles.navigation_list_link}
                     >
                       Mobile Application Development
                     </Link>
@@ -75,7 +75,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/game-development"
-                      className={styles.navigation_link}
+                      className={styles.navigation_list_link}
                     >
                       Game Development Outsourcing
                     </Link>
@@ -83,7 +83,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/vr-development"
-                      className={styles.navigation_link}
+                      className={styles.navigation_list_link}
                     >
                       VR App Development
                     </Link>
@@ -91,7 +91,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/sdk-development"
-                      className={styles.navigation_link}
+                      className={styles.navigation_list_link}
                     >
                       SDK Development
                     </Link>
@@ -99,7 +99,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/3d-modeling"
-                      className={styles.navigation_link}
+                      className={styles.navigation_list_link}
                     >
                       3D Modeling services
                     </Link>
@@ -107,27 +107,30 @@ const Footer = () => {
                 </ul>
               </li>
               <li>
-                <h4 className={styles.title}>TECHNOLOGIES</h4>
-                <ul className={styles.pages_list}>
+                <h4 className={styles.navigation_list_title}>TECHNOLOGIES</h4>
+                <ul className={styles.navigation_pages_list}>
                   <li>
-                    <Link href="/android" className={styles.navigation_link}>
+                    <Link
+                      href="/android"
+                      className={styles.navigation_list_link}
+                    >
                       Android
                     </Link>
                   </li>
                   <li>
-                    <Link href="/ios" className={styles.navigation_link}>
+                    <Link href="/ios" className={styles.navigation_list_link}>
                       IOS
                     </Link>
                   </li>
                   <li>
-                    <Link href="/unity" className={styles.navigation_link}>
+                    <Link href="/unity" className={styles.navigation_list_link}>
                       Unity
                     </Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <ul className={styles.main_pages_list}>
+                <ul className={styles.navigation_main_pages_list}>
                   <li>
                     <Link href="/products">PRODUCTS</Link>
                   </li>
@@ -137,22 +140,25 @@ const Footer = () => {
                 </ul>
               </li>
               <li>
-                <Link href="/about-us" className={styles.title}>
+                <Link href="/about-us" className={styles.navigation_list_title}>
                   ABOUT US
                 </Link>
-                <ul className={styles.pages_list}>
+                <ul className={styles.navigation_pages_list}>
                   <li>
-                    <Link href="/contacts" className={styles.navigation_link}>
+                    <Link
+                      href="/contacts"
+                      className={styles.navigation_list_link}
+                    >
                       Contacts
                     </Link>
                   </li>
                   <li>
-                    <Link href="/team" className={styles.navigation_link}>
+                    <Link href="/team" className={styles.navigation_list_link}>
                       Team
                     </Link>
                   </li>
                   <li>
-                    <Link href="/join" className={styles.navigation_link}>
+                    <Link href="/join" className={styles.navigation_list_link}>
                       Join the Team
                     </Link>
                   </li>

@@ -50,7 +50,7 @@ const Form = ({ title, text, btnText, optionalPortfolio, optionalFile }) => {
           />
         </label>
 
-        <button type="submit" className={styles.button}>
+        <button type="submit" className={styles.form_button}>
           {btnText}
         </button>
       </form>

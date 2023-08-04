@@ -1,7 +1,7 @@
 @import "../../src/utils/placeholders.module.scss";
 @import "../../src/utils/variables.module.scss";
 
-.thumb {
+.looking_thumb {
   width: 100%;
   padding-top: 40px;
   padding-bottom: 100px;
@@ -19,11 +19,11 @@
   }
 }
 
-.container {
+.looking_container {
   text-align: center;
 }
 
-.title {
+.looking_title {
   margin-bottom: 16px;
 
   color: $secondary-text-color;
@@ -39,7 +39,7 @@
   }
 }
 
-.text {
+.looking_text {
   margin-bottom: 24px;
 
   color: $secondary-text-color;
@@ -55,7 +55,7 @@
   }
 }
 
-.button {
+.looking_button {
   margin-left: auto;
   margin-right: auto;
 

@@ -7,7 +7,7 @@
   @extend %container;
 }
 
-.title {
+.contacts_title {
   margin-bottom: 30px;
 
   text-align: center;
@@ -25,7 +25,7 @@
   }
 }
 
-.text {
+.contacts_text {
   margin-bottom: 30px;
 
   text-align: center;
@@ -41,7 +41,7 @@
   }
 }
 
-.text_wrap {
+.contacts_text_wrap {
   display: block;
   margin-bottom: 50px;
 
@@ -50,7 +50,7 @@
   }
 }
 
-.thumb {
+.contacts_thumb {
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -62,16 +62,6 @@
     justify-content: space-evenly;
     gap: 0px;
   }
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-
-  text-align: start;
-
-  @extend %list;
 }
 
 .form_thumb {

@@ -11,9 +11,9 @@ const Achievements = () => {
   return (
     <section className={styles.container}>
       <div>
-        <h3 className={styles.title}>ACHIEVEMENTS</h3>
-        <ul className={styles.list}>
-          <li className={styles.item}>
+        <h3 className={styles.achievements_title}>ACHIEVEMENTS</h3>
+        <ul className={styles.achievements_list}>
+          <li className={styles.achievements_list_item}>
             <Image
               src={achievements1}
               alt="puzzles"
@@ -26,7 +26,7 @@ const Achievements = () => {
               game
             </p>
           </li>
-          <li className={styles.item}>
+          <li className={styles.achievements_list_item}>
             <Image
               src={achievements2}
               alt="rocket"
@@ -39,7 +39,7 @@ const Achievements = () => {
               projects on the market
             </p>
           </li>
-          <li className={styles.item}>
+          <li className={styles.achievements_list_item}>
             <Image
               src={achievements3}
               alt="phone"
@@ -53,7 +53,7 @@ const Achievements = () => {
               <span className={styles.accent}> 2013</span>
             </p>
           </li>
-          <li className={styles.item}>
+          <li className={styles.achievements_list_item}>
             <Image
               src={achievements4}
               alt="box"

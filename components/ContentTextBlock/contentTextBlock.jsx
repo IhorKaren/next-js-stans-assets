@@ -9,9 +9,11 @@ const ContentTextBlock = ({
   return (
     <section>
       <div className={styles.container}>
-        <ul className={styles.list}>
-          <li className={styles.item}>
-            {firstTitle && <h2 className={styles.title}>{firstTitle}</h2>}
+        <ul className={styles.content_list}>
+          <li className={styles.content_list_item}>
+            {firstTitle && (
+              <h2 className={styles.content_list_item_title}>{firstTitle}</h2>
+            )}
             {firstTextBlock ? (
               <p dangerouslySetInnerHTML={{ __html: firstTextBlock }}></p>
             ) : (
@@ -30,8 +32,10 @@ const ContentTextBlock = ({
               </p>
             )}
           </li>
-          <li className={styles.item}>
-            {secondTitle && <h2 className={styles.title}>{secondTitle}</h2>}
+          <li className={styles.content_list_item}>
+            {secondTitle && (
+              <h2 className={styles.content_list_item_title}>{secondTitle}</h2>
+            )}
             {secondTextBlock ? (
               <p dangerouslySetInnerHTML={{ __html: secondTextBlock }}></p>
             ) : (

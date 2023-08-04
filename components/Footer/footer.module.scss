@@ -27,7 +27,7 @@
   }
 }
 
-.container {
+.footer_container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -39,12 +39,12 @@
   }
 }
 
-.logo {
+.footer_logo {
   display: block;
   margin-bottom: 53px;
 }
 
-.links_list {
+.footer_links_list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
@@ -59,7 +59,7 @@
   }
 }
 
-.social_link {
+.footer_social_link {
   fill: #ffffff;
 
   transition: fill $timing-function;
@@ -70,19 +70,19 @@
   }
 }
 
-.icon {
+.footer_social_link_icon {
   width: 28px;
   height: 28px;
   fill: inherit;
 }
 
-.navigation {
+.footer_navigation {
   @media screen and (min-width: 1200px) {
     margin-left: auto;
   }
 }
 
-.navigation_list {
+.footer_navigation_list {
   display: flex;
   flex-direction: column;
   padding-top: 16px;
@@ -102,7 +102,7 @@
   }
 }
 
-.navigation_link {
+.navigation_list_link {
   padding-left: 20px;
 
   @media screen and (min-width: 1200px) {
@@ -110,12 +110,12 @@
   }
 }
 
-.navigation a {
+.footer_navigation a {
   text-decoration: none;
   position: relative;
 }
 
-.navigation a::after {
+.footer_navigation a::after {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -127,12 +127,12 @@
   transition: transform $timing-function;
 }
 
-.navigation a:hover::after,
-.navigation a:focus::after {
+.footer_navigation a:hover::after,
+.footer_navigation a:focus::after {
   transform: scaleX(1);
 }
 
-.title {
+.navigation_list_title {
   display: block;
   margin-bottom: 30px;
 
@@ -145,7 +145,7 @@
   letter-spacing: 1.4px;
 }
 
-.pages_list {
+.navigation_pages_list {
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -153,7 +153,7 @@
   @extend %list;
 }
 
-.main_pages_list {
+.navigation_main_pages_list {
   display: flex;
   flex-direction: column;
   gap: 40px;

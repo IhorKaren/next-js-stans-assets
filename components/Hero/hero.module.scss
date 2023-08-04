@@ -85,7 +85,7 @@
   }
 }
 
-.image {
+.hero_image {
   position: absolute;
   top: 0;
   left: 0;
@@ -93,7 +93,7 @@
   z-index: -1;
 }
 
-.thumb {
+.hero_thumb {
   max-width: 380px;
   display: flex;
   flex-direction: column;
@@ -112,7 +112,7 @@
   }
 }
 
-.title {
+.hero_title {
   margin-bottom: auto;
   color: $secondary-text-color;
 
@@ -156,7 +156,7 @@
   }
 }
 
-.text {
+.hero_text {
   max-width: 350px;
   margin-bottom: 35px;
 
@@ -183,7 +183,7 @@
   }
 }
 
-.btns_thumb {
+.hero_btns_thumb {
   display: flex;
   gap: 24px;
 }
@@ -268,7 +268,7 @@
   @extend %container;
 }
 
-.mobile_title {
+.mobile_hero_title {
   margin-bottom: 36px;
 
   color: $secondary-text-color;
@@ -276,7 +276,7 @@
   @extend %middle-title;
 }
 
-.btns_wrap {
+.hero_btns_wrap {
   width: 100%;
   display: flex;
   justify-content: space-around;

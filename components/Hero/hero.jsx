@@ -14,7 +14,7 @@ import mobileImage from "../../public/mobile-hero.webp";
 const Hero = () => {
   const buttons = () => {
     return (
-      <div className={styles.btns_thumb}>
+      <div className={styles.hero_btns_thumb}>
         <button type="button" className={styles.more_btn}>
           MORE
         </button>
@@ -49,14 +49,14 @@ const Hero = () => {
                       src={img}
                       alt={title}
                       placeholder="blur"
-                      className={styles.image}
+                      className={styles.hero_image}
                     />
-                    <div className={styles.thumb}>
-                      <Tag className={styles.title}>{title}</Tag>
+                    <div className={styles.hero_thumb}>
+                      <Tag className={styles.hero_title}>{title}</Tag>
                       {subtitle && (
                         <span className={styles.highlight}>{subtitle}</span>
                       )}
-                      <p className={styles.text}>
+                      <p className={styles.hero_text}>
                         {text}
                         {paragraph && (
                           <>
@@ -80,10 +80,10 @@ const Hero = () => {
           <Image src={mobileImage} alt="Ori" placeholder="blur" />
         </div>
         <div className={styles.text_wrap}>
-          <h1 className={styles.mobile_title}>
+          <h1 className={styles.mobile_hero_title}>
             FOCUS ON THE PRODUCT AND LET US DO THE REST!
           </h1>
-          <div className={styles.btns_wrap}>{buttons()}</div>
+          <div className={styles.hero_btns_wrap}>{buttons()}</div>
           <p>
             We’re an Indian software development company focused on just one
             thing - offshore software development services. We have 16+ years of

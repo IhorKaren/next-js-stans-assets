@@ -14,7 +14,7 @@ const AboutSection = () => {
             <div>
               <Image src={image1} alt="Man with PC" />
             </div>
-            <div className={styles.thumb}>
+            <div className={styles.content_list_thumb}>
               <p className={styles.content_list_text}>
                 Stan’s Assets were <strong>founded in 2013</strong> with the
                 story of Stan, who worked at night after his main job and
@@ -33,8 +33,8 @@ const AboutSection = () => {
             <div>
               <Image src={image2} alt="Robot arm and smartphone" />
             </div>
-            <div className={styles.thumb}>
-              <div className={styles.text_wrap}>
+            <div className={styles.content_list_thumb}>
+              <div className={styles.content_list_text_wrap}>
                 <p className={styles.content_list_text}>
                   Thank for our plugins we became recognizible and started
                   working with top worlknown companies like

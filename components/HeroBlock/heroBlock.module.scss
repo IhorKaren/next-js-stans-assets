@@ -5,7 +5,7 @@
   padding-bottom: 0;
 }
 
-.container {
+.hero_block_container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -13,13 +13,13 @@
   @extend %container;
 }
 
-.thumb {
+.hero_block_thumb {
   @media screen and (max-width: 1200px) {
     width: 100%;
   }
 }
 
-.navigate {
+.hero_block_navigate {
   display: block;
   margin-bottom: 36px;
 
@@ -36,7 +36,7 @@
   }
 }
 
-.title {
+.hero_block_title {
   margin-bottom: 10px;
 
   text-align: center;
@@ -59,7 +59,7 @@
   }
 }
 
-.text {
+.hero_block_text {
   max-width: 580px;
   margin-bottom: 30px;
 
@@ -84,7 +84,7 @@
   }
 }
 
-.image {
+.hero_block_image {
   @media screen and (max-width: 1199px) {
     width: 100%;
     display: flex;

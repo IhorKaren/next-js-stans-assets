@@ -15,20 +15,20 @@ const HeroBlock = ({
 
   return (
     <section className={styles.section}>
-      <div className={styles.container}>
-        <div className={styles.thumb}>
-          <span className={styles.navigate}>
+      <div className={styles.hero_block_container}>
+        <div className={styles.hero_block_thumb}>
+          <span className={styles.hero_block_navigate}>
             <Link href={lastRoute ? `/${toLowerCaseRoute}` : "/"}>
               {lastRoute}
             </Link>
             {" > "}
             {routeName ? routeName : title}
           </span>
-          <h1 className={styles.title}>{title}</h1>
-          {text && <p className={styles.text}>{text}</p>}
+          <h1 className={styles.hero_block_title}>{title}</h1>
+          {text && <p className={styles.hero_block_text}>{text}</p>}
         </div>
         {img && (
-          <div className={styles.image}>
+          <div className={styles.hero_block_image}>
             <Image src={img} alt={alt} placeholder="blur" />
           </div>
         )}

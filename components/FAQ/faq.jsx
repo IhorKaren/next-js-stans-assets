@@ -8,10 +8,10 @@ const Faq = () => {
   return (
     <section>
       <div className={styles.container}>
-        <h1 className={styles.title}>FAQ’s</h1>
-        <div className={styles.thumb}>
-          <div className={styles.decoration_wrap}>
-            <ul className={styles.titles_list}>
+        <h1 className={styles.faq_title}>FAQ’s</h1>
+        <div className={styles.faq_thumb}>
+          <div className={styles.faq_decoration_wrap}>
+            <ul className={styles.faq_titles_list}>
               {faqData.map(({ id, title }) => {
                 return (
                   <li key={id}>
@@ -24,7 +24,7 @@ const Faq = () => {
           <ul className={styles.faq_list}>
             {faqData.map(({ id, title, text }) => {
               return <FaqItem key={id} title={title} text={text} />;
-            })} 
+            })}
           </ul>
         </div>
       </div>

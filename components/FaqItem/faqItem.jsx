@@ -15,14 +15,14 @@ const FaqItem = ({ title, text }) => {
   };
 
   return (
-    <li className={styles.item}>
-      <button type="button" onClick={toggleFaq} className={styles.button}>
+    <li className={styles.faq_item}>
+      <button type="button" onClick={toggleFaq} className={styles.faq_item_button}>
         <BsChevronDown
-          className={`${styles.icon} ${
+          className={`${styles.faq_item_icon} ${
             isFaqOpen ? styles.iconOpen : styles.iconClose
           }`}
         />
-        <h5 className={styles.title}>{title}</h5>
+        <h5 className={styles.faq_item_title}>{title}</h5>
       </button>
       <motion.div
         variants={animations.faqVariants}

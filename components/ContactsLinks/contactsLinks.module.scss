@@ -1,7 +1,7 @@
 @import "../../src/utils/placeholders.module.scss";
 @import "../../src/utils/variables.module.scss";
 
-.list_default {
+.contacts_list_default {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -11,7 +11,7 @@
   @extend %list;
 }
 
-.list_columns {
+.contacts_list_columns {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -35,11 +35,11 @@
   }
 }
 
-.address {
+.contacts_address {
   font-style: normal;
 }
 
-.link {
+.contacts_link {
   display: flex;
   gap: 16px;
   align-items: center;
@@ -62,7 +62,7 @@
   }
 }
 
-.icon {
+.contacts_icon {
   fill: inherit;
   width: 24px;
   height: 24px;

@@ -176,11 +176,23 @@
   height: 60px;
   display: flex;
   align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 
   color: #4c4c4c;
 
   font-size: 14px;
   line-height: normal;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 .wrap_container {

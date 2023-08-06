@@ -169,16 +169,14 @@ const Footer = () => {
         </div>
       </footer>
       <div className={styles.wrap}>
-        <div className={styles.container}>
-          <div className={styles.wrap_container}>
-            <div>© 2023 - Stan’s Assets. Version by Ihor Karen</div>
-            <div className={styles.policy}>
-              <div>
-                <a href="#">Privacy policy</a>
-              </div>
-              <div>
-                <a href="#">Cookies policy</a>
-              </div>
+        <div className={styles.wrap_container}>
+          <div>© 2023 - Stan’s Assets. Version by Ihor Karen</div>
+          <div className={styles.policy}>
+            <div>
+              <a href="#">Privacy policy</a>
+            </div>
+            <div>
+              <a href="#">Cookies policy</a>
             </div>
           </div>
         </div>

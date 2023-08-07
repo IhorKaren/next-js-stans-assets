@@ -2,14 +2,21 @@ import { motion } from "framer-motion";
 import styles from "./menuToggle.module.scss";
 
 const MenuToggle = ({ isOpen, toggle, checkHeaderColor }) => {
-  const Path = ({ d, variants, className }) => (
+  const iconColorChange = () => {
+    if (isOpen || !checkHeaderColor) {
+      return "#FFFFFF";
+    }
+
+    return "#194484";
+  };
+
+  const Path = ({ d, variants }) => (
     <motion.path
       strokeWidth="3"
-      stroke={checkHeaderColor ? "#194484" : "#FFFFFF"}
+      stroke={iconColorChange()}
       strokeLinecap="round"
       d={d}
       variants={variants}
-      className={className}
     />
   );
 

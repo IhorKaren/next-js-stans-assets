@@ -1,14 +1,11 @@
-import { useEffect, useContext } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { BsXCircle } from "react-icons/bs";
 import styles from "./modal.module.scss";
-import AppContext from "../../AppContext";
 
 import animations from "../../resources/animations";
 
 const Modal = ({ closeModal, isModalOpen, children }) => {
-  const { isLoaded } = useContext(AppContext);
-
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.code === "Escape") {
@@ -29,8 +26,7 @@ const Modal = ({ closeModal, isModalOpen, children }) => {
     }
   };
 
-  const pageLoadingOverlayHidden = isLoaded ? styles.overlay : "";
-  const load = isLoaded ? { display: "flex" } : { display: "none" };
+  const fixOverlayFlash = isModalOpen ? { opacity: 1 } : { opacity: 0 };
 
   return (
     <motion.div
@@ -38,7 +34,7 @@ const Modal = ({ closeModal, isModalOpen, children }) => {
       animate={isModalOpen ? "open" : "closed"}
       onClick={handleBackdropClick}
       className={styles.overlay}
-      style={load}
+      style={fixOverlayFlash}
     >
       <div className={styles.modal}>
         {children}

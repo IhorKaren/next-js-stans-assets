@@ -99,9 +99,7 @@ const overlayModal = {
     transition: {
       type: "spring",
       bounce: 0,
-      duration: 1,
-      delayChildren: 0.3,
-      staggerChildren: 0.1,
+      duration: 1.2,
     },
   },
   closed: {
@@ -110,8 +108,7 @@ const overlayModal = {
     overflow: "hidden",
     transition: {
       type: "spring",
-      bounce: 0,
-      duration: 1,
+      duration: 1.2,
     },
   },
 };

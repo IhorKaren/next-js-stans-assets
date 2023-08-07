@@ -1,7 +1,8 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { motion } from "framer-motion";
 import { BsChevronDown } from "react-icons/bs";
+import AppContext from "../../AppContext";
 import Modal from "../Modal/modal";
 import Form from "../Form/form";
 
@@ -17,6 +18,8 @@ const VacancyItem = ({
 }) => {
   const [isVacancyOpen, setVacancyOpen] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
+
+  const { isLoaded } = useContext(AppContext);
 
   useEffect(() => {
     if (isModalOpen) {
@@ -114,8 +117,7 @@ const VacancyItem = ({
           </motion.li>
         </motion.ul>
       </li>
-
-      {isModalOpen && (
+      {isLoaded && (
         <Modal closeModal={closeModal} isModalOpen={isModalOpen}>
           <Form
             btnText="SUBMIT"

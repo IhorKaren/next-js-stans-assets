@@ -71,6 +71,51 @@ const vacancyMenuVariants = {
   },
 };
 
+const overlayMobileMenu = {
+  open: {
+    maxWidth: "100%",
+    transition: {
+      type: "spring",
+      bounce: 0,
+      duration: 1,
+      delayChildren: 0.3,
+      staggerChildren: 0.1,
+    },
+  },
+  closed: {
+    maxWidth: "0vh",
+    overflow: "hidden",
+    transition: {
+      type: "spring",
+      bounce: 0,
+      duration: 1,
+    },
+  },
+};
+
+const overlayModal = {
+  open: {
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0,
+      duration: 1,
+      delayChildren: 0.3,
+      staggerChildren: 0.1,
+    },
+  },
+  closed: {
+    opacity: 0,
+    pointerEvents: "none",
+    overflow: "hidden",
+    transition: {
+      type: "spring",
+      bounce: 0,
+      duration: 1,
+    },
+  },
+};
+
 const vacrncyMenuItemVariants = {
   open: {
     opacity: 1,
@@ -86,6 +131,8 @@ const animations = {
   hoverMenuItemVariants,
   vacancyMenuVariants,
   vacrncyMenuItemVariants,
+  overlayMobileMenu,
+  overlayModal,
 };
 
 export default animations;

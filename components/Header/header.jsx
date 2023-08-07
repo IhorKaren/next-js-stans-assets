@@ -1,14 +1,14 @@
 import styles from "./header.module.scss";
 import Navbar from "../Navbar/navbar";
 
-const Header = ({ isScrolled, isHeaderWhite }) => {
+const Header = ({ isScrolled, whiteHeaderColor }) => {
   return (
     <header
-      className={`${styles.header} ${isHeaderWhite && styles.header_white} ${
+      className={`${styles.header} ${whiteHeaderColor && styles.header_white} ${
         isScrolled && styles.header_shadow
       }`}
     >
-      <Navbar isScrolled={isScrolled} isHeaderWhite={isHeaderWhite} />
+      <Navbar isScrolled={isScrolled} whiteHeaderColor={whiteHeaderColor} />
     </header>
   );
 };

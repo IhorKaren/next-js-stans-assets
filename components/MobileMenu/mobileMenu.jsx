@@ -45,7 +45,7 @@ function useMenuAnimation(isOpen) {
   return scope;
 }
 
-const MobileMenu = ({ checkHeaderColor }) => {
+const MobileMenu = ({ headerIsWhite }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const { isLoaded } = useContext(AppContext);
@@ -82,7 +82,7 @@ const MobileMenu = ({ checkHeaderColor }) => {
         <div>
           <Link href="/" className={styles.site_logo_mobile}>
             <Image
-              src={checkHeaderColor ? mobile_logo_blue : mobile_logo}
+              src={headerIsWhite ? mobile_logo_blue : mobile_logo}
               alt="logo"
               priority={true}
             />
@@ -92,7 +92,7 @@ const MobileMenu = ({ checkHeaderColor }) => {
           <MenuToggle
             isOpen={isOpen}
             toggle={handleMenuToggle}
-            checkHeaderColor={checkHeaderColor}
+            headerIsWhite={headerIsWhite}
           />
         </div>
       </div>

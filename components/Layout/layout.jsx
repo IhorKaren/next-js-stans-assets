@@ -67,11 +67,11 @@ const Layout = ({ children }) => {
     });
   };
 
-  const isHeaderWhite = isScrolled || checkPathName(currentPathname);
+  const whiteHeaderColor = isScrolled || checkPathName(currentPathname);
 
   return (
     <>
-      <Header isScrolled={isScrolled} isHeaderWhite={isHeaderWhite} />
+      <Header isScrolled={isScrolled} whiteHeaderColor={whiteHeaderColor} />
       <main className={styles.main}>
         {children}
         <GoTopButton isBtnShow={isBtnShow} scrollToTop={scrollToTop} />

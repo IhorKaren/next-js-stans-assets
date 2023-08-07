@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import styles from "./menuToggle.module.scss";
 
-const MenuToggle = ({ isOpen, toggle, checkHeaderColor }) => {
+const MenuToggle = ({ isOpen, toggle, headerIsWhite }) => {
   const iconColorChange = () => {
-    if (isOpen || !checkHeaderColor) {
+    if (isOpen || !headerIsWhite) {
       return "#FFFFFF";
     }
 

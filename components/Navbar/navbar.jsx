@@ -16,7 +16,7 @@ import MobileMenu from "../MobileMenu/mobileMenu";
 import logo from "../../public/logo.png";
 import logoBlue from "../../public/logo-blue.png";
 
-const Navbar = ({ isScrolled, isHeaderWhite }) => {
+const Navbar = ({ isScrolled, whiteHeaderColor }) => {
   const [servicesMenuOpen, setServicesMenuOpen] = useState(false);
   const [technologiesMenuOpen, setTechnologiesMenuOpen] = useState(false);
   const [aboutMenuOpen, setAboutMenuOpen] = useState(false);
@@ -51,18 +51,18 @@ const Navbar = ({ isScrolled, isHeaderWhite }) => {
     setAboutMenuOpen(false);
   };
 
-  const checkHeaderColor = isScrolled || isHeaderWhite;
+  const headerIsWhite = isScrolled || whiteHeaderColor;
 
   return (
     <>
       <div
         className={`${styles.site_nav_wrapper} ${
-          checkHeaderColor && styles.site_nav_wrapper_white
+          headerIsWhite && styles.site_nav_wrapper_white
         }`}
       >
         <Link href="/" className={styles.site_logo}>
           <Image
-            src={checkHeaderColor ? logoBlue : logo}
+            src={headerIsWhite ? logoBlue : logo}
             alt="logo"
             priority={true}
           />
@@ -202,13 +202,13 @@ const Navbar = ({ isScrolled, isHeaderWhite }) => {
         <Link
           href="contacts"
           className={`${styles.site_nav_button} ${
-            checkHeaderColor && styles.site_nav_button_white_header
+            headerIsWhite && styles.site_nav_button_white_header
           }`}
         >
           CONTACT US
         </Link>
       </div>
-      <MobileMenu checkHeaderColor={checkHeaderColor} isScrolled={isScrolled} />
+      <MobileMenu headerIsWhite={headerIsWhite} isScrolled={isScrolled} />
     </>
   );
 };

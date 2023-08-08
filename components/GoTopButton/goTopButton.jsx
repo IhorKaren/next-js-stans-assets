@@ -6,6 +6,7 @@ const GoTopButton = ({ isBtnShow, scrollToTop }) => {
     <button
       type="button"
       onClick={scrollToTop}
+      aria-label="Go to top"
       className={`${styles.button} ${!isBtnShow && styles.button_hide}`}
     >
       <BsChevronUp className={styles.icon} />

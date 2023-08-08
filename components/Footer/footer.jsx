@@ -23,7 +23,13 @@ const Footer = () => {
             </Link>
             <ul className={styles.footer_links_list}>
               <li>
-                <a href="#" className={styles.footer_social_link}>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className={styles.footer_social_link}
+                >
                   <BsFacebook className={styles.footer_social_link_icon} />
                 </a>
               </li>
@@ -32,18 +38,31 @@ const Footer = () => {
                   href="https://www.linkedin.com/in/ihor-karen/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="LinkedIn"
                   className={styles.footer_social_link}
                 >
                   <BsLinkedin className={styles.footer_social_link_icon} />
                 </a>
               </li>
               <li>
-                <a href="#" className={styles.footer_social_link}>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Whatsapp"
+                  className={styles.footer_social_link}
+                >
                   <BsWhatsapp className={styles.footer_social_link_icon} />
                 </a>
               </li>
               <li>
-                <a href="#" className={styles.footer_social_link}>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Skype"
+                  className={styles.footer_social_link}
+                >
                   <BsSkype className={styles.footer_social_link_icon} />
                 </a>
               </li>
@@ -52,6 +71,7 @@ const Footer = () => {
                   href="https://github.com/IhorKaren"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Github"
                   className={styles.footer_social_link}
                 >
                   <BsGithub className={styles.footer_social_link_icon} />

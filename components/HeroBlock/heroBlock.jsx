@@ -18,7 +18,7 @@ const HeroBlock = ({
       <div className={styles.hero_block_container}>
         <div className={styles.hero_block_thumb}>
           <span className={styles.hero_block_navigate}>
-            <Link href={lastRoute ? `/${toLowerCaseRoute}` : "/"}>
+            <Link href={lastRoute === "Home" ? "/" : `/${toLowerCaseRoute}`}>
               {lastRoute}
             </Link>
             {" > "}

@@ -55,10 +55,14 @@
 .link_list {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 30px;
   margin-bottom: 30px;
 
   @extend %list;
+
+  @media screen and (min-width: 375px) {
+    gap: 60px;
+  }
 
   @media screen and (min-width: 1200px) {
     gap: 80px;

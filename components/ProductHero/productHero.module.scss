@@ -43,9 +43,13 @@
 }
 
 .route {
-  margin-bottom: 10px;
+  margin-bottom: 0;
 
   font-family: var(--font-montserrat);
+
+  @media screen and (min-width: 375px) {
+    margin-bottom: 10px;
+  }
 
   @media screen and (min-width: 1600px) {
     margin-bottom: 120px;

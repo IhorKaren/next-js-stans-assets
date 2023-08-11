@@ -88,7 +88,7 @@ const MobileMenu = ({ headerIsWhite }) => {
             />
           </Link>
         </div>
-        <div>
+        <div className={styles.toggle_btn_wrap}>
           <MenuToggle
             isOpen={isOpen}
             toggle={handleMenuToggle}

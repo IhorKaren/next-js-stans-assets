@@ -49,8 +49,8 @@
 }
 
 .item {
-  width: 322px;
-  height: 520px;
+  width: 280px;
+  height: 480px;
 
   border-radius: 16px;
   background: #fff;
@@ -58,12 +58,16 @@
 
   overflow: hidden;
 
+  @media screen and (min-width: 375px) {
+    width: 322px;
+    height: 520px;
+  }
+
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 40px) / 2);
+    width: calc((100% - 40px) / 2);
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: auto;
     width: 322px;
     height: 520px;
   }

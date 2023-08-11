@@ -16,9 +16,13 @@
 
 .modal {
   position: relative;
-  max-width: calc(100vw - 48px);
+  max-width: calc(100vw - 12px);
   max-height: calc(100vh - 24px);
   overflow-y: auto;
+
+  @media screen and (min-width: 375px) {
+    max-width: calc(100vw - 48px);
+  }
 }
 
 .close_btn {

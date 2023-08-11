@@ -52,10 +52,14 @@
 }
 
 .list {
-  min-width: 330px;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
   gap: 50px;
 
   @extend %list;
+
+  @media screen and (min-width: 375px) {
+    min-width: 330px;
+  }
 }

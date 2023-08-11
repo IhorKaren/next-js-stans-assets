@@ -1,5 +1,3 @@
-The minimum width of the device is 375 px.
-
 ## Getting Started
 
 Run the development server:

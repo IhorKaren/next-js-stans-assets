@@ -30,6 +30,15 @@
   }
 }
 
+.toggle_btn_wrap {
+  position: relative;
+  right: -15px;
+
+  @media screen and (min-width: 375px) {
+    right: 0;
+  }
+}
+
 .mobile_menu {
   @media screen and (min-width: 1024px) {
     display: none;

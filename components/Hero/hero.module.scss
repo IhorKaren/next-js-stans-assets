@@ -4,6 +4,10 @@
 .hero {
   width: 100%;
 
+  @media screen and (max-width: 360px) {
+    padding-top: 45px;
+  }
+
   @media screen and (min-width: 500px) {
     height: 640px;
   }
@@ -269,11 +273,15 @@
 }
 
 .mobile_hero_title {
-  margin-bottom: 36px;
+  margin-bottom: 18px;
 
   color: $secondary-text-color;
 
   @extend %middle-title;
+
+  @media screen and (min-width: 375px) {
+    margin-bottom: 36px;
+  }
 }
 
 .hero_btns_wrap {

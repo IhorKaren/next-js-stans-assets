@@ -3,12 +3,16 @@
 
 .footer {
   width: 100%;
-  height: 1080px;
+  height: 1180px;
   padding-top: 20px;
 
   color: $secondary-text-color;
 
   background-color: $primary-title-color;
+
+  @media screen and (min-width: 375px) {
+    height: 1080px;
+  }
 
   @media screen and (min-width: 1200px) {
     height: 700px;

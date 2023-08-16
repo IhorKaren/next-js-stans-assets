@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, A11y } from "swiper/modules";
 import styles from "./hero.module.scss";
@@ -15,12 +16,8 @@ const Hero = () => {
   const buttons = () => {
     return (
       <div className={styles.hero_btns_thumb}>
-        <button type="button" className={styles.more_btn}>
-          MORE
-        </button>
-        <button type="button" className={styles.contact_btn}>
-          CONTACT US
-        </button>
+        <Link href="portfolio" className={styles.more_btn}>MORE</Link>
+        <Link href="contacts" className={styles.contact_btn}>CONTACT US</Link>
       </div>
     );
   };

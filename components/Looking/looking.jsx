@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import styles from "./looking.module.scss";
 
 const Looking = () => {
@@ -10,9 +12,9 @@ const Looking = () => {
         <p className={styles.looking_text}>
           We are ready to discuss your project requirements
         </p>
-        <button type="button" className={styles.looking_button}>
+        <Link href="contacts" className={styles.looking_button}>
           LET’S TALK
-        </button>
+        </Link>
       </section>
     </div>
   );

@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
   const handleScroll = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop > 200) {
+    if (scrollTop > 100) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
     const handleThrottledScroll = throttle(300, handleScroll);
     const position = window.scrollY || window.pageYOffset;
 
-    if (position > 200) {
+    if (position > 100) {
       setIsScrolled(true);
     }
 

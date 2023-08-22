@@ -12,11 +12,11 @@
     height: 640px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 550px) {
     height: 740px;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     height: 840px;
   }
 
@@ -60,14 +60,14 @@
   background-position: center;
   background-size: cover;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 550px) {
     height: 740px;
-    padding-top: 100px;
-    padding-left: 60px;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     height: 840px;
+    padding-top: 100px;
+    padding-left: 60px;
   }
 
   @media screen and (min-width: 1200px) {

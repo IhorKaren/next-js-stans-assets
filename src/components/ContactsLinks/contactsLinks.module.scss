@@ -1,0 +1,69 @@
+@import "../../../src/utils/placeholders.module.scss";
+@import "../../../src/utils/variables.module.scss";
+
+.contacts_list_default {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  text-align: start;
+
+  @extend %list;
+}
+
+.contacts_list_columns {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  text-align: start;
+
+  @extend %list;
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    text-align: start;
+  }
+}
+
+.contacts_address {
+  font-style: normal;
+}
+
+.contacts_link {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  fill: $secondary-title-color;
+
+  font-size: 16px;
+  line-height: normal;
+
+  transition: color $timing-function, fill $timing-function;
+
+  &:hover,
+  :focus {
+    color: $hover-text-color;
+    fill: $hover-text-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+.contacts_icon {
+  fill: inherit;
+  width: 24px;
+  height: 24px;
+}

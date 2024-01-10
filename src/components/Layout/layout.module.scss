@@ -1,0 +1,9 @@
+@import "../../../src/utils/placeholders.module.scss";
+@import "../../../src/utils/variables.module.scss";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

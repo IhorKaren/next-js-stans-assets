@@ -4,7 +4,7 @@ import "./globals.scss";
 
 import { useState, useEffect } from "react";
 import { Montserrat, Raleway } from "next/font/google";
-import Layout from "../../components/Layout/layout";
+import Layout from "../components/Layout/layout";
 import AppContext from "../../AppContext";
 
 const montserrat = Montserrat({

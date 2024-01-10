@@ -1,7 +1,7 @@
-import HeroBlock from "../../../components/HeroBlock/heroBlock";
-import Looking from "../../../components/Looking/looking";
-import Contacts from "../../../components/Contacts/contacts";
-import PortfolioList from "../../../components/PortfolioList/portfolioList";
+import HeroBlock from "../../components/HeroBlock/heroBlock";
+import Looking from "../../components/Looking/looking";
+import Contacts from "../../components/Contacts/contacts";
+import PortfolioList from "../../components/PortfolioList/portfolioList";
 
 import image from "../../../public/portfolio.png";
 

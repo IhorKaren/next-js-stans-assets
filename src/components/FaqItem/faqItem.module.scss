@@ -1,0 +1,86 @@
+@import "../../../src/utils/placeholders.module.scss";
+@import "../../../src/utils/variables.module.scss";
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotateAnimationClose {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.faq_item {
+  padding: 16px;
+
+  border-bottom: 1px solid rgba(13, 110, 183, 0.5);
+
+  @media screen and (min-width: 1200px) {
+    width: 780px;
+  }
+}
+
+.faq_item_title {
+  flex: 2;
+
+  text-align: start;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.55;
+
+  @media screen and (min-width: 1200px) {
+    flex: 1;
+
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+.faq_item_button {
+  width: 100%;
+  display: flex;
+  padding-top: 4px;
+  padding-left: 4px;
+
+  justify-content: center;
+  margin-bottom: 14px;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+    padding-left: 0;
+
+    align-items: center;
+  }
+}
+
+.faq_item_icon {
+  width: 24px;
+  height: 24px;
+}
+
+.iconOpen {
+  transform: rotate(180deg);
+
+  animation: rotateAnimation $timing-function;
+}
+
+.iconClose {
+  transform: rotate(0deg);
+
+  animation: rotateAnimationClose $timing-function;
+}

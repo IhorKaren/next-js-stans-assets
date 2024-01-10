@@ -1,6 +1,6 @@
-import HeroBlock from "../../../components/HeroBlock/heroBlock";
-import ContentTextBlock from "../../../components/ContentTextBlock/contentTextBlock";
-import VacancyList from "../../../components/VacancyList/vacancyList";
+import HeroBlock from "../../components/HeroBlock/heroBlock";
+import ContentTextBlock from "../../components/ContentTextBlock/contentTextBlock";
+import VacancyList from "../../components/VacancyList/vacancyList";
 
 import vacations from "../../../resources/vacations";
 

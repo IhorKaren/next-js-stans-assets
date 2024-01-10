@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Looking from "../../components/Looking/looking";
-import Contacts from "../../components/Contacts/contacts";
+import Looking from "../components/Looking/looking";
+import Contacts from "../components/Contacts/contacts";
 
 import styles from "./not-found.module.scss";
 

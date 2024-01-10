@@ -1,8 +1,8 @@
-import HeroBlock from "../../../components/HeroBlock/heroBlock";
-import Form from "../../../components/Form/form";
-import ContactsLinks from "../../../components/ContactsLinks/contactsLinks";
-import Looking from "../../../components/Looking/looking";
-import ProjectsSlider from "../../../components/ProjectsSlider/projectsSlider";
+import HeroBlock from "../../components/HeroBlock/heroBlock";
+import Form from "../../components/Form/form";
+import ContactsLinks from "../../components/ContactsLinks/contactsLinks";
+import Looking from "../../components/Looking/looking";
+import ProjectsSlider from "../../components/ProjectsSlider/projectsSlider";
 
 import styles from "./contactsMobile.module.scss";
 

@@ -1,0 +1,305 @@
+@import "../../../src/utils/variables.module.scss";
+@import "../../../src/utils/placeholders.module.scss";
+
+.hero {
+  width: 100%;
+
+  @media screen and (max-width: 360px) {
+    padding-top: 45px;
+  }
+
+  @media screen and (min-width: 500px) {
+    height: 640px;
+  }
+
+  @media screen and (min-width: 550px) {
+    height: 740px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 840px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 640px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    height: 740px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    height: 920px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    height: 100vh;
+  }
+}
+
+.slider_container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  @media screen and (max-width: 499px) {
+    display: none;
+  }
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 640px;
+  padding-top: 90px;
+  padding-left: 30px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-width: 550px) {
+    height: 740px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 840px;
+    padding-top: 100px;
+    padding-left: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 640px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    height: 740px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    height: 920px;
+    padding-top: 180px;
+    padding-left: 150px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    height: 100vh;
+  }
+}
+
+.hero_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+}
+
+.hero_thumb {
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+
+  color: $secondary-text-color;
+
+  @media screen and (min-width: 768px) {
+    max-width: 500px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    max-width: 850px;
+  }
+}
+
+.hero_title {
+  margin-bottom: auto;
+  color: $secondary-text-color;
+
+  @extend %middle-title;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: normal;
+    letter-spacing: 3.6px;
+
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 1600px) {
+    margin-bottom: 16px;
+
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+  }
+}
+
+.highlight {
+  display: block;
+  margin-bottom: 10px;
+
+  color: #44c9ff;
+
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.55;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+
+    color: #44c9ff;
+
+    font-size: 29px;
+    line-height: 1.31;
+  }
+}
+
+.hero_text {
+  max-width: 350px;
+  margin-bottom: 35px;
+
+  color: $primary-text-color;
+
+  font-size: 14px;
+  line-height: 1.52;
+
+  @media screen and (min-width: 768px) {
+    max-width: 750px;
+
+    font-size: 16px;
+    line-height: 1.62;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 650px;
+
+    color: $secondary-text-color;
+  }
+
+  @media screen and (min-width: 1400px) {
+    max-width: 750px;
+  }
+}
+
+.hero_btns_thumb {
+  display: flex;
+  gap: 24px;
+}
+
+.more_btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $secondary-text-color;
+  border-color: #ffffff;
+
+  @extend %main-button;
+
+  &:hover,
+  :focus {
+    background-color: $primary-button-color;
+    border-color: $primary-button-color;
+  }
+
+  @media screen and (max-width: 500px) {
+    min-width: 146px;
+  }
+
+  @media screen and (min-width: 500px) {
+    color: $primary-button-color;
+
+    border-color: $primary-button-color;
+
+    &:hover,
+    :focus {
+      color: $secondary-text-color;
+      background-color: $primary-button-color;
+      border-color: $primary-button-color;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    color: $secondary-text-color;
+    border-color: #ffffff;
+
+    &:hover,
+    :focus {
+      background-color: $primary-button-color;
+      border-color: $primary-button-color;
+    }
+  }
+}
+
+.contact_btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $secondary-text-color;
+  background-color: $primary-button-color;
+  border-color: $primary-button-color;
+
+  @extend %main-button;
+
+  &:hover,
+  :focus {
+    background-color: $secondary-button-color;
+    border-color: $secondary-button-color;
+  }
+
+  @media screen and (max-width: 500px) {
+    min-width: 146px;
+  }
+}
+
+.mobile_hero {
+  @media screen and (min-width: 500px) {
+    display: none;
+  }
+}
+
+.mobile_hero_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.text_wrap {
+  width: 100%;
+
+  text-align: center;
+  @extend %container;
+}
+
+.mobile_hero_title {
+  margin-bottom: 18px;
+
+  color: $secondary-text-color;
+
+  @extend %middle-title;
+
+  @media screen and (min-width: 375px) {
+    margin-bottom: 36px;
+  }
+}
+
+.hero_btns_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  margin-bottom: 90px;
+
+  @media screen and (min-width: 425px) {
+    margin-bottom: 140px;
+  }
+}

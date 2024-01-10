@@ -1,0 +1,50 @@
+@import "../../../src/utils/placeholders.module.scss";
+@import "../../../src/utils/variables.module.scss";
+
+.button {
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+  width: 48px;
+  height: 48px;
+
+  background-color: $primary-button-color;
+  border-radius: 6px;
+  border: 2px solid $primary-button-color;
+
+  fill: #ffffff;
+  opacity: 1;
+
+  transition: fill $timing-function, background-color $timing-function,
+    opacity $timing-function;
+
+  cursor: pointer;
+
+  &:hover,
+  :focus {
+    background-color: transparent;
+    fill: $primary-button-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1024px) {
+    bottom: 60px;
+    right: 50px;
+  }
+}
+
+.button_hide {
+  opacity: 0;
+
+  @extend %visually-hidden;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+
+  fill: inherit;
+}

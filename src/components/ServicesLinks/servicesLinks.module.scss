@@ -1,0 +1,120 @@
+@import "../../../src/utils/placeholders.module.scss";
+@import "../../../src/utils/variables.module.scss";
+
+.container {
+  @extend %container;
+}
+
+.title {
+  margin-bottom: 30px;
+
+  text-align: center;
+
+  @extend %mobile_second_title;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 70px;
+
+    color: $primary-title-color;
+
+    text-align: center;
+    font-size: 36px;
+    line-height: normal;
+    letter-spacing: 3.6px;
+
+    text-transform: uppercase;
+  }
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
+  @extend %list;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+
+.item {
+  width: 145px;
+  height: 162px;
+
+  color: $primary-title-color;
+  background-color: #f4f8fd;
+
+  border-radius: 16px;
+  box-shadow: 0px 3px 16px 4px rgba(29, 51, 107, 0.1);
+
+  overflow: hidden;
+
+  @media screen and (min-width: 530px) {
+    width: 185px;
+    height: 200px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 240px;
+    height: 240px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+.link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  padding: 8px;
+
+  text-align: center;
+
+  font-size: 10px;
+  line-height: 1.83;
+  letter-spacing: 0.2px;
+  font-style: normal;
+
+  text-transform: uppercase;
+
+  transition: background-color $timing-function, box-shadow $timing-function;
+
+  .item &:hover,
+  .item &:focus {
+    background-color: #ffffff;
+    box-shadow: 0px 3px 20px 6px rgba(29, 51, 107, 0.15);
+  }
+
+  @media screen and (min-width: 530px) {
+    font-size: 14px;
+    line-height: 1.22;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 20px;
+
+    font-size: 16px;
+    line-height: 1.62;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+.image {
+  @media screen and (max-width: 768px) {
+    width: 60px;
+  }
+}
